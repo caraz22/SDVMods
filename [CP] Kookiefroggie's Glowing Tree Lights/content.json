@@ -1,0 +1,133 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Format": "2.8.0",
+    "Changes": [
+        // load assets
+        
+	{
+            "Action": "Load",
+            "Target": "{{ModId}}/tree3_lightmap,{{ModId}}/tree3_TAS,{{ModId}}/tree3_TAS_day,{{ModId}}/tree3_f_lightmap,{{ModId}}/tree3_f_TAS,{{ModId}}/tree3_f_TAS_day",
+            "FromFile": "assets/{{TargetWithoutPath}}.png"
+        },
+// temporary animated sprites
+   {
+            "Action": "EditData",
+            "Target": "mushymato.MMAP/TAS",
+            "Entries": {
+                "{{ModId}}_tree3_TAS": {
+                    "Id": "{{ModId}}_tree3_TAS",
+                   "Condition": "mushymato.MMAP_TIME_IS_LIGHTS_OFF, SEASON Winter",
+                    "Texture": "{{ModId}}/tree3_TAS",
+                    "SourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 256,
+                        "Height": 448
+                    },
+                    "PositionOffset": "-24,-80",
+                    "Interval": 1000,
+                    "Frames": 1,
+                    "Loops": 99999,
+                    "Scale": 0.25,
+                    "LayerDepth": 0,
+                    "SortOffset": 128
+                },
+	"{{ModId}}_tree3_TAS_day": {
+                    "Id": "{{ModId}}_tree3_TAS_day",
+                   "Condition": "!mushymato.MMAP_TIME_IS_LIGHTS_OFF, SEASON Winter",
+                    "Texture": "{{ModId}}/tree3_TAS_day",
+                    "SourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 256,
+                        "Height": 448
+                    },
+                    "PositionOffset": "-24,-80",
+                    "Interval": 1000,
+                    "Frames": 1,
+                    "Loops": 99999,
+                    "Scale": 0.25,
+                    "LayerDepth": 0,
+                    "SortOffset": 128
+                },
+                "{{ModId}}_tree3_f_TAS": {
+                    "Id": "{{ModId}}_tree3_f_TAS",
+                   "Condition": "mushymato.MMAP_TIME_IS_LIGHTS_OFF, SEASON Winter",
+                    "Texture": "{{ModId}}/tree3_f_TAS",
+                    "SourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 256,
+                        "Height": 448
+                    },
+                    "PositionOffset": "-24,-80",
+                    "Interval": 1000,
+                    "Frames": 1,
+                    "Loops": 99999,
+                    "Scale": 0.25,
+                    "LayerDepth": 0,
+                    "SortOffset": 128
+                },
+		"{{ModId}}_tree3_f_TAS_day": {
+                    "Id": "{{ModId}}_tree3_f_TAS_day",
+                   "Condition": "!mushymato.MMAP_TIME_IS_LIGHTS_OFF, SEASON Winter",
+                    "Texture": "{{ModId}}/tree3_f_TAS_day",
+                    "SourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 256,
+                        "Height": 448
+                    },
+                    "PositionOffset": "-24,-80",
+                    "Interval": 1000,
+                    "Frames": 1,
+                    "Loops": 99999,
+                    "Scale": 0.25,
+                    "LayerDepth": 0,
+                    "SortOffset": 128
+                },
+            }
+        },
+      
+        // wild tree properties
+        {
+            "Action": "EditData",
+            "Target": "mushymato.MMAP/WildTreeProperties",
+            "Entries": {
+                // format is space separated: <treeid> <growthstage> <T|F where F means flipped and T means not flipped>
+                // can use quotes for treeid if it already contains space
+                // can omit growthstage and flipped/not flipped if not important
+                // for vanilla trees, initialize it like this first, in case of multiple mods editing
+                "3 5 T": {},
+                "3 5 F": {}
+            },
+            "Priority": "Early"
+        },
+        {
+            "Action": "EditData",
+            "Target": "mushymato.MMAP/WildTreeProperties",
+            "Fields": {
+                // for vanilla trees, initialize it like this first, in case of multiple mods editing
+                "3 5 T": {
+                    "Back": {}
+                },
+                "3 5 F": {
+                    "Back": {}
+                }
+            },
+            "Priority": "Early"
+        },
+       
+//Include winter_GlowingTreeLights.json
+
+	{
+		"Action": "Include",
+		"FromFile": "assets/Data/winter_GlowingTreeLights.json",
+		"When": { 
+			"Season": "winter" 
+		},
+	},
+
+
+    ]
+}

@@ -1,0 +1,19 @@
+{
+	"config.WildTrees.name": "Birds Eat Wild Tree Seeds",
+	"config.WildTrees.description": "Birds prevent the spread of tree seeds from Oak, Maple, and Pine trees.",
+	"config.RareTrees.name": "Birds Eat Rare Tree Seeds",
+	"config.RareTrees.description": "Birds prevent the spread of tree seeds from Mahogany, Mossy, Mushroom, and Mystic Trees.",
+	"config.CornucopiaTrees.name": "Birds Eat Cornucopia Tree Seeds",
+	"config.CornucopiaTrees.description": "Birds prevent the spread of tree seeds from Sapodilla and Date Palm Trees.",
+	"config.SVETrees.name": "Birds Eat SVE Tree Seeds",
+	"config.SVETrees.description": "Birds prevent the spread of tree seeds from Birch and Fir Trees.",
+	
+	"Em.SeedBirdNest": "Wild Bird Feeder",
+	"Em.SeedBirdNestDescription": "A small house-like bird feeder for wild birds; every few days they may leave you something in return as long as it is filled with snacks.",
+	"Em.BirdNest1": "Wild Birds",
+	"Em.BirdNest2": "Hello @,^Have you noticed less seeds around the trees? This is because of the returning wild birds who enjoy picking out the seeds from between the branches. If you put out a snack or some nesting material, they might leave you something in return. I've attached the instructions on how to build a bird feeder for them.^- Marnie",
+	"Em.WildEgg": "Wild Egg",
+	"Em.WildEggDescription": "Some kind of bird's egg, it must have been in the tree branches.",
+	"Em.TimberLunch": "Timber Lunch",
+	"Em.TimberLunchDescription": "A hearty and sturdy lunch for any forager.",
+}

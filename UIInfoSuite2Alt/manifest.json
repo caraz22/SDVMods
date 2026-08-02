@@ -1,0 +1,15 @@
+{
+  "Name": "UI Info Suite 2 Alternative",
+  "Author": "DazUki",
+  "Version": "2.8.35",
+  "Description": "Adds useful information to the user interface. Alternative fork based on Annosz's UI Info Suite 2.",
+  "UniqueID": "DazUki.UIInfoSuite2Alt",
+  "EntryDll": "UIInfoSuite2Alt.dll",
+  "MinimumApiVersion": "4.1.10",
+  "Dependencies": [
+    { "UniqueID": "spacechase0.GenericModConfigMenu", "IsRequired": false },
+    { "UniqueID": "Pathoschild.ContentPatcher", "IsRequired": false },
+    { "UniqueID": "spacechase0.SpaceCore", "IsRequired": false }
+  ],
+  "UpdateKeys": ["Nexus:43127", "GitHub:dazuki/UIInfoSuite2Alt"]
+}

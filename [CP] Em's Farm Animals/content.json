@@ -1,0 +1,97 @@
+{
+	"Format": "2.9.0",
+	"ConfigSchema": {
+		"Chicken mayo":{
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+		"Duck egg":{
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+		"Duck egg color": {
+		"AllowValues": "Blue, Brown, Black",
+            	"Default": "Brown"
+		},
+		"Duck mayo":{
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+		"Duck feather": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+		"Duck feather color": {
+		"AllowValues": "MallardMale, MallardFemale, Wood, Apple, Muscovy, Cayuga, Call, Swedish, Saxony, Pintail, Mandarin, Bluebill",
+		"Default": "MallardMale"
+		},
+		"Ostrich icon": {
+		"AllowValues": "OstrichIcon1, OstrichIcon2, OstrichIcon3",
+		"Default": "OstrichIcon1"
+		},
+		"Dino egg type":{
+		"AllowValues": "Parasaur, Triceratops, Spino, Tyranno, Bronto, Ankylo, Stego, Dragon",
+		"Default": "Triceratops"
+		},
+		"Dino egg": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+		"Dino mayo":{
+		"AllowValues": "true, false",
+            	"Default": "true"
+		},
+		"Dino type": {
+		"AllowValues": "Dino, Dragon",
+            	"Default": "Dino"
+		},
+		"Incubation time": {
+		"AllowValues": "2500, 7500, 12500, 18000",
+            	"Default": "18000"
+			}
+		 },
+	"Changes": [
+	{
+		"Action": "Include",
+      		"FromFile": "data/chicken white.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/chicken brown.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/chicken items.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/pig.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/goat.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/cow white.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/cow brown.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/sheep.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/rabbit.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/duck.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/duck items.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/ostrich.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/dino.json"},
+		{
+		"Action": "Include",
+      		"FromFile": "data/dino items.json"}
+	]
+}

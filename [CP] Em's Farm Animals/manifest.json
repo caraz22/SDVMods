@@ -1,0 +1,11 @@
+{
+	"Name": "Em's Farm Animals",
+	"Author": "RivalRabbit",
+	"Version": "1.3",
+	"Description": "A complete bundle with all Em's farm animals",
+	"UniqueID": "RivalRabbit.EmsFarmAnimalsCP",
+		"UpdateKeys": [ "Nexus:39782" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	}
+}

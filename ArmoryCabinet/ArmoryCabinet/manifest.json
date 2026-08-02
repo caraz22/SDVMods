@@ -1,0 +1,12 @@
+{
+    "Name": "Armory Cabinet",
+    "Author": "Poplinp",
+    "Version": "2.0.0",
+    "Description": "Adds a custom dresser for weapons and trinkets.",
+    "UniqueID": "Poplinp.ArmoryCabinetHelper",
+    "EntryDll": "ArmoryCabinet.dll",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": [
+        "Nexus:40264"
+    ]
+}

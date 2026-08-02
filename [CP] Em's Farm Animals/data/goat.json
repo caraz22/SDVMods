@@ -1,0 +1,91 @@
+{
+	"Changes": [
+	{
+		"LogName": "Load assets",
+			"Action": "Load",
+			"Target": "{{ModId}}/Saanen, {{ModId}}/Alpine, {{ModId}}/Bagot, {{ModId}}/Boer, {{ModId}}/Guernsey, {{ModId}}/Toggenburg, {{ModId}}/Sable, {{ModId}}/Cape, {{ModId}}/Mountain, {{ModId}}/BlackNeck, {{ModId}}/Billberry, {{ModId}}/Bell, {{ModId}}/SaanenBaby, {{ModId}}/AlpineBaby, {{ModId}}/BagotBaby, {{ModId}}/BoerBaby, {{ModId}}/GuernseyBaby, {{ModId}}/ToggenburgBaby, {{ModId}}/SableBaby, {{ModId}}/CapeBaby, {{ModId}}/MountainBaby, {{ModId}}/BlackNeckBaby, {{ModId}}/BillberryBaby, {{ModId}}/BellBaby",
+"FromFile": "assets/goat/{{TargetWithoutPath}}.png"
+		},
+		{
+	"Action": "EditData",
+	"Target": "Data/FarmAnimals",
+	"TargetField": ["Goat"],
+	"Entries": {
+		"Texture": "{{ModId}}/Saanen",
+		"BabyTexture": "{{ModId}}/SaanenBaby",
+		"Skins": [
+		{
+		"Id": "Alpine",
+		"Texture": "{{ModId}}/Alpine",
+		"BabyTexture": "{{ModId}}/AlpineBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Bagot",
+		"Texture": "{{ModId}}/Bagot",
+		"BabyTexture": "{{ModId}}/BagotBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Boer",
+		"Texture": "{{ModId}}/Boer",
+		"BabyTexture": "{{ModId}}/BoerBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Guernsey",
+		"Texture": "{{ModId}}/Guernsey",
+		"BabyTexture": "{{ModId}}/GuernseyBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Toggenburg",
+		"Texture": "{{ModId}}/Toggenburg",
+		"BabyTexture": "{{ModId}}/ToggenburgBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Sable",
+		"Texture": "{{ModId}}/Sable",
+		"BabyTexture": "{{ModId}}/SableBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Cape",
+		"Texture": "{{ModId}}/Cape",
+		"BabyTexture": "{{ModId}}/CapeBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Mountain",
+		"Texture": "{{ModId}}/Mountain",
+		"BabyTexture": "{{ModId}}/MountainBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "BlackNeck",
+		"Texture": "{{ModId}}/BlackNeck",
+		"BabyTexture": "{{ModId}}/BlackNeckBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Billberry",
+		"Texture": "{{ModId}}/Billberry",
+		"BabyTexture": "{{ModId}}/BillberryBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Bell",
+		"Texture": "{{ModId}}/Bell",
+		"BabyTexture": "{{ModId}}/BellBaby",
+		"Weight": 1.0
+		}]}
+	},
+	{
+	"Action": "EditImage",
+	"Target": "LooseSprites/Cursors",
+	"FromFile": "assets/goat/GoatIcon.png",
+	"ToArea": {"X": 64, "Y": 448,"Width": 33, "Height": 17}
+			}
+		]
+	}

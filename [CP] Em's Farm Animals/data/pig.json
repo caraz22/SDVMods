@@ -1,0 +1,89 @@
+{
+	"Changes": [
+	{
+		"LogName": "Load assets",
+			"Action": "Load",
+			"Target": "{{ModId}}/Yorkshire, {{ModId}}/Wattle, {{ModId}}/Oxford, {{ModId}}/Juliana, {{ModId}}/HampshirePig, {{ModId}}/Hog, {{ModId}}/Tamworth, {{ModId}}/Berkshire, {{ModId}}/Landrace, {{ModId}}/Boar, {{ModId}}/BabyYorkshire, {{ModId}}/BabyWattle, {{ModId}}/BabyOxford, {{ModId}}/BabyJuliana, {{ModId}}/BabyHampshirePig, {{ModId}}/BabyHog, {{ModId}}/BabyTamworth, {{ModId}}/BabyBerkshire, {{ModId}}/BabyLandrace, {{ModId}}/BabyBoar",
+"FromFile": "assets/pig/{{TargetWithoutPath}}.png"
+		},
+		{
+	"Action": "EditData",
+	"Target": "Data/FarmAnimals",
+	"TargetField": ["Pig"],
+	"Entries": {
+		"Texture": "{{ModId}}/Yorkshire",
+		"BabyTexture": "{{ModId}}/BabyYorkshire",
+		"Skins": [
+		{
+		"Id": "Wattle",
+		"Texture": "{{ModId}}/Wattle",
+		"BabyTexture": "{{ModId}}/BabyWattle",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Oxford",
+		"Texture": "{{ModId}}/Oxford",
+		"BabyTexture": "{{ModId}}/BabyOxford",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Juliana",
+		"Texture": "{{ModId}}/Juliana",
+		"BabyTexture": "{{ModId}}/BabyJuliana",
+		"Weight": 1.0
+		},
+		{
+		"Id": "HampshirePig",
+		"Texture": "{{ModId}}/HampshirePig",
+		"BabyTexture": "{{ModId}}/BabyHampshirePig",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Hog",
+		"Texture": "{{ModId}}/Hog",
+		"BabyTexture": "{{ModId}}/BabyHog",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Tamworth",
+		"Texture": "{{ModId}}/Tamworth",
+		"BabyTexture": "{{ModId}}/BabyTamworth",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Berkshire",
+		"Texture": "{{ModId}}/Berkshire",
+		"BabyTexture": "{{ModId}}/BabyBerkshire",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Landrace",
+		"Texture": "{{ModId}}/Landrace",
+		"BabyTexture": "{{ModId}}/BabyLandrace",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Boar",
+		"Texture": "{{ModId}}/Boar",
+		"BabyTexture": "{{ModId}}/BabyBoar",
+		"Weight": 1.0
+		}]}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyPig",
+		"FromFile": "assets/pig/YorkshireBaby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Pig",
+		"FromFile": "assets/pig/Yorkshire.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/pig/PigIcon.png",
+		"ToArea": {"X": 0, "Y": 480,"Width": 33, "Height": 17}
+		}
+	]
+}

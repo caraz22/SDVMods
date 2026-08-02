@@ -1,0 +1,54 @@
+{
+	"Changes": [
+//Birch
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "FlashShifter.StardewValleyExpandedCP_Birch_Tree" ],
+		"When":{ "SVETrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0,
+			}
+		},
+//Fir
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "FlashShifter.StardewValleyExpandedCP_Fir_Tree" ],
+		"When":{ "SVETrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0,
+			}
+		},
+		{
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)Em.SeedBirdNest", "OutputRules", "Em.SeedBundle", "OutputItem" ],
+	"When":{ "SVETrees":"true" },
+        "Entries": {
+        	"SVE.BirchSeed": {
+                    "Id": "SVE.BirchSeed",
+                    "ItemId": "FlashShifter.StardewValleyExpandedCP_Birch_Seed",
+                    "MinStack": 3,
+                    "MaxStack": 5,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 4, RANDOM 0.1"
+        	   },
+        	"SVE.FirSeed": {
+                    "Id": "SVE.FirSeed",
+                    "ItemId": "FlashShifter.StardewValleyExpandedCP_Fir_Cone",
+                    "MinStack": 3,
+                    "MaxStack": 5,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 4, RANDOM 0.1"
+        	   }
+		},
+         "MoveEntries": [
+         { "Id": "SVE.BirchSeed", "BeforeId": "WildSeeds" },
+         { "Id": "SVE.FirSeed", "BeforeId": "WildSeeds" },
+         ]
+	},
+   ]
+}

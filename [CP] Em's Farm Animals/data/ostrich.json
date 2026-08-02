@@ -1,0 +1,61 @@
+{
+	"Changes": [
+	{
+		"LogName": "Load assets",
+			"Action": "Load",
+			"Target": "{{ModId}}/OstrichMale, {{ModId}}/OstrichFemale, {{ModId}}/Emu, {{ModId}}/Moa, {{ModId}}/WhiteRhea, {{ModId}}/Rhea, {{ModId}}/Cassowary, {{ModId}}/OstrichMaleBaby, {{ModId}}/OstrichFemaleBaby, {{ModId}}/EmuBaby, {{ModId}}/MoaBaby, {{ModId}}/WhiteRheaBaby, {{ModId}}/RheaBaby, {{ModId}}/CassowaryBaby",
+"FromFile": "assets/ostrich/{{TargetWithoutPath}}.png"
+		},
+		{
+	"Action": "EditData",
+	"Target": "Data/FarmAnimals",
+	"TargetField": ["Ostrich"],
+	"Entries": {
+		"Texture": "{{ModId}}/OstrichMale",
+		"BabyTexture": "{{ModId}}/OstrichMaleBaby",
+		"Skins": [
+		{
+		"Id": "OstrichFemale",
+		"Texture": "{{ModId}}/OstrichFemale",
+		"BabyTexture": "{{ModId}}/OstrichFemaleBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Emu",
+		"Texture": "{{ModId}}/Emu",
+		"BabyTexture": "{{ModId}}/EmuBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Moa",
+		"Texture": "{{ModId}}/Moa",
+		"BabyTexture": "{{ModId}}/MoaBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "WhiteRhea",
+		"Texture": "{{ModId}}/WhiteRhea",
+		"BabyTexture": "{{ModId}}/WhiteRheaBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Rhea",
+		"Texture": "{{ModId}}/Rhea",
+		"BabyTexture": "{{ModId}}/RheaBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Cassowary",
+		"Texture": "{{ModId}}/Cassowary",
+		"BabyTexture": "{{ModId}}/CassowaryBaby",
+		"Weight": 1.0
+		}]}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/ostrich/{{Ostrich icon}}.png",
+		"ToArea": {"X": 32, "Y": 480,"Width": 33, "Height": 17}
+		}
+	]
+}

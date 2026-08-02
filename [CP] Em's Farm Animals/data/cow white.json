@@ -1,0 +1,61 @@
+{
+	"Changes": [
+	{
+		"LogName": "Load assets",
+		"Action": "Load",
+		"Target": "{{ModId}}/Highland, {{ModId}}/Swiss, {{ModId}}/Holstein, {{ModId}}/Roan, {{ModId}}/Bull, {{ModId}}/Galloway, {{ModId}}/Belted, {{ModId}}/HighlandBaby, {{ModId}}/SwissBaby, {{ModId}}/HolsteinBaby, {{ModId}}/RoanBaby, {{ModId}}/BullBaby, {{ModId}}/GallowayBaby, {{ModId}}/BeltedBaby",
+"FromFile": "assets/cow/{{TargetWithoutPath}}.png"
+		},
+		{
+	"Action": "EditData",
+	"Target": "Data/FarmAnimals",
+	"TargetField": ["White Cow"],
+	"Entries": {
+		"Texture": "{{ModId}}/Holstein",
+		"BabyTexture": "{{ModId}}/HolsteinBaby",
+		"Skins": [
+		{
+		"Id": "Highland",
+		"Texture": "{{ModId}}/Highland",
+		"BabyTexture": "{{ModId}}/HighlandBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Roan",
+		"Texture": "{{ModId}}/Roan",
+		"BabyTexture": "{{ModId}}/RoanBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Bull",
+		"Texture": "{{ModId}}/Bull",
+		"BabyTexture": "{{ModId}}/BullBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Galloway",
+		"Texture": "{{ModId}}/Galloway",
+		"BabyTexture": "{{ModId}}/GallowayBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Belted",
+		"Texture": "{{ModId}}/Belted",
+		"BabyTexture": "{{ModId}}/BeltedBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Swiss",
+		"Texture": "{{ModId}}/Swiss",
+		"BabyTexture": "{{ModId}}/SwissBaby",
+		"Weight": 1.0
+		}]}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/cow/CowIcon.png",
+		"ToArea": {"X": 32, "Y": 448,"Width": 33, "Height": 17}
+		}
+	]
+}

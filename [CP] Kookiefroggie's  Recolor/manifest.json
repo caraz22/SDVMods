@@ -1,0 +1,96 @@
+{
+  "Name": "[CP] Kookiefroggie's Recolor",
+  "Author": "Kookiefroggie",
+  "Version": "1.3.1",
+  "Description": "Modular recolor that recolors the game in pretty colors and replaces some textures",
+  "UniqueID": "Kookiefroggie.Recolor",
+  "UpdateKeys": [ "Nexus:39407" ],
+  "ContentPackFor": {
+	"UniqueID": "Pathoschild.ContentPatcher",
+	},
+  "Dependencies":[
+//Expansions
+	{
+		"UniqueID": "Lemurkat.EastScarp",
+		"IsRequired": false,
+	},
+	{
+		"UniqueID": "Lemurkat.EastScarpe.CP",
+		"IsRequired": false,
+	},
+	{
+		"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "Tarniyar.CP.WalkToDesert",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "dreamy.kickitspot",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "MV.PelicanTownAccessibility",
+		"IsRequired": false
+	},
+
+//Tilesheets
+
+	{
+		"UniqueID": "xiddav.tilesheet",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "crystalinerose.Tilesheets",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "MixedBag.Tilesheets",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "Lumisteria.TtilesheetsOutdoor",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "DaisyNiko.Tilesheets",
+		"IsRequired": false
+	},		
+	{
+		"UniqueID": "alvadea.tilesheet",
+		"IsRequired": false
+	},	
+	{
+		"UniqueID": "A_TK.AToMS",
+		"IsRequired": false
+	},
+
+// Recolors
+
+	{
+		"UniqueID": "DaisyNiko.EarthyRecolour",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "Lita.StarblueValleyUnofficial",
+		"IsRequired": false
+	},
+
+	{
+		"UniqueID": "Acerbicon.Recolor",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "grapeponta.VibrantPastoralRecolor",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "Aimon_WitchyDGR",
+		"IsRequired": false
+	},
+
+
+],
+
+}

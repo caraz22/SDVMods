@@ -1,0 +1,277 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Leroymilo/FurnitureFramework/main/doc/schemas/content.json",
+	"Format": 3,
+	"Furniture": {
+		"[[ModID]].armory_cabinet": {
+			"Display Name": "i18n:Poplinp.ArmoryCabinet.DisplayName",
+			"Price": 5000,
+			"Source Image": "assets/cabinetsprites.png",
+			"Rotations": ["Front", "Back"],
+			"Collisions": {"Width": 2, "Height": 1},
+			"Placement Restriction": 2,
+			"Exclude from Random Sales": true,
+			"Shows in Shops": [
+            "AdventureShop", 
+            "Furniture Catalogue"
+         	],
+			"Layers": {
+                "Front": {
+                "Source Rect": {
+                  "X": 0, "Y": 0,
+                  "Width": 32, "Height": 32
+                    }
+                },
+                "Back": {
+                "Source Rect": {
+                  "X": 32, "Y": 0,
+                  "Width": 32, "Height": 32
+                    }
+                }
+			},
+
+			"Special Type": "FFStorage",
+			"Storage Condition": "ANY \"ITEM_TYPE Input (W) (TR)\" \"ITEM_CATEGORY Input -96\"",
+			"Storage Tabs": [
+				{
+					"ID": "any",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 0, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "swords",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 0 3",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 16, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "clubs",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 2",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 32, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "daggers",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 1",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 48, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "trinkets",
+					"Condition": "ITEM_TYPE Input (TR)",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 64, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "rings",
+					"Condition": "ITEM_CATEGORY  Input -96",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 80, "Width": 16, "Height": 16}
+				}
+			]
+		},
+
+		"[[ModID]].armory_cabinet_dark": {
+			"Display Name": "i18n:Poplinp.ArmoryCabinet.DisplayName",
+			"Price": 5000,
+			"Source Image": "assets/cabinetsprites.png",
+			"Rotations": ["Front", "Back"],
+			"Collisions": {"Width": 2, "Height": 1},
+			"Placement Restriction": 2,
+			"Exclude from Random Sales": true,
+			"Shows in Shops": [
+            "AdventureShop", 
+            "Furniture Catalogue"
+         	],
+			"Layers": {
+                "Front": {
+                "Source Rect": {
+                  "X": 0, "Y": 32,
+                  "Width": 32, "Height": 48
+                    }
+                },
+                "Back": {
+                "Source Rect": {
+                  "X": 32, "Y": 32,
+                  "Width": 32, "Height": 48
+                    }
+                }
+			},
+
+			"Special Type": "FFStorage",
+			"Storage Condition": "ANY \"ITEM_TYPE Input (W) (TR)\" \"ITEM_CATEGORY Input -96\"",
+			"Storage Tabs": [
+				{
+					"ID": "any",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 0, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "swords",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 0 3",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 16, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "clubs",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 2",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 32, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "daggers",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 1",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 48, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "trinkets",
+					"Condition": "ITEM_TYPE Input (TR)",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 64, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "rings",
+					"Condition": "ITEM_CATEGORY  Input -96",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 80, "Width": 16, "Height": 16}
+				}
+			]
+		},
+
+		"[[ModID]].armory_cabinet_light_narrow": {
+			"Display Name": "i18n:Poplinp.ArmoryCabinet.DisplayName",
+			"Price": 5000,
+			"Source Image": "assets/cabinetsprites.png",
+			"Rotations": ["Front", "Back"],
+			"Collisions": {"Width": 1, "Height": 1},
+			"Placement Restriction": 2,
+			"Exclude from Random Sales": true,
+			"Shows in Shops": [
+            "AdventureShop", 
+            "Furniture Catalogue"
+         	],
+			"Layers": {
+                "Front": {
+                "Source Rect": {
+                  "X": 64, "Y": 0,
+                  "Width": 16, "Height": 32
+                    }
+                },
+                "Back": {
+                "Source Rect": {
+                  "X": 80, "Y": 0,
+                  "Width": 16, "Height": 32
+                    }
+                }
+			},
+
+			"Special Type": "FFStorage",
+			"Storage Condition": "ANY \"ITEM_TYPE Input (W) (TR)\" \"ITEM_CATEGORY Input -96\"",
+			"Storage Tabs": [
+				{
+					"ID": "any",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 0, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "swords",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 0 3",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 16, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "clubs",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 2",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 32, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "daggers",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 1",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 48, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "trinkets",
+					"Condition": "ITEM_TYPE Input (TR)",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 64, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "rings",
+					"Condition": "ITEM_CATEGORY  Input -96",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 80, "Width": 16, "Height": 16}
+				}
+			]
+		},
+
+		"[[ModID]].armory_cabinet_dark_narrow": {
+			"Display Name": "i18n:Poplinp.ArmoryCabinet.DisplayName",
+			"Price": 5000,
+			"Source Image": "assets/cabinetsprites.png",
+			"Rotations": ["Front", "Back"],
+			"Collisions": {"Width": 1, "Height": 1},
+			"Placement Restriction": 2,
+			"Exclude from Random Sales": true,
+			"Shows in Shops": [
+            "AdventureShop", 
+            "Furniture Catalogue"
+         	],
+			"Layers": {
+                "Front": {
+                "Source Rect": {
+                  "X": 64, "Y": 32,
+                  "Width": 16, "Height": 48
+                    }
+                },
+                "Back": {
+                "Source Rect": {
+                  "X": 80, "Y": 32,
+                  "Width": 16, "Height": 48
+                    }
+                }
+			},
+
+			"Special Type": "FFStorage",
+			"Storage Condition": "ANY \"ITEM_TYPE Input (W) (TR)\" \"ITEM_CATEGORY Input -96\"",
+			"Storage Tabs": [
+				{
+					"ID": "any",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 0, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "swords",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 0 3",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 16, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "clubs",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 2",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 32, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "daggers",
+					"Condition": "Poplinp.ArmoryCabinetHelper_WEAPON_TYPE Input 1",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 48, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "trinkets",
+					"Condition": "ITEM_TYPE Input (TR)",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 64, "Width": 16, "Height": 16}
+				},
+				{
+					"ID": "rings",
+					"Condition": "ITEM_CATEGORY  Input -96",
+					"Source Image": "assets/tabsprites.png",
+					"Source Rect": {"X": 0, "Y": 80, "Width": 16, "Height": 16}
+				}
+			]
+		}
+	}
+}

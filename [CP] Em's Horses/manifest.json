@@ -1,0 +1,11 @@
+{
+   "Name": "Em's Horses",
+   "Author": "RivalRabbit",
+   "Version": "1.1",
+   "Description": "Retexture of the horse.",
+   "UniqueID": "RivalRabbit.EmsHorsesCP",
+	"UpdateKeys": [ "Nexus:41169" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   }
+}

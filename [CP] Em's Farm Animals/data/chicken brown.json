@@ -1,0 +1,42 @@
+{
+	"Changes": [
+	{
+		"LogName": "Load assets",
+		"Action": "Load",
+		"Target": "{{ModId}}/Lohmann, {{ModId}}/Rhode, {{ModId}}/Maran, {{ModId}}/Plymouth, {{ModId}}/Hampshire, {{ModId}}/LohmannBaby, {{ModId}}/RhodeBaby, {{ModId}}/MaranBaby, {{ModId}}/PlymouthBaby, {{ModId}}/HampshireBaby",
+"FromFile": "assets/chicken/{{TargetWithoutPath}}.png"
+		},
+		{
+	"Action": "EditData",
+	"Target": "Data/FarmAnimals",
+	"TargetField": ["Brown Chicken"],
+	"Entries": {
+		"Texture": "{{ModId}}/Lohmann",
+		"BabyTexture": "{{ModId}}/LohmannBaby",
+		"Skins": [
+		{
+		"Id": "Rhode",
+		"Texture": "{{ModId}}/Rhode",
+		"BabyTexture": "{{ModId}}/RhodeBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Maran",
+		"Texture": "{{ModId}}/Maran",
+		"BabyTexture": "{{ModId}}/MaranBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Hampshire",
+		"Texture": "{{ModId}}/Hampshire",
+		"BabyTexture": "{{ModId}}/HampshireBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Plymouth",
+		"Texture": "{{ModId}}/Plymouth",
+		"BabyTexture": "{{ModId}}/PlymouthBaby",
+		"Weight": 1.0
+			}
+		]
+	}}]}

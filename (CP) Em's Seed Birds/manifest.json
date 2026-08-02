@@ -1,0 +1,15 @@
+{
+    "Name": "Em's Tree Seed Birds",
+    "Author": "RivalRabbit",
+    "Version": "1.1",
+    "Description": "Trees stop dropping seeds on the ground, instead, birds collect them for you.",
+    "UniqueID": "RivalRabbit.EmsTreeSeedBirds",
+	"UpdateKeys": [ "Nexus:41939" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+	{ "UniqueID": "Cornucopia.MoreCrops",  "IsRequired": false },
+	{ "UniqueID": "FlashShifter.StardewValleyExpandedCP",  "IsRequired": false },
+	],
+}

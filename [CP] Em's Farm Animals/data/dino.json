@@ -1,0 +1,52 @@
+{
+	"Changes": [
+	{
+		"LogName": "Load assets",
+			"Action": "Load",
+			"Target": "{{ModId}}/Parasaur, {{ModId}}/Triceratops, {{ModId}}/Spino, {{ModId}}/Tyranno, {{ModId}}/Bronto, {{ModId}}/Ankylo, {{ModId}}/Stego, {{ModId}}/Dragon",
+"FromFile": "assets/dino/{{TargetWithoutPath}}.png"
+		},
+		{
+	"Action": "EditData",
+	"Target": "Data/FarmAnimals",
+	"TargetField": ["Dinosaur"],
+	"Entries": {
+		"Texture": "{{ModId}}/Triceratops",
+		"Skins": [
+		{
+		"Id": "Parasaur",
+		"Texture": "{{ModId}}/Parasaur",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Spino",
+		"Texture": "{{ModId}}/Spino",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Tyranno",
+		"Texture": "{{ModId}}/Tyranno",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Bronto",
+		"Texture": "{{ModId}}/Bronto",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Ankylo",
+		"Texture": "{{ModId}}/Ankylo",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Stego",
+		"Texture": "{{ModId}}/Stego",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Dragon",
+		"Texture": "{{ModId}}/Dragon",
+		"Weight": 1.0
+			}
+		]
+	}}]}

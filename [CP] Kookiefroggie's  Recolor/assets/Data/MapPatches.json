@@ -1,0 +1,2885 @@
+//This json does small cosmetic fixes on tiles that look disconnected. The map layouts do NOT get changed.
+//East Scarp MapPatches made with permission from lemurkat.
+
+{
+
+"Changes": [
+
+//IslandSouth MapPatch
+{
+"LogName": "IslandSouth MapPatch",
+"Action": "EditMap",
+"Target": "Maps/Island_S",
+"When": {
+                "HasMod |contains= Lnh.IslandOverhaul": false
+            },
+"MapTiles": [
+{
+"Position": { 
+ "X": 13, 
+ "Y": 30
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 16, 
+ "Y": 30
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 19, 
+ "Y": 30
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 20, 
+ "Y": 28
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 72
+ },
+{
+"Position": { 
+ "X": 27, 
+ "Y": 30
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 29, 
+ "Y": 30
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+
+],
+},
+
+
+
+//IslandResort MapPatch
+{
+"LogName": "IslandResort MapPatch",
+"Action": "EditMap",
+"Target": "Maps/Island_Resort",
+"When": {
+                "HasMod |contains= Lnh.IslandOverhaul": false
+            },
+"MapTiles": [
+{
+"Position": { 
+ "X": 4, 
+ "Y": 15
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 7, 
+ "Y": 15
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 10, 
+ "Y": 15
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 18, 
+ "Y": 15
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 20, 
+ "Y": 15
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+],
+},
+
+{
+"LogName": "IslandSouthEast MapPatch",
+"Action": "EditMap",
+"Target": "Maps/Island_SE",
+"MapTiles": [
+{
+"Position": { 
+ "X": 15, 
+ "Y": 26
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 19, 
+ "Y": 26
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 26, 
+ "Y": 12
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 207
+ },
+
+],
+},
+
+{
+"LogName": "IslandWest MapPatch",
+"Action": "EditMap",
+"Target": "Maps/Island_W",
+"MapTiles": [
+{
+"Position": { 
+ "X": 28, 
+ "Y": 83
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 130
+ },
+{
+"Position": { 
+ "X": 39, 
+ "Y": 85
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 46, 
+ "Y": 85
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 130
+ },
+{
+"Position": { 
+ "X": 61, 
+ "Y": 85
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 65, 
+ "Y": 84
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 72, 
+ "Y": 84
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+
+],
+},
+
+
+//IslandWest MapPatch Part 2
+{
+"LogName": "IslandWest MapPatch Part 2",
+"Action": "EditMap",
+"Target": "Maps/Island_W",
+"When": {
+                "HasMod |contains= Lnh.IslandOverhaul": false
+            },
+"MapTiles": [
+{
+"Position": { 
+ "X": 87, 
+ "Y": 82
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ },
+{
+"Position": { 
+ "X": 91, 
+ "Y": 82
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 37
+ }
+],
+},
+
+
+
+{
+"LogName": "Beach Vanilla MapPatch ",
+"Action": "EditMap",
+"Target": "Maps/Beach",
+"When": {
+                "HasMod |contains= FlashShifter.StardewValleyExpandedCP": false
+            },
+"MapTiles": [
+{
+"Position": { 
+ "X": 8, 
+ "Y": 3
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 134
+ },
+{
+"Position": { 
+ "X": 8, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 133
+ },
+{
+"Position": { 
+ "X": 8, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 6, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 22
+ },
+{
+"Position": { 
+ "X": 5, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 21
+ },
+{
+"Position": { 
+ "X": 4, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 22
+ },
+{
+"Position": { 
+ "X": 9, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 69
+ },
+{
+"Position": { 
+ "X": 9, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 54
+ },
+{
+"Position": { 
+ "X": 8, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 53
+ },
+{
+"Position": { 
+ "X": 7, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 69
+ },
+{
+"Position": { 
+ "X": 7, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 54
+ },
+{
+"Position": { 
+ "X": 6, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 53
+ },
+{
+"Position": { 
+ "X": 5, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 52
+ },
+{
+"Position": { 
+ "X": 19, 
+ "Y": 18
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 41
+ },
+{
+"Position": { 
+ "X": 33, 
+ "Y": 19
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 51, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 56, 
+ "Y": 13
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 71
+ },
+{
+"Position": { 
+ "X": 87, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 65, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 64, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 85
+ },
+{
+"Position": { 
+ "X": 64, 
+ "Y": 21
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 68
+ },
+{
+"Position": { 
+ "X": 63, 
+ "Y": 14
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 87
+ },
+],
+},
+
+{
+"LogName": "Beach SVE MapPatch ",
+"Action": "EditMap",
+"Target": "Maps/Beach",
+"When": {
+                "HasMod |contains= FlashShifter.StardewValleyExpandedCP": true
+            },
+"MapTiles": [
+{
+"Position": { 
+ "X": 4, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 22
+ },
+{
+"Position": { 
+ "X": 5, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 21
+ },
+{
+"Position": { 
+ "X": 6, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 21
+ },
+{
+"Position": { 
+ "X": 8, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 19, 
+ "Y": 18
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 41
+ },
+{
+"Position": { 
+ "X": 33, 
+ "Y": 19
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 51, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 64, 
+ "Y": 21
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 68
+ },
+{
+"Position": { 
+ "X": 64, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 85
+ },
+{
+"Position": { 
+ "X": 65, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 87, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+
+],
+},
+
+{
+"LogName": "EastScarp MapPatch ",
+"Action": "EditMap",
+"Target": "Maps/EastScarp_Village",
+"When": {
+                "HasMod |contains= Lemurkat.EastScarp": true
+            },
+"MapTiles": [
+{
+"Position": { 
+ "X": 15, 
+ "Y": 115
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 14, 
+ "Y": 114
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 13, 
+ "Y": 113
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 12, 
+ "Y": 112
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 35, 
+ "Y": 113
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 3, 
+ "Y": 105
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 377
+ },
+{
+"Position": { 
+ "X": 2, 
+ "Y": 105
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 1, 
+ "Y": 105
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 353
+ },
+{
+"Position": { 
+ "X": 1, 
+ "Y": 106
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 281
+ },
+{
+"Position": { 
+ "X": 1, 
+ "Y": 107
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 306
+ },
+{
+"Position": { 
+ "X": 1, 
+ "Y": 108
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 306
+ },
+{
+"Position": { 
+ "X": 1, 
+ "Y": 109
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 306
+ },
+{
+"Position": { 
+ "X": 1, 
+ "Y": 110
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 306
+ },
+{
+"Position": { 
+ "X": 3, 
+ "Y": 106
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 175
+ },
+{
+"Position": { 
+ "X": 32, 
+ "Y": 76
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 403
+ },
+{
+"Position": { 
+ "X": 71, 
+ "Y": 106
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 327
+ },
+{
+"Position": { 
+ "X": 77, 
+ "Y": 106
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 328
+ },
+{
+"Position": { 
+ "X": 85, 
+ "Y": 104
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 378
+ },
+{
+"Position": { 
+ "X": 88, 
+ "Y": 86
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 353
+ },
+{
+"Position": { 
+ "X": 89, 
+ "Y": 85
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 353
+ },
+{
+"Position": { 
+ "X": 89, 
+ "Y": 86
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 377
+ },
+{
+"Position": { 
+ "X": 90, 
+ "Y": 82
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 403
+ },
+{
+"Position": { 
+ "X": 71, 
+ "Y": 57
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 407
+ },
+{
+"Position": { 
+ "X": 46, 
+ "Y": 50
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 325
+ },
+{
+"Position": { 
+ "X": 37, 
+ "Y": 47
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 327
+ },
+{
+"Position": { 
+ "X": 19, 
+ "Y": 52
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 175
+ },
+{
+"Position": { 
+ "X": 20, 
+ "Y": 44
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 404
+ },
+{
+"Position": { 
+ "X": 20, 
+ "Y": 45
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 19, 
+ "Y": 45
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 353
+ },
+{
+"Position": { 
+ "X": 19, 
+ "Y": 44
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 351
+ },
+{
+"Position": { 
+ "X": 12, 
+ "Y": 32
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 30, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 327
+ },
+{
+"Position": { 
+ "X": 39, 
+ "Y": 9
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 406
+ },
+{
+"Position": { 
+ "X": 46, 
+ "Y": 10
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 353
+ },
+{
+"Position": { 
+ "X": 56, 
+ "Y": 14
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 404
+ },
+{
+"Position": { 
+ "X": 56, 
+ "Y": 13
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 407
+ },
+{
+"Position": { 
+ "X": 55, 
+ "Y": 13
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 404
+ },
+{
+"Position": { 
+ "X": 55, 
+ "Y": 12
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 407
+ },
+{
+"Position": { 
+ "X": 54, 
+ "Y": 12
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 405
+ },
+{
+"Position": { 
+ "X": 66, 
+ "Y": 20
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 59, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 72, 
+ "Y": 3
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 377
+ },
+{
+"Position": { 
+ "X": 85, 
+ "Y": 12
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 353
+ },
+{
+"Position": { 
+ "X": 97, 
+ "Y": 10
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 375
+ },
+{
+"Position": { 
+ "X": 37, 
+ "Y": 18
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 680
+ },
+{
+"Position": { 
+ "X": 33, 
+ "Y": 11
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 680
+ },
+{
+"Position": { 
+ "X": 32, 
+ "Y": 23
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 680
+ },
+{
+"Position": { 
+ "X": 32, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 680
+ },
+{
+"Position": { 
+ "X": 37, 
+ "Y": 27
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 680
+ },
+{
+"Position": { 
+ "X": 37, 
+ "Y": 28
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 680
+ },
+
+],
+},
+
+//East Scarp Legacy Beach Map Fix
+
+{
+"LogName": "EastScarp MapPatch ",
+"Action": "EditMap",
+"Target": "Maps/EastScarp_Village",
+"When": {
+                "HasMod |contains= LemurKat.EastScarpe.CP": true
+            },
+"MapTiles": [
+{
+"Position": { 
+ "X": 15, 
+ "Y": 115
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 14, 
+ "Y": 114
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 13, 
+ "Y": 113
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 12, 
+ "Y": 112
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 35, 
+ "Y": 113
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 23
+ },
+
+//-------additional in Legacy
+
+{
+"Position": { 
+ "X": 11, 
+ "Y": 122
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 86
+ },
+{
+"Position": { 
+ "X": 13, 
+ "Y": 122
+ },
+ "Layer": "Back",
+ "SetTilesheet":"ES_beach",
+ "SetIndex": 22
+ },
+
+],
+},
+
+//SVE - Ice Festival
+
+{
+"LogName": "SVE Forest Ice Festival Map Patch",
+"Action": "EditMap",
+"Target": "Maps/Forest-IceFestival",
+"When": {
+                "HasMod |contains= FlashShifter.StardewValleyExpandedCP": true
+            },
+"MapTiles": [
+{
+"Position": { 
+ "X": 61, 
+ "Y": 43
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 175
+ },
+
+{
+"Position": { 
+ "X": 40, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 39, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 39, 
+ "Y": 7
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 46, 
+ "Y": 15
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 45, 
+ "Y": 16
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 35, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 34, 
+ "Y": 25
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 49, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 48, 
+ "Y": 25
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 43, 
+ "Y": 27
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 42, 
+ "Y": 28
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 42, 
+ "Y": 29
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+
+{
+"Position": { 
+ "X": 31, 
+ "Y": 37
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+
+{
+"Position": { 
+ "X": 29, 
+ "Y": 40
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 28, 
+ "Y": 41
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+
+{
+"Position": { 
+ "X": 35, 
+ "Y": 42
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 34, 
+ "Y": 43
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 34, 
+ "Y": 44
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 45, 
+ "Y": 42
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 44, 
+ "Y": 43
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 50, 
+ "Y": 57
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 49, 
+ "Y": 58
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 53, 
+ "Y": 54
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 52, 
+ "Y": 32
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 51, 
+ "Y": 33
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 55, 
+ "Y": 32
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 326
+ },
+
+{
+"Position": { 
+ "X": 61, 
+ "Y": 55
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 60, 
+ "Y": 56
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 82, 
+ "Y": 54
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 81, 
+ "Y": 55
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 84, 
+ "Y": 52
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 100, 
+ "Y": 58
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+
+{
+"Position": { 
+ "X": 119, 
+ "Y": 55
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 119, 
+ "Y": 41
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 116, 
+ "Y": 31
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 116, 
+ "Y": 44
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 115, 
+ "Y": 45
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 113, 
+ "Y": 40
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 112, 
+ "Y": 41
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 95, 
+ "Y": 27
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 94, 
+ "Y": 28
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 102, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 101, 
+ "Y": 23
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 111, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 110, 
+ "Y": 25
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 110, 
+ "Y": 26
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 119, 
+ "Y": 21
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 118, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 118, 
+ "Y": 23
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 111, 
+ "Y": 16
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 110, 
+ "Y": 17
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 101, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 100, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 89, 
+ "Y": 9
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 88, 
+ "Y": 10
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 87, 
+ "Y": 16
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 86, 
+ "Y": 17
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 98, 
+ "Y": 7
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 97, 
+ "Y": 8
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 97, 
+ "Y": 9
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 78, 
+ "Y": 46
+ },
+ "Layer": "Back",
+ "SetTilesheet":"fest",
+ "SetIndex": 874
+ },
+{
+"Position": { 
+ "X": 83, 
+ "Y": 42
+ },
+ "Layer": "Back",
+ "SetTilesheet":"fest",
+ "SetIndex": 874
+ },
+{
+"Position": { 
+ "X": 83, 
+ "Y": 43
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 326
+ },
+{
+"Position": { 
+ "X": 84, 
+ "Y": 43
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 328
+ },
+{
+"Position": { 
+ "X": 84, 
+ "Y": 42
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 325
+ },
+{
+"Position": { 
+ "X": 81, 
+ "Y": 30
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 327
+ },
+{
+"Position": { 
+ "X": 62, 
+ "Y": 25
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 331
+ },
+
+],
+},
+
+//SVE - Ice Festival 2
+
+{
+"LogName": "SVE Forest Ice Festival 2 MapPatch ",
+"Action": "EditMap",
+"Target": "Maps/Forest-IceFestival2",
+"When": {
+                "HasMod |contains= FlashShifter.StardewValleyExpandedCP": true
+            },
+"MapTiles": [
+{
+"Position": { 
+ "X": 61, 
+ "Y": 43
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 175
+ },
+
+{
+"Position": { 
+ "X": 40, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 39, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 39, 
+ "Y": 7
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 46, 
+ "Y": 15
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 45, 
+ "Y": 16
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 35, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 34, 
+ "Y": 25
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 49, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 48, 
+ "Y": 25
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 43, 
+ "Y": 27
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 42, 
+ "Y": 28
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 42, 
+ "Y": 29
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+
+{
+"Position": { 
+ "X": 31, 
+ "Y": 37
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+
+{
+"Position": { 
+ "X": 29, 
+ "Y": 40
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 28, 
+ "Y": 41
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+
+{
+"Position": { 
+ "X": 35, 
+ "Y": 42
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 34, 
+ "Y": 43
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 34, 
+ "Y": 44
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 45, 
+ "Y": 42
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 44, 
+ "Y": 43
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 50, 
+ "Y": 57
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 49, 
+ "Y": 58
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 53, 
+ "Y": 54
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 52, 
+ "Y": 32
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 51, 
+ "Y": 33
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 55, 
+ "Y": 32
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 326
+ },
+
+{
+"Position": { 
+ "X": 61, 
+ "Y": 55
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 60, 
+ "Y": 56
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 82, 
+ "Y": 54
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 81, 
+ "Y": 55
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 84, 
+ "Y": 52
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 100, 
+ "Y": 58
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+
+{
+"Position": { 
+ "X": 119, 
+ "Y": 55
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 119, 
+ "Y": 41
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 116, 
+ "Y": 31
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 116, 
+ "Y": 44
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 115, 
+ "Y": 45
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 113, 
+ "Y": 40
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 112, 
+ "Y": 41
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 95, 
+ "Y": 27
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 94, 
+ "Y": 28
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 102, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 101, 
+ "Y": 23
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 111, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 110, 
+ "Y": 25
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 110, 
+ "Y": 26
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 119, 
+ "Y": 21
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 118, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 118, 
+ "Y": 23
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 111, 
+ "Y": 16
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 110, 
+ "Y": 17
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 101, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 100, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 89, 
+ "Y": 9
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 88, 
+ "Y": 10
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 87, 
+ "Y": 16
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 86, 
+ "Y": 17
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 98, 
+ "Y": 7
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 376
+ },
+{
+"Position": { 
+ "X": 97, 
+ "Y": 8
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+{
+"Position": { 
+ "X": 97, 
+ "Y": 9
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 352
+ },
+
+{
+"Position": { 
+ "X": 78, 
+ "Y": 46
+ },
+ "Layer": "Back",
+ "SetTilesheet":"fest",
+ "SetIndex": 874
+ },
+{
+"Position": { 
+ "X": 83, 
+ "Y": 42
+ },
+ "Layer": "Back",
+ "SetTilesheet":"fest",
+ "SetIndex": 874
+ },
+{
+"Position": { 
+ "X": 83, 
+ "Y": 43
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 326
+ },
+{
+"Position": { 
+ "X": 84, 
+ "Y": 43
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 328
+ },
+{
+"Position": { 
+ "X": 84, 
+ "Y": 42
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 325
+ },
+{
+"Position": { 
+ "X": 81, 
+ "Y": 30
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 327
+ },
+{
+"Position": { 
+ "X": 62, 
+ "Y": 25
+ },
+ "Layer": "Back",
+ "SetTilesheet":"outdoors",
+ "SetIndex": 331
+ },
+
+
+],
+},
+
+{
+"LogName": "Beach Luau Festivals MapPatches ",
+"Action": "EditMap",
+"Target": "Maps/Beach-Luau, Maps/Beach-Luau2",
+
+"MapTiles": [
+{
+"Position": { 
+ "X": 8, 
+ "Y": 3
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 134
+ },
+{
+"Position": { 
+ "X": 8, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 133
+ },
+{
+"Position": { 
+ "X": 8, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 6, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 22
+ },
+{
+"Position": { 
+ "X": 5, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 21
+ },
+{
+"Position": { 
+ "X": 4, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 22
+ },
+{
+"Position": { 
+ "X": 9, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 69
+ },
+{
+"Position": { 
+ "X": 9, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 54
+ },
+{
+"Position": { 
+ "X": 8, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 53
+ },
+{
+"Position": { 
+ "X": 7, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 69
+ },
+{
+"Position": { 
+ "X": 7, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 54
+ },
+{
+"Position": { 
+ "X": 6, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 53
+ },
+{
+"Position": { 
+ "X": 5, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 52
+ },
+{
+"Position": { 
+ "X": 19, 
+ "Y": 18
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 41
+ },
+{
+"Position": { 
+ "X": 51, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 56, 
+ "Y": 13
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 71
+ },
+{
+"Position": { 
+ "X": 87, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 65, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 64, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 85
+ },
+{
+"Position": { 
+ "X": 64, 
+ "Y": 21
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 68
+ },
+{
+"Position": { 
+ "X": 63, 
+ "Y": 14
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 65, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 34, 
+ "Y": 20
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+],
+},
+
+
+
+{
+"LogName": "Beach Festivals MapPatches",
+"Action": "EditMap",
+"Target": "Maps/Beach-Jellies, Maps/Beach-Jellies2, Maps/Beach-NightMarket",
+
+"MapTiles": [
+{
+"Position": { 
+ "X": 8, 
+ "Y": 3
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 134
+ },
+{
+"Position": { 
+ "X": 8, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 133
+ },
+{
+"Position": { 
+ "X": 8, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 87
+ },
+{
+"Position": { 
+ "X": 6, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 22
+ },
+{
+"Position": { 
+ "X": 5, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 21
+ },
+{
+"Position": { 
+ "X": 4, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 22
+ },
+{
+"Position": { 
+ "X": 9, 
+ "Y": 6
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 69
+ },
+{
+"Position": { 
+ "X": 9, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 54
+ },
+{
+"Position": { 
+ "X": 8, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 53
+ },
+{
+"Position": { 
+ "X": 7, 
+ "Y": 5
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 69
+ },
+{
+"Position": { 
+ "X": 7, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 54
+ },
+{
+"Position": { 
+ "X": 6, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 53
+ },
+{
+"Position": { 
+ "X": 5, 
+ "Y": 4
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 52
+ },
+{
+"Position": { 
+ "X": 19, 
+ "Y": 18
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 41
+ },
+{
+"Position": { 
+ "X": 33, 
+ "Y": 19
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 51, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 56, 
+ "Y": 13
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 71
+ },
+{
+"Position": { 
+ "X": 87, 
+ "Y": 24
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 65, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 23
+ },
+{
+"Position": { 
+ "X": 64, 
+ "Y": 22
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 85
+ },
+{
+"Position": { 
+ "X": 64, 
+ "Y": 21
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 68
+ },
+{
+"Position": { 
+ "X": 63, 
+ "Y": 14
+ },
+ "Layer": "Back",
+ "SetTilesheet":"untitled tile sheet",
+ "SetIndex": 87
+ },
+],
+},
+
+
+
+
+
+
+
+
+]
+
+}

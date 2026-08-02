@@ -1,0 +1,14 @@
+{
+	"Name": "[FF] Armory Cabinet",
+	"Author": "Poplinp",
+	"Version": "2.0.0",
+	"Description": "Adds a custom dresser for weapons and trinkets.",
+	"UniqueID": "Poplinp.ArmoryCabinet",
+	"ContentPackFor": {
+		"UniqueID": "leroymilo.FurnitureFramework",
+		"MinimumVersion": "3.0.1"
+	},
+	"UpdateKeys": [
+		"Nexus:40264"
+	]
+}

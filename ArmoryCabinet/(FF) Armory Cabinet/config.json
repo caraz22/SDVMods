@@ -1,0 +1,11 @@
+{
+  "Poplinp.ArmoryCabinet/content.json": {
+    "Furniture": {
+      "Poplinp.ArmoryCabinet.armory_cabinet": true,
+      "Poplinp.ArmoryCabinet.armory_cabinet_dark": true,
+      "Poplinp.ArmoryCabinet.armory_cabinet_light_narrow": true,
+      "Poplinp.ArmoryCabinet.armory_cabinet_dark_narrow": true
+    },
+    "Included": {}
+  }
+}

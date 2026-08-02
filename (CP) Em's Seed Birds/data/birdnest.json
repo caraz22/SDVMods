@@ -1,0 +1,216 @@
+{
+	"Changes": [
+ //Big Craftables
+ 	{
+        "Action": "EditData",
+        "Target": "Data/BigCraftables",
+        "Entries": {
+        	"Em.SeedBirdNest": {
+                    "Name": "Seed Bird Nest",
+                    "DisplayName": "{{i18n:Em.SeedBirdNest}}",
+                    "Description": "{{i18n:Em.SeedBirdNestDescription}}",
+                    "Texture": "assets/SeedBirdSprites",
+                    "SpriteIndex": 2,
+        		},
+      		}
+    	},
+ 	{
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Entries": {
+                "Em.SeedBirdNest": "388 15 92 5 770 3/Field/Em.SeedBirdNest/true/null",
+      		},
+    	},
+//Machine Data
+    	{
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "Entries": {
+  		"(BC)Em.SeedBirdNest": {
+    			"OutputRules": [
+    	    {
+            "Id": "Em.SeedBundle",
+            "Triggers": [
+                {
+                    "Id": "ItemPlacedInMachine",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "770",
+                    "Condition": "LOCATION_IS_OUTDOORS Here"
+                },
+                {
+                    "Id": "ItemPlacedInMachine",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "431",
+                    "Condition": "LOCATION_IS_OUTDOORS Here"
+                },
+                {
+                    "Id": "ItemPlacedInMachine",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "440",
+                    "Condition": "LOCATION_IS_OUTDOORS Here"
+                },
+            		],
+            "OutputItem": [
+                    {
+                    "Id": "GoldenAnimalCracker",
+                    "ItemId": "GoldenAnimalCracker",
+                    "MinStack": 1,
+                    "MaxStack": 1,
+                    "Condition": "PLAYER_STAT Current mastery_0 1, RANDOM 0.005"
+                    },
+                    {
+                    "Id": "Mushroom",
+                    "ItemId": "891",
+                    "MinStack": 1,
+                    "MaxStack": 1,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 8, RANDOM 0.01"
+                    },
+                    {
+                    "Id": "Ancient",
+                    "ItemId": "499",
+                    "MinStack": 1,
+                    "MaxStack": 1,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 6, RANDOM 0.05, ITEM_ID Input 431"
+                    },
+                    {
+                    "Id": "Rare",
+                    "ItemId": "347",
+                    "MinStack": 1,
+                    "MaxStack": 1,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 6, RANDOM 0.05, ITEM_ID Input 431"
+                    },
+                    {
+                    "Id": "Mystic",
+                    "ItemId": "MysticTreeSeed",
+                    "MinStack": 1,
+                    "MaxStack": 1,
+                    "Condition": "PLAYER_STAT Current mastery_2 1, RANDOM 0.05"
+                    },
+                    {
+                    "Id": "Egg",
+                    "ItemId": "Em.WildEgg",
+                    "MinStack": 1,
+                    "MaxStack": 1,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 5, RANDOM 0.1, ITEM_ID Input 431"
+                    },
+                    {
+                    "Id": "Mossy",
+                    "ItemId": "MossySeed",
+                    "MinStack": 1,
+                    "MaxStack": 1,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 6, WEATHER Here Rain GreenRain Storm, RANDOM 0.4"
+                    },
+                    {
+                    "Id": "Fiber",
+                    "ItemId": "885",
+                    "MinStack": 2,
+                    "MaxStack": 3,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 6, RANDOM 0.1"
+                    },
+                    {
+                    "Id": "Spring",
+                    "ItemId": "495",
+                    "MinStack": 2,
+                    "MaxStack": 3,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 4, SEASON spring, RANDOM 0.1"
+                    },
+                    {
+                    "Id": "Summer",
+                    "ItemId": "496",
+                    "MinStack": 2,
+                    "MaxStack": 3,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 4, SEASON summer, RANDOM 0.1"
+                    },
+                    {
+                    "Id": "Fall",
+                    "ItemId": "497",
+                    "MinStack": 2,
+                    "MaxStack": 3,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 4, SEASON fall, RANDOM 0.1"
+                    },
+                    {
+                    "Id": "Winter",
+                    "ItemId": "498",
+                    "MinStack": 2,
+                    "MaxStack": 3,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 4, SEASON winter, RANDOM 0.1"
+                    },
+                    {
+                    "Id": "Mahogany",
+                    "ItemId": "292",
+                    "MinStack": 2,
+                    "MaxStack": 3,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 4, RANDOM 0.25"
+                    },
+                    {
+                    "Id": "WildSeeds",
+                    "RandomItemId": [ "309", "310", "311" ],
+                    "MinStack": 3,
+                    "MaxStack": 5,
+                    }
+         	  ],
+            "UseFirstValidOutput": true,
+            "DaysUntilReady": 2
+        	},
+    				],
+    			"LoadEffects": [
+      				{
+        			"Id": "Default",
+        			"Sounds": [
+          			    {
+            			    "Id": "dirtyHit",
+            			    "Delay": 0
+          			    }
+        		    	  ]
+      				   }
+    				],
+    			"WorkingEffects": [
+      				{
+        			"Id": "Default",
+        			"Sounds": [
+          			    {
+            			    "Id": "SpringBirds",
+            			    "Delay": 0
+          			    }
+        		    	  ]
+      				   }
+    				],
+    			"WorkingEffectChance": 0.33,
+    			"WobbleWhileWorking": false,
+    			"AllowFairyDust": false,	
+          		"ReadyTimeModifiers": [
+            			{
+              			"Id": "Random",
+              			"Modification": "Add",
+              			"RandomAmount": [ 0, 1, 2, 3 ],
+              			"Condition": "!PLAYER_HAS_PROFESSION Current 12"
+            			},
+            			{
+              			"Id": "Random",
+              			"Modification": "Add",
+              			"RandomAmount": [ 0, 1 ],
+              			"Condition": "PLAYER_HAS_PROFESSION Current 12"
+            			},
+          		    ],
+          		"ReadyTimeModifierMode": "Stack",
+          		"OnlyCompleteOvernight": true,
+          		"ShowNextIndexWhileWorking": true,
+          		"ShowNextIndexWhenReady": true,
+			},       
+		},
+	},
+//Animal Shop
+	{
+      		"Action": "EditData",
+	  	"Target": "Data/Shops",
+      		"TargetField": [ "AnimalShop", "Items" ],
+      "Entries": {
+		"Em.SeedBirdNest": {
+			"Id": "Em.SeedBirdNest",
+			"ItemId": "Em.SeedBirdNest",
+			"Price": 250,
+		      },
+		   }
+		},
+   ]
+}

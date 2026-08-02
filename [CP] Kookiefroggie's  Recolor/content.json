@@ -1,0 +1,3127 @@
+{
+"Format": "2.8.0",
+
+
+//Config File
+
+"ConfigSchema": {
+
+
+"Grass Spring": {
+		"AllowValues": "light_green, dark_green_warm, dark_green_cool, none",
+		"Default": "dark_green_warm",
+		"Description": "Select the grass color in spring.",
+		"Section": "Grass Color:"
+	},
+	
+"Grass Summer": {
+		"AllowValues": "light_green, dark_green_warm, dark_green_cool, none",
+		"Default": "dark_green_warm",
+		"Description": "Select the grass color in summer.",
+		"Section": "Grass Color:"
+	},	
+"Grass Fall": {
+		"AllowValues": "light_green, dark_green_warm, dark_green_cool, none",
+		"Default": "dark_green_warm",
+		"Description": "Select the grass color in fall.",
+		"Section": "Grass Color:"
+	},	
+"Grass Winter": {
+		"AllowValues": "light_green, dark_green_warm, dark_green_cool, none",
+		"Default": "dark_green_cool",
+		"Description": "Select the grass color in winter.",
+		"Section": "Grass Color:"
+	},
+
+"Dirt Spring": {
+		"AllowValues": "light_brown, dark_brown_warm, dark_brown_cool, none",
+		"Default": "dark_brown_warm",
+		"Description": "Select the dirt color in spring.",
+		"Section": "Dirt Color:"
+	},
+	
+"Dirt Summer": {
+		"AllowValues": "light_brown, dark_brown_warm, dark_brown_cool, none",
+		"Default": "dark_brown_warm",
+		"Description": "Select the dirt color in summer.",
+		"Section": "Dirt Color:"
+	},	
+"Dirt Fall": {
+		"AllowValues": "light_brown, dark_brown_warm, dark_brown_cool, none",
+		"Default": "dark_brown_warm",
+		"Description": "Select the dirt color in fall.",
+		"Section": "Dirt Color:"
+	},	
+"Dirt Winter": {
+		"AllowValues": "light_brown, dark_brown_warm, dark_brown_cool, none",
+		"Default": "dark_brown_cool",
+		"Description": "Select the dirt color in winter.",
+		"Section": "Dirt Color:"
+	},
+
+
+"Cliff Spring": {
+		"AllowValues": "light_brown, dark_brown_warm, none",
+		"Default": "dark_brown_warm",
+		"Description": "Select the cliff color in spring.",
+		"Section": "Cliff Color:"
+	},
+	
+"Cliff Summer": {
+		"AllowValues": "light_brown, dark_brown_warm, none",
+		"Default": "dark_brown_warm",
+		"Description": "Select the cliff color in summer.",
+		"Section": "Cliff Color:"
+	},	
+"Cliff Fall": {
+		"AllowValues": "light_brown, dark_brown_warm, none",
+		"Default": "dark_brown_warm",
+		"Description": "Select the cliff color in fall.",
+		"Section": "Cliff Color:"
+	},	
+"Cliff Winter": {
+		"AllowValues": "light_brown, dark_brown_warm, none",
+		"Default": "light_brown",
+		"Description": "Select the cliff color in winter.",
+		"Section": "Cliff Color:"
+	},
+
+
+
+"Snow Color": {
+		"AllowValues": "blue_toned, grey_toned, none",
+		"Default": "blue_toned",
+		"Description": "Select the snow color in winter.",
+		"Section": "Snow:"
+	},
+"More Snow": {
+		"AllowValues": "none, always, during snowfall",
+		"Default": "none",
+		"Description": "Adds more snow",
+		"Section": "Snow:"
+	},
+"Darker Snow": {
+		"AllowValues": "true, false",
+		"Default": "false",
+		"Description": "Makes the snow darker",
+		"Section": "Snow:"
+	},
+"Force Snow": {
+		"AllowValues": "true, false",
+		"Default": "false",
+		"Description": "Can be used to force Snow from this mod over grass and dirt from other mods. Snow color MUST be selected. Also uses choices from More Snow and Darker Snow.",
+		"Section": "Snow:"
+	},
+
+
+
+
+
+"Cherry Blossoms": {
+		"AllowValues": "yes, no",
+		"Default": "yes",
+		"Description": "Adds cherry blossoms.",
+		"Section": "Cherry Blossoms:"
+	},
+
+"Force Cherry Blossoms": {
+		"AllowValues": "true, false",
+		"Default": "false",
+		"Description": "Can be used to force Cherry Blossoms from this mod over grass and dirt from other mods.",
+		"Section": "Cherry Blossoms:"
+	},
+
+"Leaves": {
+		"AllowValues": "yes, no",
+		"Default": "yes",
+		"Description": "Adds leaves.",
+		"Section": "Leaves:"
+	},
+"Force Leaves": {
+		"AllowValues": "true, false",
+		"Default": "false",
+		"Description": "Can be used to force Leaves from this mod over grass and dirt from other mods.",
+		"Section": "Leaves:"
+	},
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+	"OutdoorTilesheet Fence Replacement": {
+		"AllowValues": "Nothing, Only Grass Recolor, Grass Recolor + Retexture",
+		"Default": "Grass Recolor + Retexture",
+		"Description": "'Nothing': If you pick this, nothing will be added. 'Only Grass Recolor': If you pick this, recolored grass/snow will be added at the bottom. Can be used on top of other fence replacement mods. Pick 'Nothing' if it doesn't line up or you don't like it. 'Grass Recolor + Retexture': Replaces the fence with one matching the Craftable Seasonal Hardwood Fence that can be added with this mod.",
+		"Section": "Fence Options:"
+	},
+	"TownTilesheet Fence Replacement": {
+		"AllowValues": "Nothing, Only Grass Recolor",
+		"Default": "Only Grass Recolor",
+		"Description": "'Nothing': If you pick this, nothing will be added. 'Only Grass Recolor': If you pick this, recolored grass will be added at the bottom. Can be used on top of other fence replacement mods. Pick 'Nothing' if it doesn't line up or you don't like it.",
+		"Section": "Fence Options:"
+	},
+	"Make Craftable Hardwood Fence Seasonal": {
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Makes the Craftable Hardwood Fence seasonal. Matches the option 'Grass Recolor + Retexture' under 'OutdoorTilesheet Fence Replacement'. Can be disabled if you want to use a different fence replacement mod, or you don't like it.",
+		"Section": "Fence Options:"
+	},
+
+"Cosmetic Map Patches": {
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Adds some small cosmetic fixes to the beach edges on the Main Beach, Ginger Island, and East Scarp, the snow/grass edges in East Scarp Remastered and some Festivals, that might look disconnected otherwise.",
+		"Section": "Other:"
+	},
+
+
+"Fertilizer as cute weeds": {
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Can be used to turn the fertilizer into the cute vanilla weeds.",
+		"Section": "Other:"
+	},
+
+
+	"Force Grass/Snow on Bottom of Tilesheet Trees": {
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Adjusted to the Vanilla Trees. Can be used on top of other tree/foliage replacement mods. Works with Simple Foliage. Disable if it doesn't line up or you don't like it.",
+		"Section": "Other:"
+	},
+	"Force Grass in Front of Town Buildings": {
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Adjusted to the Vanilla Buildings. Can be used on top of other building replacement mods. Disable if it doesn't line up or you don't like it.",
+		"Section": "Other:"
+	},
+},
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+
+"DynamicTokens": [
+
+{
+	Name: "snow",
+	"Value": "snow_{{Snow Color}}",
+	"When": { 
+          	"Snow Color |contains= none": false 
+		},
+},
+{
+
+	Name: "snow",
+	"Value": "{{snow}}_dark",
+	"When": { 
+          	"Snow Color |contains= none": false,
+		"Darker Snow": "true" 
+		},
+},
+
+
+],
+
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+
+"Changes": [
+
+
+
+
+
+//Patch Tilesheets
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet2, Maps/summer_outdoorsTileSheet2, Maps/fall_outdoorsTileSheet2, Maps/winter_outdoorsTileSheet2, Maps/spring_town, Maps/summer_town, Maps/fall_town, Maps/winter_town, Maps/spring_island_tilesheet_1, Maps/summer_island_tilesheet_1, Maps/fall_island_tilesheet_1, Maps/winter_island_tilesheet_1, Maps/spring_beach, Maps/summer_beach, Maps/fall_beach, Maps/winter_beach",
+		"FromFile": "assets/{{Target}}.png",
+		"PatchMode": "Overlay",
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/island_tilesheet_1, Maps/island_tilesheet_2",
+		"FromFile": "assets/{{Target}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Dirt Summer |contains= none": false   	      },
+	},
+
+//Grass-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet, Maps/spring_outdoorsTileSheet2, Maps/spring_outdoorTileSheet_extra, Maps/spring_town, Maps/spring_island_tilesheet_1, Maps/spring_monsterGraveTiles, Maps/spring_beach",
+		"FromFile": "assets/{{Target}}_grass_{{Grass Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Grass Spring |contains= none": false 
+			
+  	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/summer_outdoorsTileSheet, Maps/summer_outdoorsTileSheet2, Maps/summer_outdoorTileSheet_extra, Maps/summer_town, Maps/summer_island_tilesheet_1, Maps/summer_monsterGraveTiles, Maps/summer_beach",
+		"FromFile": "assets/{{Target}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Grass Summer |contains= none": false 
+  	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/island_tilesheet_1, Maps/island_tilesheet_2",
+		"FromFile": "assets/{{Target}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Grass Summer |contains= none": false   	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/fall_outdoorsTileSheet, Maps/fall_outdoorsTileSheet2, Maps/fall_outdoorTileSheet_extra, Maps/fall_town, Maps/fall_island_tilesheet_1, Maps/fall_monsterGraveTiles, Maps/fall_beach",
+		"FromFile": "assets/{{Target}}_grass_{{Grass Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Grass Fall |contains= none": false 
+  	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet, Maps/winter_outdoorsTileSheet2, Maps/winter_outdoorTileSheet_extra, Maps/winter_town, Maps/winter_island_tilesheet_1, Maps/winter_monsterGraveTiles, Maps/winter_beach",
+		"FromFile": "assets/{{Target}}_grass_{{Grass Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Grass Winter |contains= none": false 
+  	      },
+	},
+
+
+//Dirt-----------------------------------------------------------------------------------------------------
+
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet, Maps/spring_outdoorsTileSheet2, Maps/spring_outdoorTileSheet_extra, Maps/spring_town, Maps/spring_island_tilesheet_1",
+		"FromFile": "assets/{{Target}}_dirt_{{Dirt Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Dirt Spring |contains= none": false 
+  	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/summer_outdoorsTileSheet, Maps/summer_outdoorsTileSheet2, Maps/summer_outdoorTileSheet_extra, Maps/summer_town, Maps/summer_island_tilesheet_1",
+		"FromFile": "assets/{{Target}}_dirt_{{Dirt Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Dirt Summer |contains= none": false 
+  	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/island_tilesheet_1, Maps/island_tilesheet_2",
+		"FromFile": "assets/{{Target}}_dirt_{{Dirt Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Dirt Summer |contains= none": false   	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/fall_outdoorsTileSheet, Maps/fall_outdoorsTileSheet2, Maps/fall_outdoorTileSheet_extra, Maps/fall_town, Maps/fall_island_tilesheet_1",
+		"FromFile": "assets/{{Target}}_dirt_{{Dirt Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Dirt Fall |contains= none": false 
+  	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet, Maps/winter_outdoorsTileSheet2, Maps/winter_outdoorTileSheet_extra, Maps/winter_town, Maps/winter_island_tilesheet_1",
+		"FromFile": "assets/{{Target}}_dirt_{{Dirt Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Dirt Winter |contains= none": false 
+  	      },
+	},
+
+
+//Cliff-----------------------------------------------------------------------------------------------------
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet, Maps/spring_outdoorsTileSheet2, Maps/spring_island_tilesheet_1, Maps/spring_monsterGraveTiles, Maps/spring_beach",
+		"FromFile": "assets/{{Target}}_cliff_{{Cliff Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Cliff Spring |contains= none": false 
+  	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/summer_outdoorsTileSheet, Maps/summer_outdoorsTileSheet2, Maps/summer_island_tilesheet_1, Maps/summer_monsterGraveTiles, Maps/summer_beach",
+		"FromFile": "assets/{{Target}}_cliff_{{Cliff Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Cliff Summer |contains= none": false 
+  	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/island_tilesheet_1, Maps/island_tilesheet_2",
+		"FromFile": "assets/{{Target}}_cliff_{{Cliff Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Cliff Summer |contains= none": false   	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/fall_outdoorsTileSheet, Maps/fall_outdoorsTileSheet2, Maps/fall_island_tilesheet_1, Maps/fall_monsterGraveTiles, Maps/fall_beach",
+		"FromFile": "assets/{{Target}}_cliff_{{Cliff Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Cliff Fall |contains= none": false 
+  	      },
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet, Maps/winter_outdoorsTileSheet2, Maps/winter_island_tilesheet_1, Maps/winter_monsterGraveTiles, Maps/winter_beach",
+		"FromFile": "assets/{{Target}}_cliff_{{Cliff Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Cliff Winter |contains= none": false 
+  	      },
+	},
+
+
+
+
+//Patch Tilesheet in Patchmode "Replace"
+
+//Stone at Top
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet",
+	        "FromFile": "assets/{{Target}}_replace_stones.png",
+		"FromArea": { "X": 112, "Y": 176, "Width": 16, "Height": 16 },
+		"ToArea": { "X": 112, "Y": 176, "Width": 16, "Height": 16 },
+		"PatchMode": "Replace",
+		"When": { 
+          		"Cliff Spring |contains= none": false,
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_outdoorsTileSheet",
+	        "FromFile": "assets/{{Target}}_replace_stones.png",
+		"FromArea": { "X": 112, "Y": 176, "Width": 16, "Height": 16 },
+		"ToArea": { "X": 112, "Y": 176, "Width": 16, "Height": 16 },
+		"PatchMode": "Replace",
+		"When": { 
+          		"Cliff Summer |contains= none": false,
+		},
+	},
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_outdoorsTileSheet",
+	        "FromFile": "assets/{{Target}}_replace_stones.png",
+		"FromArea": { "X": 112, "Y": 176, "Width": 16, "Height": 16 },
+		"ToArea": { "X": 112, "Y": 176, "Width": 16, "Height": 16 },
+		"PatchMode": "Replace",
+		"When": { 
+          		"Cliff Fall |contains= none": false,
+		},
+	},
+
+//Stones at bottom right
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet",
+	        "FromFile": "assets/{{Target}}_replace_stones.png",
+		"FromArea": { "X": 368, "Y": 1056, "Width": 32, "Height": 16 },
+		"ToArea": { "X": 368, "Y": 1056, "Width": 32, "Height": 16 },
+		"PatchMode": "Replace",
+		"When": { 
+          		"Cliff Spring |contains= none": false,
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_outdoorsTileSheet",
+	        "FromFile": "assets/{{Target}}_replace_stones.png",
+		"FromArea": { "X": 368, "Y": 1056, "Width": 32, "Height": 16 },
+		"ToArea": { "X": 368, "Y": 1056, "Width": 32, "Height": 16 },
+		"PatchMode": "Replace",
+		"When": { 
+          		"Cliff Summer |contains= none": false,
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_outdoorsTileSheet",
+	        "FromFile": "assets/{{Target}}_replace_stones.png",
+		"FromArea": { "X": 368, "Y": 1056, "Width": 32, "Height": 16 },
+		"ToArea": { "X": 368, "Y": 1056, "Width": 32, "Height": 16 },
+		"PatchMode": "Replace",
+		"When": { 
+          		"Cliff Fall |contains= none": false,
+		},
+	},
+
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet",
+	        "FromFile": "assets/{{Target}}_replace_stones.png",
+		"FromArea": { "X": 352, "Y": 1072, "Width": 32, "Height": 16 },
+		"ToArea": { "X": 352, "Y": 1072, "Width": 32, "Height": 16 },
+		"PatchMode": "Replace",
+		"When": { 
+          		"Cliff Spring |contains= none": false,
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_outdoorsTileSheet",
+	        "FromFile": "assets/{{Target}}_replace_stones.png",
+		"FromArea": { "X": 352, "Y": 1072, "Width": 32, "Height": 16 },
+		"ToArea": { "X": 352, "Y": 1072, "Width": 32, "Height": 16 },
+		"PatchMode": "Replace",
+		"When": { 
+          		"Cliff Summer |contains= none": false,
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_outdoorsTileSheet",
+	        "FromFile": "assets/{{Target}}_replace_stones.png",
+		"FromArea": { "X": 352, "Y": 1072, "Width": 32, "Height": 16 },
+		"ToArea": { "X": 352, "Y": 1072, "Width": 32, "Height": 16 },
+		"PatchMode": "Replace",
+		"When": { 
+          		"Cliff Fall |contains= none": false,
+		},
+	},
+
+
+//Snowballs
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet",
+	        "FromFile": "assets/Maps/winter_outdoorsTileSheet_replace_snowballs.png",
+		"FromArea": { "X": 112, "Y": 144, "Width": 16, "Height": 64 },
+		"ToArea": { "X": 112, "Y": 144, "Width": 16, "Height": 64 },
+		"PatchMode": "Replace",
+		"When": { 
+          		"Snow Color |contains= none": false,
+
+		},
+	},
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+//Patch Festivals Tilesheets
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Festivals",
+		"FromFile": "assets/{{Target}}.png",
+		"PatchMode": "Overlay",
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Festivals",
+		"FromFile": "assets/{{Target}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Grass Summer |contains= none": false 
+  	      },
+	},
+
+
+//-----------------------------------------------------------------------------------------------------
+
+
+//Snow
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet, Maps/winter_outdoorsTileSheet2, Maps/Festivals, Maps/winter_beach",
+		"FromFile": "assets/{{Target}}_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,		
+		},
+	},
+
+
+//More Snow
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet, Maps/winter_outdoorsTileSheet2, Maps/winter_outdoorTileSheet_extra, Maps/winter_town, Maps/Festivals",
+		"FromFile": "assets/{{Target}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			},
+
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet, Maps/winter_outdoorsTileSheet2, Maps/winter_outdoorTileSheet_extra, Maps/winter_town, Maps/Festivals",
+		"FromFile": "assets/{{Target}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			},
+
+	},
+
+//More Snow Island Tilesheets
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_island_tilesheet_1, Maps/island_tilesheet_1",
+		"FromFile": "assets/{{Target}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"LocationContext |contains=Desert": false,
+			"LocationContext |contains=Island": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_island_tilesheet_1, Maps/island_tilesheet_1",
+		"FromFile": "assets/{{Target}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"LocationContext |contains=Desert": false,
+			"LocationContext |contains=Island": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+//Patch Tilesheets with Cherry Blossoms
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet, Maps/spring_town",
+		"FromFile": "assets/{{Target}}_cherryblossoms.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cherry Blossoms": "yes"
+		},
+	},
+
+
+//-----------------------------------------------------------------------------------------------------
+
+//Patch Tilesheets with Leaves
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/fall_outdoorsTileSheet, Maps/fall_town",
+		"FromFile": "assets/{{Target}}_leaves.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Leaves": "yes" 
+		},
+	},
+
+//-----------------------------------------------------------------------------------------------------
+	
+
+//Config Option: Force Grass/Snow on Bottom of Tilesheet Trees
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet, Maps/spring_outdoorsTileSheet2, Maps/spring_town, Maps/spring_island_tilesheet_1",
+		"FromFile": "assets/{{Target}}_TreeGrass.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Grass/Snow on Bottom of Tilesheet Trees": "true",
+          		"Grass Spring |contains= none": false 
+		},
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/summer_outdoorsTileSheet, Maps/summer_outdoorsTileSheet2, Maps/summer_town, Maps/summer_island_tilesheet_1",
+		"FromFile": "assets/{{Target}}_TreeGrass.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Grass/Snow on Bottom of Tilesheet Trees": "true",
+			"Grass Summer |contains= none": false 
+		},
+	},
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/fall_outdoorsTileSheet, Maps/fall_outdoorsTileSheet2, Maps/fall_town, Maps/fall_island_tilesheet_1",
+		"FromFile": "assets/{{Target}}_TreeGrass.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Grass/Snow on Bottom of Tilesheet Trees": "true",
+          		"Grass Fall |contains= none": false 
+		},
+	},
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet, Maps/winter_outdoorsTileSheet2",
+		"FromFile": "assets/{{Target}}_TreeGrass.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Grass/Snow on Bottom of Tilesheet Trees": "true",
+          		"Snow Color |contains= none": false 
+		},
+	},
+
+
+//Add recolored Grass/Snow on bottom of SVE Tilesheet Trees, if SVE is installed
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/spring_SVE_Tilesheet2",
+		"FromFile": "assets/SVETilesheets/{{TargetWithoutPath}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Grass/Snow on Bottom of Tilesheet Trees": "true",
+          		"Grass Spring |contains= none": false,
+			"HasMod": "FlashShifter.StardewValleyExpandedCP" 
+		},
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/summer_SVE_Tilesheet2",
+		"FromFile": "assets/SVETilesheets/{{TargetWithoutPath}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Grass/Snow on Bottom of Tilesheet Trees": "true",
+			"Grass Summer |contains= none": false, 
+			"HasMod": "FlashShifter.StardewValleyExpandedCP" 
+		},
+	},
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/fall_SVE_Tilesheet2",
+		"FromFile": "assets/SVETilesheets/{{TargetWithoutPath}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Grass/Snow on Bottom of Tilesheet Trees": "true",
+          		"Grass Fall |contains= none": false, 
+			"HasMod": "FlashShifter.StardewValleyExpandedCP" 
+		},
+	},
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_SVE_Tilesheet2",
+		"FromFile": "assets/SVETilesheets/{{TargetWithoutPath}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Grass/Snow on Bottom of Tilesheet Trees": "true",
+          		"Snow Color |contains= none": false,
+			"HasMod": "FlashShifter.StardewValleyExpandedCP" 
+		},
+	},
+
+
+//-----------------------------------------------------------------------------------------------------
+
+//Config Option: "Force Grass in Front of Town Buildings"
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet, Maps/spring_town",
+		"FromFile": "assets/{{Target}}_BuildingGrass.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Grass/Snow on Bottom of Tilesheet Trees": "true",
+          		"Grass Spring |contains= none": false 
+		},
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/summer_outdoorsTileSheet, Maps/summer_town",
+		"FromFile": "assets/{{Target}}_BuildingGrass.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Grass in Front of Town Buildings": "true",
+			"Grass Summer |contains= none": false 
+		},
+	},
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/fall_outdoorsTileSheet, Maps/fall_town",
+		"FromFile": "assets/{{Target}}_BuildingGrass.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Grass in Front of Town Buildings": "true",
+          		"Grass Fall |contains= none": false 
+		},
+	},
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+//Config Option "OutdoorTilesheet Fence Replacement":
+
+//Only Grass Recolor
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/fall_outdoorsTileSheet, Maps/winter_outdoorsTileSheet",
+		"FromFile": "assets/{{Target}}_fencegrass.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"OutdoorTilesheet Fence Replacement": "Only Grass Recolor" 
+		},
+	},
+
+
+//Grass Recolor + Retexture 
+
+	{
+		"LogName": "Replace Fence Tilesheet part 1",
+	        "Action": "EditImage",
+        	"Target": "Maps/spring_outdoorsTileSheet",
+	        "FromFile": "assets/fence_tilesheet_spring.png",
+	        "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 },
+	        "ToArea": { "X": 128, "Y": 224, "Width": 64, "Height": 32 },
+		"PatchMode": "Replace",
+		"Priority":"Late+5",
+		"When": { 
+			"OutdoorTilesheet Fence Replacement": "Grass Recolor + Retexture" 
+		},
+	},
+	{
+		"LogName": "Replace Fence Tilesheet part 2",
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet",
+	        "FromFile": "assets/fence_tilesheet_spring.png",
+	        "FromArea": { "X": 16, "Y": 32, "Width": 48, "Height": 32 },
+	        "ToArea": { "X": 144, "Y": 256, "Width": 48, "Height": 32 },
+		"PatchMode": "Replace",
+		"Priority":"Late+5",
+		"When": { 
+			"OutdoorTilesheet Fence Replacement": "Grass Recolor + Retexture" 
+		},
+	},
+
+	{
+		"LogName": "Replace Fence Tilesheet part 1",
+	        "Action": "EditImage",
+        	"Target": "Maps/summer_outdoorsTileSheet",
+	        "FromFile": "assets/fence_tilesheet_summer.png",
+	        "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 },
+	        "ToArea": { "X": 128, "Y": 224, "Width": 64, "Height": 32 },
+		"PatchMode": "Replace",
+		"Priority":"Late+5",
+		"When": { 
+			"OutdoorTilesheet Fence Replacement": "Grass Recolor + Retexture" 
+		},
+	},
+	{
+		"LogName": "Replace Fence Tilesheet part 2",
+		"Action": "EditImage",
+		"Target": "Maps/summer_outdoorsTileSheet",
+	        "FromFile": "assets/fence_tilesheet_summer.png",
+	        "FromArea": { "X": 16, "Y": 32, "Width": 48, "Height": 32 },
+	        "ToArea": { "X": 144, "Y": 256, "Width": 48, "Height": 32 },
+		"PatchMode": "Replace",
+		"Priority":"Late+5",
+		"When": { 
+			"OutdoorTilesheet Fence Replacement": "Grass Recolor + Retexture" 
+		},
+	},
+	{
+		"LogName": "Replace Fence Tilesheet part 1",
+	        "Action": "EditImage",
+        	"Target": "Maps/fall_outdoorsTileSheet",
+	        "FromFile": "assets/fence_tilesheet_fall.png",
+	        "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 },
+	        "ToArea": { "X": 128, "Y": 224, "Width": 64, "Height": 32 },
+		"PatchMode": "Replace",
+		"Priority":"Late+5",
+		"When": { 
+			"OutdoorTilesheet Fence Replacement": "Grass Recolor + Retexture" 
+		},
+	},
+	{
+		"LogName": "Replace Fence Tilesheet part 2",
+		"Action": "EditImage",
+		"Target": "Maps/fall_outdoorsTileSheet",
+	        "FromFile": "assets/fence_tilesheet_fall.png",
+	        "FromArea": { "X": 16, "Y": 32, "Width": 48, "Height": 32 },
+	        "ToArea": { "X": 144, "Y": 256, "Width": 48, "Height": 32 },
+		"PatchMode": "Replace",
+		"Priority":"Late+5",
+		"When": { 
+			"OutdoorTilesheet Fence Replacement": "Grass Recolor + Retexture" 
+		},
+	},
+	{
+		"LogName": "Replace Fence Tilesheet part 1",
+	        "Action": "EditImage",
+        	"Target": "Maps/winter_outdoorsTileSheet",
+	        "FromFile": "assets/fence_tilesheet_winter.png",
+	        "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 },
+	        "ToArea": { "X": 128, "Y": 224, "Width": 64, "Height": 32 },
+		"PatchMode": "Replace",
+		"Priority":"Late+5",
+		"When": { 
+			"OutdoorTilesheet Fence Replacement": "Grass Recolor + Retexture" 
+		},
+	},
+	{
+		"LogName": "Replace Fence Tilesheet part 2",
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet",
+	        "FromFile": "assets/fence_tilesheet_winter.png",
+	        "FromArea": { "X": 16, "Y": 32, "Width": 48, "Height": 32 },
+	        "ToArea": { "X": 144, "Y": 256, "Width": 48, "Height": 32 },
+		"PatchMode": "Replace",
+		"Priority":"Late+5",
+		"When": { 
+			"OutdoorTilesheet Fence Replacement": "Grass Recolor + Retexture" 
+		},
+	},
+
+//-----------------------------------------------------------------------------------------------------
+
+//Config Option "TownTilesheet Fence Replacement":
+
+//Only Grass Recolor
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_town, Maps/summer_town, Maps/fall_town, Maps/winter_town",
+		"FromFile": "assets/{{Target}}_fencegrass.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"TownTilesheet Fence Replacement": "Only Grass Recolor" 
+		},
+	},
+
+
+//-----------------------------------------------------------------------------------------------------
+
+//Config Option "Make Craftable Hardwood Fence Seasonal":
+
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence5",
+		"FromFile": "assets/fence_5_spring.png",
+			"Patchmode": "Replace",
+			"Priority":"Late+5",
+			"When": {
+				"Season": "Spring",
+				"IsOutdoors": true,
+				"LocationContext |contains=Desert": false,
+				"LocationContext |contains=Island": false,
+				"Make Craftable Hardwood Fence Seasonal": true
+			},
+			"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence5",
+		"FromFile": "assets/fence_5_summer.png",
+			"Patchmode": "Replace",
+			"Priority":"Late+5",
+			"When": {
+				"Season": "Summer",
+				"IsOutdoors": true,
+				"LocationContext |contains=Desert": false,
+				"LocationContext |contains=Island": false,
+				"Make Craftable Hardwood Fence Seasonal": true
+				},
+			"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence5",
+		"FromFile": "assets/fence_5_fall.png",
+			"Patchmode": "Replace",
+			"Priority":"Late+5",
+			"When": {
+				"Season": "Fall",
+				"IsOutdoors": true,
+				"LocationContext |contains=Desert": false,
+				"LocationContext |contains=Island": false,
+				"Make Craftable Hardwood Fence Seasonal": true
+				},
+			"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence5",
+		"FromFile": "assets/fence_5_winter.png",
+			"Patchmode": "Replace",
+			"Priority":"Late+5",
+			"When": {
+				"Season": "Winter",
+				"IsOutdoors": true,
+				"LocationContext |contains=Desert": false,
+				"LocationContext |contains=Island": false,
+				"Make Craftable Hardwood Fence Seasonal": true
+				},
+			"Update": "OnLocationChange"
+	},
+
+//-----------------------------------------------------------------------------------------------------
+
+//Recolor three Stonewalls in Cursors Tilesheet
+
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors, LooseSprites/Cursors.{{language}}",
+	        "FromFile": "assets/LooseSprites/Cursors_StoneTop.png",
+		"ToArea": { "X": 646, "Y": 1218, "Width": 49, "Height": 80 },
+		"PatchMode": "Overlay"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors, LooseSprites/Cursors.{{language}}",
+	        "FromFile": "assets/LooseSprites/Cursors_StoneMiddle.png",
+		"ToArea": { "X": 640, "Y": 1453, "Width": 64, "Height": 80 },
+		"PatchMode": "Overlay"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors, LooseSprites/Cursors.{{language}}",
+	        "FromFile": "assets/LooseSprites/Cursors_StoneBottom.png",
+		"ToArea": { "X": 640, "Y": 2176, "Width": 64, "Height": 80 },
+		"PatchMode": "Overlay"
+	},
+
+//Recolor Removable Boulder on Ginger Island in Cursors2 Tilesheet
+
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors2",
+	        "FromFile": "assets/LooseSprites/Cursors2_RemovableBoulder.png",
+		"ToArea": { "X": 144, "Y": 224, "Width": 43, "Height": 32 },
+		"PatchMode": "Overlay"
+	},
+
+
+//Recolor Fertilizer in Cursors Tilesheet
+
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors, LooseSprites/Cursors.{{language}}",
+	        "FromFile": "assets/LooseSprites/Fertilizer.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 48 }, 
+		"ToArea": { "X": 173, "Y": 462, "Width": 16, "Height": 48 },
+		"Patchmode": "Replace",
+		"When": {
+				"Fertilizer as cute weeds": "true",
+				},
+
+	},
+
+//Recolor the tilled soil
+
+	{
+		"LogName": "Recolor tilled soil",
+		"Action": "EditImage",
+		"Target": "TerrainFeatures/hoeDirt, TerrainFeatures/hoeDirtDark",
+		"FromFile": "assets/{{Target}}.png",
+		"Patchmode": "Replace",
+	},
+
+//Recolor snow tilled soil to brown
+
+	{
+		"LogName": "Recolor snow tilled soil",
+		"Action": "EditImage",
+		"Target": "TerrainFeatures/hoeDirtSnow",
+		"FromFile": "assets/TerrainFeatures/hoeDirt.png",
+		"Patchmode": "Replace",
+	},
+
+
+//-----------------------------------------------------------------------------------------------------
+
+
+
+//Compatibility Patches
+
+
+//Alvadea's Tilesheets with permission from Alvadea:
+
+//Grass-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Spring |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Summer |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Fall |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Winter |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+//Dirt-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Spring |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Summer |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Fall |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Winter |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+
+
+//Cliff-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Spring |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Summer |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Fall |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Winter |contains= none": false, 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+//crystalinerose Tilesheets with permission from crystalinerose:
+
+
+//Grass-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_CR_outdoor, Maps/spring_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Spring |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_CR_outdoor, Maps/summer_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Summer |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_CR_outdoor, Maps/fall_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Fall |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_CR_outdoor, Maps/winter_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Winter |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+//Dirt-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_CR_outdoor, Maps/spring_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Spring |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_CR_outdoor, Maps/summer_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Summer |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_CR_outdoor, Maps/fall_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Fall |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_CR_outdoor, Maps/winter_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Winter |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+
+
+//Cliff-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_CR_outdoor",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Spring |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_CR_outdoor",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Summer |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_CR_outdoor",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Fall |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_CR_outdoor",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Winter |contains= none": false, 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+
+
+//-----------------------------------------------------------------------------------------------------
+
+//DaisyNiko's Tilesheets with permission from DaisyNiko:
+
+
+//Grass-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Spring |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Summer |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Fall |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Winter |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+//Dirt-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Spring |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Summer |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Fall |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Winter |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+
+
+//Cliff-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Spring |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Summer |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Fall |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_cliff_{{Cliff Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Winter |contains= none": false, 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+
+//-----------------------------------------------------------------------------------------------------
+
+//Lumisteria Tilesheets - Outdoor with permission from Lumisteria:
+
+
+//Grass-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_grass_{{Grass Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Spring |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Summer |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_grass_{{Grass Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Fall |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_grass_{{Grass Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Winter |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+//Dirt-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_dirt_{{Dirt Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Spring |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_dirt_{{Dirt Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Summer |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_dirt_{{Dirt Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Fall |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_dirt_{{Dirt Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Winter |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+
+
+//Cliff-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_cliff_{{Cliff Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Spring |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_cliff_{{Cliff Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Summer |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_cliff_{{Cliff Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Fall |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_cliff_{{Cliff Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Winter |contains= none": false, 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+
+//-----------------------------------------------------------------------------------------------------
+
+//MixedBag's Tilesheets with permission from JefGrizli:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_z_dirtpath, Maps/summer_z_dirtpath, Maps/fall_z_dirtpath, Maps/winter_z_dirtpath, Maps/spring_z_grasspath, Maps/summer_z_grasspath, Maps/fall_z_grasspath, Maps/winter_z_grasspath, Maps/spring_z_rndpath, Maps/summer_z_rndpath, Maps/fall_z_rndpath, Maps/winter_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+//Grass-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_z_dirtpath, Maps/spring_z_grasspath, Maps/spring_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Spring |contains= none": false, 
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_z_dirtpath, Maps/summer_z_grasspath, Maps/summer_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Summer |contains= none": false, 
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_z_dirtpath, Maps/fall_z_grasspath, Maps/fall_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Fall |contains= none": false, 
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_dirtpath, Maps/winter_z_grasspath, Maps/winter_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_grass_{{Grass Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Winter |contains= none": false, 
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+//Dirt-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_z_dirtpath, Maps/spring_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Spring |contains= none": false, 
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_z_dirtpath, Maps/summer_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Summer |contains= none": false, 
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_z_dirtpath, Maps/fall_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Fall |contains= none": false, 
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_dirtpath, Maps/winter_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_dirt_{{Dirt Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Winter |contains= none": false, 
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+//-----------------------------------------------------------------------------------------------------
+
+//Xiddav's Tilesheet with permission from xiddav:
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Spring_Xiddav, Maps/Summer_Xiddav, Maps/Fall_Xiddav, Maps/Winter_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+//Grass-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Spring_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_grass_{{Grass Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Spring |contains= none": false, 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Summer_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Summer |contains= none": false, 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Fall_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_grass_{{Grass Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Fall |contains= none": false, 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Winter_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_grass_{{Grass Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Winter |contains= none": false, 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+//Dirt-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Spring_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_dirt_{{Dirt Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Spring |contains= none": false, 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Summer_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_dirt_{{Dirt Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Summer |contains= none": false, 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Fall_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_dirt_{{Dirt Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Fall |contains= none": false, 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Winter_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_dirt_{{Dirt Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Winter |contains= none": false, 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+//-----------------------------------------------------------------------------------------------------
+
+//Walk to the Desert Redux with permission from Tarniyar:
+
+
+//Grass-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_z_wtd_tilesheet",
+		"FromFile": "assets/Compatibility/Walk to the Desert Redux/{{TargetWithoutPath}}_grass_{{Grass Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Spring |contains= none": false, 
+			"HasMod |contains= Tarniyar.CP.WalkToDesert": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_z_wtd_tilesheet",
+		"FromFile": "assets/Compatibility/Walk to the Desert Redux/{{TargetWithoutPath}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Summer |contains= none": false, 
+			"HasMod |contains= Tarniyar.CP.WalkToDesert": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_z_wtd_tilesheet",
+		"FromFile": "assets/Compatibility/Walk to the Desert Redux/{{TargetWithoutPath}}_grass_{{Grass Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Fall |contains= none": false, 
+			"HasMod |contains= Tarniyar.CP.WalkToDesert": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_wtd_tilesheet",
+		"FromFile": "assets/Compatibility/Walk to the Desert Redux/{{TargetWithoutPath}}_grass_{{Grass Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Winter |contains= none": false, 
+			"HasMod |contains= Tarniyar.CP.WalkToDesert": true
+		},
+	},
+
+//-----------------------------------------------------------------------------------------------------
+
+
+//Cape Stardew with permission from Lucidvisionsinc:
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"HasMod |contains= dreamy.kickitspot": true,
+		},
+	},
+
+//Grass-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles, Maps/CapeBusTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_grass_{{Grass Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Spring |contains= none": false, 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Spring"
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles, Maps/CapeBusTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Summer |contains= none": false, 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Summer"
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles, Maps/CapeBusTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_grass_{{Grass Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Fall |contains= none": false, 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Fall"
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles, Maps/CapeBusTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_grass_{{Grass Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Winter |contains= none": false, 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Winter"
+		},
+	},
+
+//Cliff-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_cliff_{{Cliff Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Spring |contains= none": false, 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Spring"
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_cliff_{{Cliff Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Summer |contains= none": false, 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Summer"
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_cliff_{{Cliff Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Fall |contains= none": false, 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Fall"
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_cliff_{{Cliff Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Cliff Winter |contains= none": false, 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Winter"
+		},
+	},
+
+
+//-----------------------------------------------------------------------------------------------------
+
+
+//AToMS - Archie's Tilesheets of Miscellaneous Stuff﻿ with permission from ArchibaldTK
+
+
+//Grass-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_ATK_AToMS_EXaqua, Maps/spring_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_grass_{{Grass Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Spring |contains= none": false, 
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_ATK_AToMS_EXaqua, Maps/summer_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_grass_{{Grass Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Summer |contains= none": false, 
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_ATK_AToMS_EXaqua, Maps/fall_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_grass_{{Grass Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Fall |contains= none": false, 
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_ATK_AToMS_EXaqua, Maps/winter_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_grass_{{Grass Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Grass Winter |contains= none": false, 
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+//Dirt-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_dirt_{{Dirt Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Spring |contains= none": false, 
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_dirt_{{Dirt Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Summer |contains= none": false, 
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_dirt_{{Dirt Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Fall |contains= none": false, 
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_dirt_{{Dirt Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Winter |contains= none": false, 
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+//-----------------------------------------------------------------------------------------------------
+
+
+// Pelican Town Accessibility - Handrails and Wheelchair Ramps and Safer Footbridges with permission from MidnightVoyager
+
+
+//Dirt-----------------------------------------------------------------------------------------------------
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_RailroadRamps",
+		"FromFile": "assets/Compatibility/Pelican Town Accessibility/{{TargetWithoutPath}}_dirt_{{Dirt Spring}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Spring |contains= none": false, 
+			"HasMod |contains= MV.PelicanTownAccessibility": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/summer_RailroadRamps",
+		"FromFile": "assets/Compatibility/Pelican Town Accessibility/{{TargetWithoutPath}}_dirt_{{Dirt Summer}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Summer |contains= none": false, 
+			"HasMod |contains= MV.PelicanTownAccessibility": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/fall_RailroadRamps",
+		"FromFile": "assets/Compatibility/Pelican Town Accessibility/{{TargetWithoutPath}}_dirt_{{Dirt Fall}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Fall |contains= none": false, 
+			"HasMod |contains= MV.PelicanTownAccessibility": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_RailroadRamps",
+		"FromFile": "assets/Compatibility/Pelican Town Accessibility/{{TargetWithoutPath}}_dirt_{{Dirt Winter}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+			"Dirt Winter |contains= none": false, 
+			"HasMod |contains= MV.PelicanTownAccessibility": true
+		},
+	},
+
+
+//-----------------------------------------------------------------------------------------------------
+
+//East Scarp Compatibility Patches with permission from lemurkat:
+
+//East Scarp Remastered Tide Pools:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_EastScarp, Maps/summer_EastScarp, Maps/fall_EastScarp, Maps/winter_EastScarp",
+		"FromFile": "assets/Compatibility/East Scarp/season_EastScarp.png",
+		"FromArea": { "X": 320, "Y": 272, "Width": 80, "Height": 64 },
+		"ToArea": { "X": 320, "Y": 272, "Width": 80, "Height": 64 },
+		"PatchMode": "Overlay",
+		"When": { 
+			"HasMod |contains= Lemurkat.EastScarp": true
+		},
+	},
+
+//East Scarp Legacy Tide Pools:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_rockpools, Maps/summer_rockpools, Maps/fall_rockpools, Maps/winter_rockpools",
+		"FromFile": "assets/Compatibility/East Scarp/season_EastScarp.png",
+		"FromArea": { "X": 320, "Y": 272, "Width": 48, "Height": 64 },
+		"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 64 },
+		"PatchMode": "Replace",
+		"When": { 
+			"HasMod |contains= LemurKat.EastScarpe.CP": true
+		},
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_rockpools, Maps/summer_rockpools, Maps/fall_rockpools, Maps/winter_rockpools",
+		"FromFile": "assets/Compatibility/East Scarp/season_EastScarp.png",
+		"FromArea": { "X": 368, "Y": 272, "Width": 32, "Height": 48 },
+		"ToArea": { "X": 64, "Y": 0, "Width": 32, "Height": 48 },
+		"PatchMode": "Replace",
+		"When": { 
+			"HasMod |contains= LemurKat.EastScarpe.CP": true
+		},
+	},
+
+//East Scarp Remastered Stones:
+//PatchMode Replace because of the shadows.
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_EastScarp, Maps/summer_EastScarp, Maps/fall_EastScarp, Maps/winter_EastScarp",
+		"FromFile": "assets/Compatibility/East Scarp/season_EastScarp.png",
+		"FromArea": { "X": 0, "Y": 416, "Width": 64, "Height": 64 },
+		"ToArea": { "X": 0, "Y": 416, "Width": 64, "Height": 64 },
+		"PatchMode": "Replace",
+		"When": { 
+			"HasMod |contains= Lemurkat.EastScarp": true
+		},
+	},
+
+//-----------------------------------------------------------------------------------------------------
+
+//Snow:
+
+//crystalinerose Tilesheets with permission from crystalinerose:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_CR_extras, Maps/winter_CR_outdoor",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+//Lumisteria Tilesheets - Outdoor with permission from Lumisteria:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+//MixedBag's Tilesheets with permission from JefGrizli:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_grasspath, Maps/winter_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+//Xiddav's Tilesheet with permission from xiddav:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Winter_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+//AToMS - Archie's Tilesheets of Miscellaneous Stuff﻿ with permission from ArchibaldTK
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_ATK_AToMS_EXaqua, Maps/winter_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+//-----------------------------------------------------------------------------------------------------
+
+
+
+//Config Option: "More Snow":
+
+	
+
+
+//Alvadea's Tilesheets with permission from Alvadea:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+//crystalinerose Tilesheets with permission from crystalinerose:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+
+//DaisyNiko's Tilesheets with permission from DaisyNiko:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+//Lumisteria Tilesheets - Outdoor with permission from Lumisteria:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+//MixedBag's Tilesheets with permission from JefGrizli:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_dirtpath, Maps/winter_z_grasspath, Maps/winter_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_dirtpath, Maps/winter_z_grasspath, Maps/winter_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+//Xiddav's Tilesheet with permission from xiddav:
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Winter_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Winter_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+//Walk to the Desert Redux with permission from Tarniyar:
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_wtd_tilesheet",
+		"FromFile": "assets/Compatibility/Walk to the Desert Redux/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_wtd_tilesheet",
+		"FromFile": "assets/Compatibility/Walk to the Desert Redux/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+
+//Cape Stardew with permission from Lucidvisionsinc:
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles, Maps/CapeBusTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Winter"
+		},
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles, Maps/CapeBusTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard", 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Winter"
+		},
+	},
+
+//AToMS - Archie's Tilesheets of Miscellaneous Stuff﻿ with permission from ArchibaldTK
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_ATK_AToMS_EXaqua, Maps/winter_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always",
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_ATK_AToMS_EXaqua, Maps/winter_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+//-----------------------------------------------------------------------------------------------------
+
+//Config Option: "Force Cherry Blossoms, Leaves, Snow:"
+
+//Force Cherry Blossoms
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/spring_outdoorsTileSheet",
+		"FromFile": "assets/{{Target}}_cherryblossoms.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Cherry Blossoms": "true" 
+		},
+	},
+
+//Force Leaves	
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/fall_outdoorsTileSheet",
+		"FromFile": "assets/{{Target}}_leaves.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Leaves": "true" 
+		},
+	},
+
+//Force Snow
+	
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet, Maps/winter_outdoorsTileSheet2, Maps/Festivals",
+		"FromFile": "assets/{{Target}}_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"Force Snow": "true" 
+		},
+	},
+
+	//Snowballs
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet",
+	        "FromFile": "assets/Maps/winter_outdoorsTileSheet_replace_snowballs.png",
+		"FromArea": { "X": 112, "Y": 144, "Width": 16, "Height": 64 },
+		"ToArea": { "X": 112, "Y": 144, "Width": 16, "Height": 64 },
+		"PatchMode": "Replace",
+		"Priority": "Late+5",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"Force Snow": "true" 
+		},
+	},
+
+
+
+
+
+//crystalinerose Tilesheets with permission from crystalinerose:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_CR_extras, Maps/winter_CR_outdoor",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"Force Snow": "true",
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+//Lumisteria Tilesheets - Outdoor with permission from Lumisteria:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"Force Snow": "true",
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+//MixedBag's Tilesheets with permission from JefGrizli:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_grasspath, Maps/winter_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"Force Snow": "true",
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+//Xiddav's Tilesheet with permission from xiddav:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Winter_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"Force Snow": "true",
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+//AToMS - Archie's Tilesheets of Miscellaneous Stuff﻿ with permission from ArchibaldTK
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_ATK_AToMS_EXaqua, Maps/winter_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_{{snow}}.png",
+		"PatchMode": "Overlay",	
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+//------------------------------------------------------------------------------------------------------
+
+//More Snow for config Option "Force Snow":
+
+
+	//More Snow
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet, Maps/winter_outdoorsTileSheet2, Maps/winter_outdoorTileSheet_extra, Maps/winter_town, Maps/Festivals",
+		"FromFile": "assets/{{Target}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority": "Late+5",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"Force Snow": "true" 
+
+			},
+
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_outdoorsTileSheet, Maps/winter_outdoorsTileSheet2, Maps/winter_outdoorTileSheet_extra, Maps/winter_town, Maps/Festivals",
+		"FromFile": "assets/{{Target}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority": "Late+5",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"Force Snow": "true" 
+			},
+
+	},
+
+//More Snow Island Tilesheets
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_island_tilesheet_1, Maps/island_tilesheet_1",
+		"FromFile": "assets/{{Target}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority": "Late+5",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"LocationContext |contains=Desert": false,
+			"LocationContext |contains=Island": false,
+			"Force Snow": "true" 
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_island_tilesheet_1, Maps/island_tilesheet_1",
+		"FromFile": "assets/{{Target}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority": "Late+5",
+		"When": { 
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"LocationContext |contains=Desert": false,
+			"LocationContext |contains=Island": false,
+			"Force Snow": "true" 
+			},
+		"Update": "OnLocationChange"
+	},
+
+
+
+
+
+//Alvadea's Tilesheets with permission from Alvadea:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_AlvadeasTileSheet",
+		"FromFile": "assets/Compatibility/Alvadea's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= alvadea.tilesheet": true
+		},
+	},
+
+//crystalinerose Tilesheets with permission from crystalinerose:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_CR_extras",
+		"FromFile": "assets/Compatibility/crystalinerose Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= crystalinerose.Tilesheets": true
+		},
+	},
+
+
+//DaisyNiko's Tilesheets with permission from DaisyNiko:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_daisyextras",
+		"FromFile": "assets/Compatibility/DaisyNiko's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= DaisyNiko.Tilesheets": true
+		},
+	},
+
+//Lumisteria Tilesheets - Outdoor with permission from Lumisteria:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_mod_lumisteria_tilesheetsoutdoor_tiles",
+		"FromFile": "assets/Compatibility/Lumisteria Tilesheets - Outdoor/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= Lumisteria.TtilesheetsOutdoor": true
+		},
+	},
+
+//MixedBag's Tilesheets with permission from JefGrizli:
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_dirtpath, Maps/winter_z_grasspath, Maps/winter_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_dirtpath, Maps/winter_z_grasspath, Maps/winter_z_rndpath",
+		"FromFile": "assets/Compatibility/MixedBag's Tilesheets/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= MixedBag.Tilesheets": true
+		},
+	},
+
+//Xiddav's Tilesheet with permission from xiddav:
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Winter_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Winter_Xiddav",
+		"FromFile": "assets/Compatibility/Xiddav's Tilesheet/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+//Walk to the Desert Redux with permission from Tarniyar:
+
+{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_wtd_tilesheet",
+		"FromFile": "assets/Compatibility/Walk to the Desert Redux/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_z_wtd_tilesheet",
+		"FromFile": "assets/Compatibility/Walk to the Desert Redux/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= xiddav.tilesheet": true
+		},
+	},
+
+//Cape Stardew with permission from Lucidvisionsinc:
+
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles, Maps/CapeBusTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "always", 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Winter"
+		},
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/Custom_CaveTiles, Maps/CapeBusTiles",
+		"FromFile": "assets/Compatibility/Cape Stardew/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard", 
+			"HasMod |contains= dreamy.kickitspot": true,
+			"Season": "Winter"
+		},
+	},
+
+//AToMS - Archie's Tilesheets of Miscellaneous Stuff﻿ with permission from ArchibaldTK
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_ATK_AToMS_EXaqua, Maps/winter_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "always",
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+	{
+		"Action": "EditImage",
+		"Target": "Maps/winter_ATK_AToMS_EXaqua, Maps/winter_ATK_AToMS_EXground",
+		"FromFile": "assets/Compatibility/AToMS - Archie Tilesheets of Misc Stuff/{{TargetWithoutPath}}_more_{{snow}}.png",
+		"PatchMode": "Overlay",
+		"Priority":"Late+5",
+		"When": { 
+			"Force Snow": "true",
+          		"Snow Color |contains= none": false,
+			"More Snow": "during snowfall", 
+			"Weather": "Snow, Blizzard",
+			"HasMod |contains= A_TK.AToMS": true
+		},
+	},
+
+//------------------------------------------------------------------------------------------------------
+
+//Include MapPatches.json
+
+	{
+		"Action": "Include",
+		"FromFile": "assets/Data/MapPatches.json",
+		"When": { 
+			"Cosmetic Map Patches": "true" 
+		},
+	},
+
+]
+
+}
+
+
+
+

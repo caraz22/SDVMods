@@ -1,0 +1,28 @@
+{
+	"Changes": [
+//Mail
+	{
+    	"LogName": "BirdMail",
+    	"Action": "EditData",
+    	"Target": "Data/Mail",
+    	"Entries":  {
+    		"Em.BirdNest": "{{i18n:Em.BirdNest2}}%item craftingRecipe Em.SeedBirdNest%%[#]{{i18n:Em.BirdNest1}}",
+      		}
+    	},
+//Trigger Actions
+	{
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+                "Em.BirdNest": {
+                    "Id": "Em.BirdNest",
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 2",
+                    "Trigger": "DayEnding",
+                    "Actions": [
+                        "AddMail Current Em.BirdNest now"
+                    ]
+                },
+            }
+        },
+    	]
+}

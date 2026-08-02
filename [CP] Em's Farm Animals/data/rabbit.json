@@ -1,0 +1,103 @@
+{
+	"Changes": [
+	{
+		"LogName": "Load assets",
+			"Action": "Load",
+			"Target": "{{ModId}}/Alaska, {{ModId}}/Angora, {{ModId}}/Beveren, {{ModId}}/California, {{ModId}}/Hollander, {{ModId}}/Pearl, {{ModId}}/English, {{ModId}}/Harlequin, {{ModId}}/Lion, {{ModId}}/German, {{ModId}}/Lop, {{ModId}}/Palomino, {{ModId}}/Rex, {{ModId}}/Tan, {{ModId}}/AlaskaBaby, {{ModId}}/AngoraBaby, {{ModId}}/BeverenBaby, {{ModId}}/CaliforniaBaby, {{ModId}}/HollanderBaby, {{ModId}}/PearlBaby, {{ModId}}/EnglishBaby, {{ModId}}/HarlequinBaby, {{ModId}}/LionBaby, {{ModId}}/GermanBaby, {{ModId}}/LopBaby, {{ModId}}/PalominoBaby, {{ModId}}/RexBaby, {{ModId}}/TanBaby",
+"FromFile": "assets/rabbit/{{TargetWithoutPath}}.png"
+		},
+		{
+	"Action": "EditData",
+	"Target": "Data/FarmAnimals",
+	"TargetField": ["Rabbit"],
+	"Entries": {
+		"Texture": "{{ModId}}/Palomino",
+		"BabyTexture": "{{ModId}}/PalominoBaby",
+		"Skins": [
+		{
+		"Id": "Alaska",
+		"Texture": "{{ModId}}/Alaska",
+		"BabyTexture": "{{ModId}}/AlaskaBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Angora",
+		"Texture": "{{ModId}}/Angora",
+		"BabyTexture": "{{ModId}}/AngoraBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Beveren",
+		"Texture": "{{ModId}}/Beveren",
+		"BabyTexture": "{{ModId}}/BeverenBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "California",
+		"Texture": "{{ModId}}/California",
+		"BabyTexture": "{{ModId}}/CaliforniaBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Hollander",
+		"Texture": "{{ModId}}/Hollander",
+		"BabyTexture": "{{ModId}}/HollanderBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Pearl",
+		"Texture": "{{ModId}}/Pearl",
+		"BabyTexture": "{{ModId}}/PearlBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "English",
+		"Texture": "{{ModId}}/English",
+		"BabyTexture": "{{ModId}}/EnglishBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Harlequin",
+		"Texture": "{{ModId}}/Harlequin",
+		"BabyTexture": "{{ModId}}/HarlequinBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Lion",
+		"Texture": "{{ModId}}/Lion",
+		"BabyTexture": "{{ModId}}/LionBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "German",
+		"Texture": "{{ModId}}/German",
+		"BabyTexture": "{{ModId}}/GermanBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Lop",
+		"Texture": "{{ModId}}/Lop",
+		"BabyTexture": "{{ModId}}/LopBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Rex",
+		"Texture": "{{ModId}}/Rex",
+		"BabyTexture": "{{ModId}}/RexBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Tan",
+		"Texture": "{{ModId}}/Tan",
+		"BabyTexture": "{{ModId}}/TanBaby",
+		"Weight": 1.0
+		}]}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/rabbit/RabbitIcon.png",
+		"ToArea": {"X": 64, "Y": 464,"Width": 33, "Height": 17}
+		}
+	]
+}

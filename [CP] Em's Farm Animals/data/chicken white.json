@@ -1,0 +1,72 @@
+{
+	"Changes": [
+	{
+		"LogName": "Load assets",
+		"Action": "Load",
+		"Target": "{{ModId}}/Orpington, {{ModId}}/Leghorn, {{ModId}}/Polish, {{ModId}}/Lakenveld, {{ModId}}/Lavender, {{ModId}}/Silkie, {{ModId}}/Rooster, {{ModId}}/Void, {{ModId}}/Blue, {{ModId}}/Gold, {{ModId}}/OrpingtonBaby, {{ModId}}/LeghornBaby, {{ModId}}/PolishBaby, {{ModId}}/LakenveldBaby, {{ModId}}/LavenderBaby, {{ModId}}/SilkieBaby, {{ModId}}/RoosterBaby, {{ModId}}/VoidBaby, {{ModId}}/BlueBaby, {{ModId}}/GoldBaby",
+"FromFile": "assets/chicken/{{TargetWithoutPath}}.png"
+		},
+		{
+	"Action": "EditData",
+	"Target": "Data/FarmAnimals",
+	"TargetField": ["White Chicken"],
+	"Entries": {
+		"Texture": "{{ModId}}/Leghorn",
+		"BabyTexture": "{{ModId}}/LeghornBaby",
+		"Skins": [
+		{
+		"Id": "Orpington",
+		"Texture": "{{ModId}}/Orpington",
+		"BabyTexture": "{{ModId}}/OrpingtonBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Polish",
+		"Texture": "{{ModId}}/Polish",
+		"BabyTexture": "{{ModId}}/PolishBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Lakenveld",
+		"Texture": "{{ModId}}/Lakenveld",
+		"BabyTexture": "{{ModId}}/LakenveldBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Lavender",
+		"Texture": "{{ModId}}/Lavender",
+		"BabyTexture": "{{ModId}}/LavenderBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Silkie",
+		"Texture": "{{ModId}}/Silkie",
+		"BabyTexture": "{{ModId}}/SilkieBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Rooster",
+		"Texture": "{{ModId}}/Rooster",
+		"BabyTexture": "{{ModId}}/RoosterBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Void",
+		"Texture": "{{ModId}}/Void",
+		"BabyTexture": "{{ModId}}/VoidBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Blue",
+		"Texture": "{{ModId}}/Blue",
+		"BabyTexture": "{{ModId}}/BlueBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Gold",
+		"Texture": "{{ModId}}/Gold",
+		"BabyTexture": "{{ModId}}/GoldBaby",
+		"Weight": 1.0
+			}
+		]
+	}}]}

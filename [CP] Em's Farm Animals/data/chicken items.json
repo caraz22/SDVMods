@@ -1,0 +1,67 @@
+{
+	"Changes": [
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyWhite Chicken",
+		"FromFile": "assets/chicken/LeghornBaby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/White Chicken",
+		"FromFile": "assets/chicken/Leghorn.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyBrown Chicken",
+		"FromFile": "assets/chicken/LohmannBaby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Brown Chicken",
+		"FromFile": "assets/chicken/Lohmann.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyVoid Chicken",
+		"FromFile": "assets/chicken/VoidBaby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Void Chicken",
+		"FromFile": "assets/chicken/Void.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyBlue Chicken",
+		"FromFile": "assets/chicken/BlueBaby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Blue Chicken",
+		"FromFile": "assets/chicken/Blue.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/BabyGolden Chicken",
+		"FromFile": "assets/chicken/GoldBaby.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Animals/Golden Chicken",
+		"FromFile": "assets/chicken/Gold.png"
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/chicken/ChickenIcon.png",
+		"ToArea": {"X": 0, "Y": 448,"Width": 33, "Height": 17}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/chicken/ChickenMayo.png",
+		"ToArea": { "X": 288, "Y": 192, "Width": 16, "Height": 16 },
+		"When":{ "Chicken mayo":"true"}
+		},
+	]
+}

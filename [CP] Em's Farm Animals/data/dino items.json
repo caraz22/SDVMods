@@ -1,0 +1,49 @@
+{
+	"Changes": [
+	{
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"TargetField": ["Dinosaur"],
+		"When":{ "Dino type":"Dragon"},
+		"Entries": {
+			"DisplayName": "{{i18n:Dino_Name}}"
+	}},
+	{        
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"TargetField": ["107"],
+		"When":{ "Dino type":"Dragon"},
+		"Entries": {
+			"DisplayName": "{{i18n:DinoEgg_Name}}",
+			"Description": "{{i18n:DinoEgg_Description}}"
+	}},
+	{        
+		"Action": "EditData",
+		"Target": "Data/Objects",
+		"TargetField": ["807"],
+		"When":{ "Dino type":"Dragon"},
+		"Entries": {
+			"DisplayName": "{{i18n:DinoMayo_Name}}",
+			"Description": "{{i18n:DinoMayo_Description}}"  
+	}},
+	{      
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"TargetField": ["Dinosaur"],
+		"Entries": {
+			"IncubationTime": "{{Incubation time}}"
+	}},
+	{    
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/dino/{{Dino egg type}}Egg.png",
+		"ToArea": {"X": 176, "Y": 64,"Width": 16, "Height": 16},
+		"When":{ "Dino egg":"true"}
+	},
+	{    
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/dino/DinoMayo.png",
+		"ToArea": { "X": 240, "Y": 528, "Width": 16, "Height": 16 },
+		"When":{ "Dino mayo":"true"}
+		}]}

@@ -1,0 +1,13 @@
+{
+   "Name": "Black cat 'void cat'",
+   "Author": "LemurKat",
+   "Version": "1.0",
+   "Description": "Changes the ginger cat into a fluffy black cat",
+   "UniqueID": "lemurkat.voidcat",
+   "UpdateKeys": ["Nexus:5437"],
+   "MinimumApiVersion": "2.10.0",
+    "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher" 
+     
+   }
+}

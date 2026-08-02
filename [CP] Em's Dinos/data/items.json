@@ -1,0 +1,19 @@
+{
+	"Changes": [
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/{{Dino Egg}}Egg.png",
+		"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+		"ToArea": {"X": 176, "Y": 64,"Width": 16, "Height": 16},
+		"When":{ "Egg option":"true"}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/DinoMayo.png",
+		"ToArea": { "X": 240, "Y": 528, "Width": 16, "Height": 16 },
+		"When":{ "Mayo option":"true"}
+		}
+	]
+}

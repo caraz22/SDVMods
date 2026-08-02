@@ -1,0 +1,34 @@
+{    
+"Changes": [
+
+        {
+            "Action": "EditData",
+            "Target": "mushymato.MMAP/WildTreeProperties",
+            "TargetField": [
+                "3 5 T",
+                "Back"
+            ],
+            "Entries": {
+                // property: value reposition 0 -160 standard
+                "mushymato.MMAP_Light": "1 Coral {{ModId}}/tree3_lightmap 0 -128 None", 
+                "mushymato.MMAP_LightCond": "mushymato.MMAP_TIME_IS_LIGHTS_OFF, SEASON Winter",
+                "mushymato.MMAP_TAS": "{{ModId}}_tree3_TAS {{ModId}}_tree3_TAS_day"
+            }
+        },
+	
+        {
+            "Action": "EditData",
+            "Target": "mushymato.MMAP/WildTreeProperties",
+            "TargetField": [
+                "3 5 F",
+                "Back"
+            ],
+            "Entries": {
+                // property: value reposition 0 -160 standard
+                "mushymato.MMAP_Light": "1 Coral {{ModId}}/tree3_f_lightmap 0 -128 None", 
+                "mushymato.MMAP_LightCond": "mushymato.MMAP_TIME_IS_LIGHTS_OFF, SEASON Winter",
+                "mushymato.MMAP_TAS": "{{ModId}}_tree3_f_TAS {{ModId}}_tree3_f_TAS_day"
+            }
+        },
+    ]
+}

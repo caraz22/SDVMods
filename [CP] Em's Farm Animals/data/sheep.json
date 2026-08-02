@@ -1,0 +1,103 @@
+{
+	"Changes": [
+	{
+		"LogName": "Load assets",
+		"Action": "Load",
+		"Target": "{{ModId}}/Balwen, {{ModId}}/Welsh, {{ModId}}/WelshBrown, {{ModId}}/HampshireWhite, {{ModId}}/HampshireBlack, {{ModId}}/Gute, {{ModId}}/Dutch, {{ModId}}/DutchBrown, {{ModId}}/Suffolk, {{ModId}}/Corriedale, {{ModId}}/Zwartbles, {{ModId}}/Coburg, {{ModId}}/BalwenSheared, {{ModId}}/WelshSheared, {{ModId}}/WelshBrownSheared, {{ModId}}/HampshireWhiteSheared, {{ModId}}/HampshireBlackSheared, {{ModId}}/GuteSheared, {{ModId}}/DutchSheared, {{ModId}}/DutchBrownSheared, {{ModId}}/SuffolkSheared, {{ModId}}/CorriedaleSheared, {{ModId}}/ZwartblesSheared, {{ModId}}/CoburgSheared, {{ModId}}/BalwenBaby, {{ModId}}/WelshBaby, {{ModId}}/WelshBrownBaby, {{ModId}}/HampshireWhiteBaby, {{ModId}}/HampshireBlackBaby, {{ModId}}/GuteBaby, {{ModId}}/DutchBaby, {{ModId}}/DutchBrownBaby, {{ModId}}/SuffolkBaby, {{ModId}}/CorriedaleBaby, {{ModId}}/ZwartblesBaby, {{ModId}}/CoburgBaby",
+"FromFile": "assets/sheep/{{TargetWithoutPath}}.png"
+		},
+		{
+	"Action": "EditData",
+	"Target": "Data/FarmAnimals",
+	"TargetField": ["Sheep"],
+	"Entries": {
+		"Texture": "{{ModId}}/Balwen",
+		"HarvestedTexture": "{{ModId}}/BalwenSheared",
+		"BabyTexture": "{{ModId}}/BalwenBaby",
+		"Skins": [
+		{
+		"Id": "Welsh",
+		"Texture": "{{ModId}}/Welsh",
+		"HarvestedTexture": "{{ModId}}/WelshSheared",
+		"BabyTexture": "{{ModId}}/WelshBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "WelshBrown",
+		"Texture": "{{ModId}}/WelshBrown",
+		"HarvestedTexture": "{{ModId}}/WelshBrownSheared",
+		"BabyTexture": "{{ModId}}/WelshBrownBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "HampshireWhite",
+		"Texture": "{{ModId}}/HampshireWhite",
+		"HarvestedTexture": "{{ModId}}/HampshireWhiteSheared",
+		"BabyTexture": "{{ModId}}/HampshireWhiteBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "HampshireBlack",
+		"Texture": "{{ModId}}/HampshireBlack",
+		"HarvestedTexture": "{{ModId}}/HampshireBlackSheared",
+		"BabyTexture": "{{ModId}}/HampshireBlackBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Gute",
+		"Texture": "{{ModId}}/Gute",
+		"HarvestedTexture": "{{ModId}}/GuteSheared",
+		"BabyTexture": "{{ModId}}/GuteBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Dutch",
+		"Texture": "{{ModId}}/Dutch",
+		"HarvestedTexture": "{{ModId}}/DutchSheared",
+		"BabyTexture": "{{ModId}}/DutchBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "DutchBrown",
+		"Texture": "{{ModId}}/DutchBrown",
+		"HarvestedTexture": "{{ModId}}/DutchBrownSheared",
+		"BabyTexture": "{{ModId}}/DutchBrownBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Suffolk",
+		"Texture": "{{ModId}}/Suffolk",
+		"HarvestedTexture": "{{ModId}}/SuffolkSheared",
+		"BabyTexture": "{{ModId}}/SuffolkBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Corriedale",
+		"Texture": "{{ModId}}/Corriedale",
+		"HarvestedTexture": "{{ModId}}/CorriedaleSheared",
+		"BabyTexture": "{{ModId}}/CorriedaleBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Zwartbles",
+		"Texture": "{{ModId}}/Zwartbles",
+		"HarvestedTexture": "{{ModId}}/ZwartblesSheared",
+		"BabyTexture": "{{ModId}}/ZwartblesBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Coburg",
+		"Texture": "{{ModId}}/Coburg",
+		"HarvestedTexture": "{{ModId}}/CoburgSheared",
+		"BabyTexture": "{{ModId}}/CoburgBaby",
+		"Weight": 1.0
+		}]}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/sheep/SheepIcon.png",
+		"ToArea": {"X": 32, "Y": 464,"Width": 33, "Height": 17}
+		}
+	]
+}

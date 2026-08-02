@@ -1,0 +1,11 @@
+{
+   "Name": "Em's Dinos",
+   "Author": "RivalRabbit",
+   "Version": "1.2",
+   "Description": "Eight dinosaur options with multiple config options",
+   "UniqueID": "Ems.DinosCP",
+   "UpdateKeys": [ "Nexus:36316" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   }
+}

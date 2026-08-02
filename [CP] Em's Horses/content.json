@@ -1,0 +1,40 @@
+{
+	"Format":"2.0",
+	"ConfigSchema":{
+		"Horse":{
+		"AllowValues": "Mule, Zebra, Gypsy, DappleGrey, Donkey, Krobus, RedRoan, BlueRoan, Appaloosa, Unicorn, Paint, Haflinger, Fjord, BelgianDraft, Shire, Chestnut, Bay, Mustang",
+		"Default": "Chestnut"
+		},
+		"Saddle":{
+		"AllowValues": "True, False",
+		"Default": "True"
+		},
+		"Bridle":{
+		"AllowValues": "True, False",
+		"Default": "True"
+		}
+	},
+	"Changes":[
+	{
+	"Action":"Load",
+	"Target":"Animals/Horse",
+	"FromFile":"assets/{{Horse}}.png"
+	},
+	{
+	"Action":"EditImage",
+	"Target":"Animals/Horse",
+	"FromFile":"assets/Tack/Saddle.png",
+   	"Patchmode":"Overlay",
+	"When":{
+	"Saddle":"True"
+	}},
+	{
+	"Action":"EditImage",
+	"Target":"Animals/Horse",
+	"FromFile":"assets/Tack/Bridle.png",
+	"Patchmode":"Overlay",
+	"When":{
+	"Bridle":"True"
+		}}
+	]
+}

@@ -1,0 +1,21 @@
+{
+  "Format": "1.11",
+  
+
+  "Changes": [
+	
+	   {
+          "Action": "Load",
+          "Target": "Animals/Cat",
+          "FromFile": "assets/VoidCat.png",
+       },
+	   
+	   {
+	   "Action": "EditImage",
+	   "Target": "LooseSprites/Cursors",
+	   "FromFile": "assets/icon.png",
+	   "ToArea": { "X": 160, "Y": 208, "Width": 15, "Height": 15 }
+		},
+	   
+]
+}

@@ -1,0 +1,54 @@
+{
+	"Changes": [
+			{
+            "LogName": "Item Data",      
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "Em.WildEgg": {
+                    "Category": -5,
+                    "Description": "{{i18n:Em.WildEggDescription}}",
+                    "Displayname": "{{i18n:Em.WildEgg}}",
+                    "Name": "Wild Egg",
+                    "Price": 200,
+                    "Texture": "assets/SeedBirdSprites",
+                    "SpriteIndex": 0,
+                    "Type": "Basic",
+                    "ContextTags": [ "color_white", "egg_item" ],
+                    "Edibility": 40,
+                    "IsDrink": false,
+    		    "Buffs": [],
+                },
+                "Em.TimberLunch": {
+                    "Category": -7,
+                    "Description": "{{i18n:Em.TimberLunchDescription}}",
+                    "Displayname": "{{i18n:Em.TimberLunch}}",
+                    "Name": "Timber Lunch",
+                    "Price": 200,
+                    "Texture": "assets/SeedBirdSprites",
+                    "SpriteIndex": 2,
+                    "Type": "Cooking",
+                    "ContextTags": [ "color_yellow", "timber_lunch_item" ],
+                    "Edibility": 88,
+                    "IsDrink": false,
+    		    "Buffs": [
+      			{
+        		"Id": "Food",
+        		"Duration": 550,
+        		"CustomAttributes": {
+          			"ForagingLevel": 1.0,
+        				},
+      				}
+    			],
+                },
+            }
+        },
+        {
+	"Action": "EditData",
+	"Target": "Data/CookingRecipes",
+	"Entries": {
+		"Em.TimberLunch": "Em.WildEgg 1 -6 1 246/25 5/Em.TimberLunch/Foraging 2/",
+		}
+	},
+   ]
+}

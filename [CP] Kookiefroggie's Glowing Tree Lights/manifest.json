@@ -1,0 +1,96 @@
+{
+  "Name": "[CP] Kookiefroggie's Glowing Tree Lights",
+  "Author": "Kookiefroggie",
+  "Version": "1.0.1",
+  "Description": "Adds glowing lights to trees.",
+  "UniqueID": "Kookiefroggie.GlowingTreeLights",
+  "UpdateKeys": [ "Nexus:40491" ],
+  "ContentPackFor": {
+	"UniqueID": "Pathoschild.ContentPatcher",
+	},
+  "Dependencies":[
+	{
+		"UniqueID": "mushymato.MMAP",
+		"MinimumVersion": "1.12.4",
+		"IsRequired": true
+	},
+	{
+		"UniqueID": "Kookiefroggie.Recolor",
+		"IsRequired": false,
+	},
+	{
+		"UniqueID": "Az.Foliage",
+		"IsRequired": false,
+	},
+	{
+            "UniqueID": "Morghoula.SVETreesRecolored",
+            "IsRequired": false
+        },
+//Expansions
+	{
+		"UniqueID": "Lemurkat.EastScarp",
+		"IsRequired": false,
+	},
+	{
+		"UniqueID": "Lemurkat.EastScarpe.CP",
+		"IsRequired": false,
+	},
+	{
+		"UniqueID": "FlashShifter.StardewValleyExpandedCP",
+		"IsRequired": false
+	},
+
+//Tilesheets
+
+	{
+		"UniqueID": "xiddav.tilesheet",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "crystalinerose.Tilesheets",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "MixedBag.Tilesheets",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "Lumisteria.TtilesheetsOutdoor",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "DaisyNiko.Tilesheets",
+		"IsRequired": false
+	},		{
+		"UniqueID": "alvadea.tilesheet",
+		"IsRequired": false
+	},	
+	{
+		"UniqueID": "A_TK.AToMS",
+		"IsRequired": false
+	},
+
+// Recolors
+
+	{
+		"UniqueID": "DaisyNiko.EarthyRecolour",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "Lita.StarblueValleyUnofficial",
+		"IsRequired": false
+	},
+
+	{
+		"UniqueID": "Acerbicon.Recolor",
+		"IsRequired": false
+	},
+	{
+		"UniqueID": "grapeponta.VibrantPastoralRecolor",
+		"IsRequired": false
+	},
+
+
+],
+
+}

@@ -1,0 +1,54 @@
+{
+	"Changes": [
+	{
+		"LogName": "Load assets",
+		"Action": "Load",
+		"Target": "{{ModId}}/GuernseyCow, {{ModId}}/Texas, {{ModId}}/Hereford, {{ModId}}/Jersey, {{ModId}}/HighlandRed, {{ModId}}/BeltedBrown, {{ModId}}/Normande, {{ModId}}/GuernseyCowBaby, {{ModId}}/TexasBaby, {{ModId}}/HerefordBaby, {{ModId}}/JerseyBaby, {{ModId}}/HighlandRedBaby, {{ModId}}/BeltedBrownBaby, {{ModId}}/NormandeBaby",
+"FromFile": "assets/cow/{{TargetWithoutPath}}.png"
+		},
+		{
+	"Action": "EditData",
+	"Target": "Data/FarmAnimals",
+	"TargetField": ["Brown Cow"],
+	"Entries": {
+		"Texture": "{{ModId}}/GuernseyCow",
+		"BabyTexture": "{{ModId}}/GuernseyCowBaby",
+		"Skins": [
+		{
+		"Id": "Hereford",
+		"Texture": "{{ModId}}/Hereford",
+		"BabyTexture": "{{ModId}}/HerefordBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Jersey",
+		"Texture": "{{ModId}}/Jersey",
+		"BabyTexture": "{{ModId}}/JerseyBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "HighlandRed",
+		"Texture": "{{ModId}}/HighlandRed",
+		"BabyTexture": "{{ModId}}/HighlandRedBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "BeltedBrown",
+		"Texture": "{{ModId}}/BeltedBrown",
+		"BabyTexture": "{{ModId}}/BeltedBrownBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Texas",
+		"Texture": "{{ModId}}/Texas",
+		"BabyTexture": "{{ModId}}/TexasBaby",
+		"Weight": 1.0
+		},
+		{
+		"Id": "Normande",
+		"Texture": "{{ModId}}/Normande",
+		"BabyTexture": "{{ModId}}/NormandeBaby",
+		"Weight": 1.0
+			}
+		]
+	}}]}

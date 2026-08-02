@@ -1,0 +1,42 @@
+{
+	"Changes": [
+//Sapodilla
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "Cornucopia_SapodillaSeed" ],
+		"When":{ "CornucopiaTrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0,
+			}
+		},
+		{
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": [ "(BC)Em.SeedBirdNest", "OutputRules", "Em.SeedBundle", "OutputItem" ],
+	"When":{ "CornucopiaTrees":"true" },
+        "Entries": {
+        	"Cornucopia.SapodillaSeed": {
+                    "Id": "Cornucopia.SapodillaSeed",
+                    "ItemId": "Cornucopia_SapodillaSeed",
+                    "MinStack": 1,
+                    "MaxStack": 2,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 6, RANDOM 0.1"
+        	   },
+        	"Cornucopia.DatePalmSeed": {
+                    "Id": "Cornucopia.DatePalmSeed",
+                    "ItemId": "Cornucopia_DatePalmSeed",
+                    "MinStack": 1,
+                    "MaxStack": 2,
+                    "Condition": "PLAYER_VISITED_LOCATION Current Desert, RANDOM 0.1"
+        	   }
+		},
+         "MoveEntries": [
+         { "Id": "Cornucopia.SapodillaSeed", "BeforeId": "WildSeeds" },
+         { "Id": "Cornucopia.DatePalmSeed", "BeforeId": "WildSeeds" },
+         ]
+	},
+   ]
+}

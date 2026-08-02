@@ -1,0 +1,269 @@
+{
+"Format": "2.0.0",
+	"ConfigSchema": {
+		"WildTrees": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+			},
+		"RareTrees": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+			},
+		"CornucopiaTrees": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+			},
+		"SVETrees": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+			},
+		"WildTreesCollectionTrees": {
+		"AllowValues": "true, false",
+            	"Default": "true"
+			},
+		 },
+	"Changes": [
+//load assets
+		{
+		"LogName": "Load assets",
+		"Action": "Load",
+		"Target": "assets/SeedBirdSprites",
+		"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+//oak
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "1" ],
+		"When":{ "WildTrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0,
+
+			}
+		},
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "1", "ChopItems" ],
+		"Entries": {
+			"Em.WildEgg": {
+				"Id": "WildEgg",
+				"ItemId": "(O)Em.WildEgg",
+				"Chance": 0.01,
+				"Condition": "SEASON Spring Summer Fall",
+				"MinSize": "Tree",
+				},
+			}
+		},
+//maple
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "2" ],
+		"When":{ "WildTrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0
+			}
+		},
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "2", "ChopItems" ],
+		"Entries": {
+			"Em.WildEgg": {
+				"Id": "WildEgg",
+				"ItemId": "(O)Em.WildEgg",
+				"Chance": 0.01,
+				"Condition": "SEASON Spring Summer Fall",
+				"MinSize": "Tree",
+				},
+			}
+		},
+//pine
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "3" ],
+		"When":{ "WildTrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0
+			}
+		},
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "3", "ChopItems" ],
+		"Entries": {
+			"Em.WildEgg": {
+				"Id": "WildEgg",
+				"ItemId": "(O)Em.WildEgg",
+				"Chance": 0.01,
+				"Condition": "SEASON Spring Summer Fall",
+				"MinSize": "Tree",
+				},
+			}
+		},
+//mushroom
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "7" ],
+		"When":{ "RareTrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0
+			}
+		},
+//mahogony
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "8" ],
+		"When":{ "RareTrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0
+			}
+		},
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "8", "ChopItems" ],
+		"Entries": {
+			"Em.WildEgg": {
+				"Id": "WildEgg",
+				"ItemId": "(O)Em.WildEgg",
+				"Chance": 0.01,
+				"Condition": "SEASON Spring Summer Fall",
+				"MinSize": "Tree",
+				},
+			}
+		},
+//mossy
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "10" ],
+		"When":{ "RareTrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0
+			}
+		},
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "11" ],
+		"When":{ "RareTrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0
+			}
+		},
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "12" ],
+		"When":{ "RareTrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0
+			}
+		},
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "10", "ChopItems" ],
+		"Entries": {
+			"Em.WildEgg": {
+				"Id": "WildEgg",
+				"ItemId": "(O)Em.WildEgg",
+				"Chance": 0.01,
+				"Condition": "SEASON Spring Summer Fall",
+				"MinSize": "Tree",
+				},
+			}
+		},
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "11", "ChopItems" ],
+		"Entries": {
+			"Em.WildEgg": {
+				"Id": "WildEgg",
+				"ItemId": "(O)Em.WildEgg",
+				"Chance": 0.01,
+				"Condition": "SEASON Spring Summer Fall",
+				"MinSize": "Tree",
+				},
+			}
+		},
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "12", "ChopItems" ],
+		"Entries": {
+			"Em.WildEgg": {
+				"Id": "WildEgg",
+				"ItemId": "(O)Em.WildEgg",
+				"Chance": 0.01,
+				"Condition": "SEASON Spring Summer Fall",
+				"MinSize": "Tree",
+				},
+			}
+		},
+//mystic
+		{
+		"LogName": "Seed Data",
+		"Action": "EditData",
+		"Target": "Data/WildTrees",
+		"TargetField": [ "13" ],
+		"When":{ "RareTrees":"true" },
+	
+		"Entries": {
+			"SeedSpreadChance": 0
+			}
+		},
+//include
+    		{
+      		"Action": "Include",
+      		"FromFile": "data/objects.json",
+    		},
+    		{
+      		"Action": "Include",
+      		"FromFile": "data/mail.json",
+    		},
+    		{
+      		"Action": "Include",
+      		"FromFile": "data/birdnest.json",
+    		},
+    		{
+      		"Action": "Include",
+      		"FromFile": "data/cornucopia.json",
+      		"When": { "HasMod": "Cornucopia.MoreCrops" }
+    		},
+    		{
+      		"Action": "Include",
+      		"FromFile": "data/SVE.json",
+      		"When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" }
+    		},
+	]
+   }
