@@ -1,0 +1,39 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Aimon Fancy Horse Flute - Animation
+		//////////////////////////////////////
+        {
+			"LogName": "Aimon flute animation - male",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald",
+			"FromFile": "assets/images/AimonHarpAnim.png",
+            "Priority": "Late",
+			"ToArea": {
+				"X": 224,
+				"Y": 512,
+				"Width": 48,
+				"Height": 32
+			},
+            "When": {
+                "CT_AimonHarpAnim": true
+            }
+		},
+        {
+			"LogName": "Aimon flute animation - female",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald",
+			"FromFile": "assets/images/AimonHarpAnimGirl.png",
+            "Priority": "Late",
+			"ToArea": {
+				"X": 224,
+				"Y": 512,
+				"Width": 48,
+				"Height": 32
+			},
+            "When": {
+                "CT_AimonHarpAnim": true
+            }
+		},
+    ]
+}

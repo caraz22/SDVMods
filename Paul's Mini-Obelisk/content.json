@@ -1,0 +1,23 @@
+{
+  "Format": "2.1.0",
+
+  "Changes": [
+    {
+      "LogName": "Mini-Obelisk",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/TextureOverrides",
+      "Entries": {
+        "Miniobelisk.Paul_Mini-Obelisk": {
+          "TargetTexture": "TileSheets/Craftables",
+          "TargetRect": {
+            "X": 96,
+            "Y": 928,
+            "Width": 16,
+            "Height": 32
+          },
+          "SourceTexture": "{{InternalAssetKey: Mini-Obelisk.png}}:0..31@5"
+        }
+      }
+    }
+  ]
+}

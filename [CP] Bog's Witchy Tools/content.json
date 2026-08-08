@@ -1,0 +1,479 @@
+/*
+
+Mod by BogWyytch and Abagaianye!
+
+Art: BogWyytch
+Json: Abagaianye
+
+*/
+{
+	"Format": "2.8.0",
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"ConfigSchema": {
+		"CT_IridiumColour": {
+            "Section": "VanillaTools",
+			"AllowValues": "Blue, Green, Pink, Purple, Red",
+			"Default": "Green"
+		},
+        "CT_EnableTools": {
+            "Section": "VanillaTools",
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+        "CT_EnableScythe": {
+            "Section": "VanillaTools",
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+        "CT_EnableFlute": {
+            "Section": "VanillaTools",
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+        "CT_ChangeFluteName": {
+            "Section": "VanillaTools",
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+        "CT_ChangeFluteMusic": {
+            "Section": "VanillaTools",
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+        "CT_RodColour": {
+            "Section": "Compat",
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"CT_PrismaticTools": {
+            "Section": "Compat",
+			"AllowValues": "true, false",
+			"Default": "false"
+		},
+        "CT_AimonHarpAnim": {
+            "Section": "Compat",
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+	},
+	"Changes": [
+		//////////////////////////////////////
+		// LOAD TEXTURES
+		//////////////////////////////////////
+		{
+			"LogName": "Load prismatic textures",
+			"Action": "Load",
+			"Target": "{{ModId}}/ToolsPrismatic, {{ModId}}/SprinklerPrismatic",
+			"FromFile": "assets/images/{{TargetWithoutPath}}.png",
+            "Priority": "Low"
+		},
+
+		//////////////////////////////////////
+		// VANILLA TOOL RETEXTURES
+		//////////////////////////////////////
+
+        // Tools
+		//////////////////////////////////////
+		{
+			"LogName": "Retexture tools tilesheet",
+			"Action": "EditImage",
+			"Priority": "Late",
+			"Target": "TileSheets/tools",
+			"FromFile": "assets/images/Tools{{CT_IridiumColour}}.png",
+            "When": {
+                "CT_EnableTools": true
+            }
+		},
+
+        // Panning Animation
+		//////////////////////////////////////
+        {
+			"LogName": "Retexture panning animation - male",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald",
+			"FromFile": "assets/images/PanningAnim{{CT_IridiumColour}}.png",
+            "Priority": "Late",
+			"ToArea": {
+				"X": 96,
+				"Y": 640,
+				"Width": 192,
+				"Height": 32
+			},
+            "When": {
+                "CT_EnableTools": true
+            }
+		},
+        {
+			"LogName": "Retexture panning animation - female",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald",
+			"FromFile": "assets/images/PanningAnim{{CT_IridiumColour}}Girl.png",
+            "Priority": "Late",
+			"ToArea": {
+				"X": 96,
+				"Y": 640,
+				"Width": 192,
+				"Height": 32
+			},
+            "When": {
+                "CT_EnableTools": true
+            }
+		},
+
+        // Scythes
+		//////////////////////////////////////
+		{
+			"LogName": "Retexture iridium scythe",
+			"Action": "EditImage",
+			"Target": "TileSheets/weapons",
+			"FromFile": "assets/images/ScytheIridium{{CT_IridiumColour}}.png",
+            "Priority": "High",
+			"ToArea": {
+				"X": 32,
+				"Y": 128,
+				"Width": 16,
+				"Height": 16
+			},
+            "When": {
+                "CT_EnableScythe": true
+            }
+		},
+		{
+			"LogName": "Retexture gold scythe",
+			"Action": "EditImage",
+			"Target": "TileSheets/weapons",
+			"FromFile": "assets/images/ScytheGold.png",
+            "Priority": "High",
+			"ToArea": {
+				"X": 80,
+				"Y": 96,
+				"Width": 16,
+				"Height": 16
+			},
+            "When": {
+                "CT_EnableScythe": true
+            }
+		},
+		{
+			"LogName": "Retexture base scythe",
+			"Action": "EditImage",
+			"Target": "TileSheets/weapons",
+			"FromFile": "assets/images/ScytheBase.png",
+            "Priority": "High",
+			"ToArea": {
+				"X": 112,
+				"Y": 80,
+				"Width": 16,
+				"Height": 16
+			},
+            "When": {
+                "CT_EnableScythe": true
+            }
+		},
+
+        // Trash cans
+		//////////////////////////////////////
+        {
+			"LogName": "Retexture UI trash cans",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/images/TrashCans{{CT_IridiumColour}}.png",
+            "Priority": "Late",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 96,
+				"Height": 48
+			},
+			"ToArea": {
+				"X": 560,
+				"Y": 96,
+				"Width": 96,
+				"Height": 48
+			},
+            "When": {
+                "CT_EnableTools": true
+            }
+		},
+
+        // Horse Flute - Inventory Icon
+		//////////////////////////////////////
+        {
+			"LogName": "Retexture horse flute - inventory",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/images/Harp{{CT_IridiumColour}}.png",
+            "Priority": "Late",
+			"ToArea": {
+				"X": 368,
+				"Y": 592,
+				"Width": 16,
+				"Height": 16
+			},
+            "When": {
+                "CT_EnableFlute": true
+            }
+		},
+
+        // Horse Flute - Rename
+		//////////////////////////////////////
+        {
+			"LogName": "Rename horse flute",
+			"Action": "EditData",
+			"Target": "Data/Objects",
+            "Priority": "Late",
+			"Fields": {
+				"911": {
+                    "DisplayName": "{{i18n: object.display-name.horse-flute}}",
+                    "Description": "{{i18n: object.description.horse-flute}}"
+                }
+			},
+            "When": {
+                "CT_ChangeFluteName": true,
+            }
+		},
+
+        // Horse Flute - Animation
+		//////////////////////////////////////
+        {
+			"LogName": "Retexture flute animation - male",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_base, Characters/Farmer/farmer_base_bald",
+			"FromFile": "assets/images/HarpAnim{{CT_IridiumColour}}.png",
+            "Priority": "Late",
+			"ToArea": {
+				"X": 224,
+				"Y": 512,
+				"Width": 48,
+				"Height": 32
+			},
+            "When": {
+                "CT_EnableFlute": true
+            }
+		},
+        {
+			"LogName": "Retexture flute animation - female",
+			"Action": "EditImage",
+			"Target": "Characters/Farmer/farmer_girl_base, Characters/Farmer/farmer_girl_base_bald",
+			"FromFile": "assets/images/HarpAnim{{CT_IridiumColour}}Girl.png",
+            "Priority": "Late",
+			"ToArea": {
+				"X": 224,
+				"Y": 512,
+				"Width": 48,
+				"Height": 32
+			},
+            "When": {
+                "CT_EnableFlute": true
+            }
+		},
+
+        // Horse Flute - Change music
+		//////////////////////////////////////
+        {
+			"LogName": "Change horse flute music",
+			"Action": "EditData",
+			"Target": "Data/AudioChanges",
+            "Priority": "Late",
+			"Entries": {
+				"horse_flute": {
+                    "ID": "horse_flute",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/sounds/Harp.ogg}}" ],
+                    "StreamedVorbis": false,
+                }
+			},
+            "When": {
+                "CT_ChangeFluteMusic": true
+            }
+		},
+
+		//////////////////////////////////////
+		// PRISMATIC TOOLS CONTINUED RETEXTURES
+		//////////////////////////////////////
+		{
+			"LogName": "Retexture prismatic tools",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Tools",
+			"Fields": {
+				"PrismaticPickaxe": {
+					"Texture": "{{ModId}}/ToolsPrismatic"
+				},
+				"PrismaticAxe": {
+					"Texture": "{{ModId}}/ToolsPrismatic"
+				},
+				"PrismaticWateringCan": {
+					"Texture": "{{ModId}}/ToolsPrismatic"
+				},
+				"PrismaticHoe": {
+					"Texture": "{{ModId}}/ToolsPrismatic"
+				},
+			},
+            "When": {
+                "CT_PrismaticTools": true,
+                "HasMod": "iargue.PrismaticToolsContinued"
+            }
+		},
+		{
+			"LogName": "Retexture prismatic sprinkler",
+			"Action": "EditData",
+			"Priority": "Late",
+			"Target": "Data/Objects",
+			"Fields": {
+				"PrismaticSprinkler": {
+					"Texture": "{{ModId}}/SprinklerPrismatic"
+				},
+			},
+            "When": {
+                "CT_PrismaticTools": true,
+                "HasMod": "iargue.PrismaticToolsContinued"
+            }
+		},
+
+        //////////////////////////////////////
+		// COLORFUL FISHING ROD COLOURS
+		//////////////////////////////////////
+		{
+			"LogName": "Recolour prismatic rods - green",
+			"Action": "EditData",
+			"Target": "Mods/ColorfulFishingRods",
+            "Priority": "Late",
+			"Entries": {
+				"(T)IridiumRod": { //qualified ID of the rod from Data/Tools
+					"R": 134,
+                    "G": 209,
+                    "B": 137,
+                    "A": 255
+				},
+				"(T)AdvancedIridiumRod": {
+					"R": 134,
+                    "G": 209,
+                    "B": 137,
+                    "A": 255
+				},
+			},
+            "When": {
+                "CT_RodColour": true,
+                "HasMod": "atravita.ColorfulFishingRods",
+                "CT_IridiumColour": "green"
+            }
+		},
+        {
+			"LogName": "Recolour prismatic rods - purple",
+			"Action": "EditData",
+			"Target": "Mods/ColorfulFishingRods",
+            "Priority": "Late",
+			"Entries": {
+				"(T)IridiumRod": { //qualified ID of the rod from Data/Tools
+					"R": 108,
+                    "G": 73,
+                    "B": 171,
+                    "A": 255
+				},
+				"(T)AdvancedIridiumRod": {
+					"R": 108,
+                    "G": 73,
+                    "B": 171,
+                    "A": 255
+				},
+			},
+            "When": {
+                "CT_RodColour": true,
+                "HasMod": "atravita.ColorfulFishingRods",
+                "CT_IridiumColour": "purple"
+            }
+		},
+        {
+			"LogName": "Recolour prismatic rods - pink",
+			"Action": "EditData",
+			"Target": "Mods/ColorfulFishingRods",
+            "Priority": "Late",
+			"Entries": {
+				"(T)IridiumRod": { //qualified ID of the rod from Data/Tools
+					"R": 148,
+                    "G": 96,
+                    "B": 134,
+                    "A": 255
+				},
+				"(T)AdvancedIridiumRod": {
+					"R": 148,
+                    "G": 96,
+                    "B": 134,
+                    "A": 255
+				},
+			},
+            "When": {
+                "CT_RodColour": true,
+                "HasMod": "atravita.ColorfulFishingRods",
+                "CT_IridiumColour": "pink"
+            }
+		},
+        {
+			"LogName": "Recolour prismatic rods - red",
+			"Action": "EditData",
+			"Target": "Mods/ColorfulFishingRods",
+            "Priority": "Late",
+			"Entries": {
+				"(T)IridiumRod": { //qualified ID of the rod from Data/Tools
+					"R": 132,
+                    "G": 40,
+                    "B": 65,
+                    "A": 255
+				},
+				"(T)AdvancedIridiumRod": {
+					"R": 132,
+                    "G": 40,
+                    "B": 65,
+                    "A": 255
+				},
+			},
+            "When": {
+                "CT_RodColour": true,
+                "HasMod": "atravita.ColorfulFishingRods",
+                "CT_IridiumColour": "red"
+            }
+		},
+        {
+			"LogName": "Recolour prismatic rods - blue",
+			"Action": "EditData",
+			"Target": "Mods/ColorfulFishingRods",
+            "Priority": "Late",
+			"Entries": {
+				"(T)IridiumRod": { //qualified ID of the rod from Data/Tools
+					"R": 40,
+                    "G": 111,
+                    "B": 132,
+                    "A": 255
+				},
+				"(T)AdvancedIridiumRod": {
+					"R": 40,
+                    "G": 111,
+                    "B": 132,
+                    "A": 255
+				},
+			},
+            "When": {
+                "CT_RodColour": true,
+                "HasMod": "atravita.ColorfulFishingRods",
+                "CT_IridiumColour": "blue"
+            }
+		},
+
+        //////////////////////////////////////
+		// COMPATIBILITY
+		//////////////////////////////////////
+
+        // Aimon's Fancy Qi Items and Misc Stuff Retexture
+		//////////////////////////////////////
+        {
+            "LogName": "Include Aimon Compat",
+            "Action": "Include",
+            "FromFile": "data/aimon.json",
+            "When": {
+                "HasMod": "Aimon111.FancyQiItemsandMiscStuffRetexture",
+                "CT_EnableFlute": false
+            }
+        }
+	]
+}

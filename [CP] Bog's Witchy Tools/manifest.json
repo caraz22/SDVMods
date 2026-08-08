@@ -1,0 +1,23 @@
+{
+    "Name": "Bog's Witchy Tools",
+    "Author": "BogWytch and Abagaianye",
+    "Version": "2.0.1",
+    "Description": "justa touch of magic and moss for our tools",
+    "UniqueID": "Bogs.WitchyTools",
+    "UpdateKeys": [
+        "Nexus:24078"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "iargue.PrismaticToolsContinued",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "atravita.ColorfulFishingRods",
+            "IsRequired": false
+        }
+    ]
+}

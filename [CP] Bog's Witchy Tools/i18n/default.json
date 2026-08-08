@@ -1,0 +1,47 @@
+{
+    //////////////////////////////////////
+	// CONFIG
+	//////////////////////////////////////
+
+    "config.section.VanillaTools.name": "Vanilla Tools",
+    "config.section.Compat.name": "Mod Compatibility",
+
+    "config.CT_IridiumColour.name": "Iridium Color",
+    "config.CT_IridiumColour.description": "Choose which color iridium tools appear as.",
+    "config.CT_IridiumColour.values.Green": "Green",
+    "config.CT_IridiumColour.values.Purple": "Purple",
+    "config.CT_IridiumColour.values.Pink": "Pink",
+    "config.CT_IridiumColour.values.Red": "Red",
+    "config.CT_IridiumColour.values.Blue": "Blue",
+
+    "config.CT_EnableTools.name": "Enable Tools",
+    "config.CT_EnableTools.description": "Enable the retextured axe, fishing rods, hoe, milk pail, pan, pickaxe, return sceptre, shears, trash can, and watering can.",
+
+    "config.CT_EnableScythe.name": "Enable Scythe",
+    "config.CT_EnableScythe.description": "Enable the retextured scythe.",
+
+    "config.CT_EnableFlute.name": "Enable Horse Flute",
+    "config.CT_EnableFlute.description": "Retexture the horse flute into a harp. Disable to use another mod's retexture instead.",
+
+    "config.CT_ChangeFluteName.name": "Change Horse Flute Name",
+    "config.CT_ChangeFluteName.description": "Whether to rename the horse flute to Mount Harp. Default enabled. When enabled it will change the name even if \"Enable Flute\" is disabled.",
+
+    "config.CT_ChangeFluteMusic.name": "Change Horse Flute Music",
+    "config.CT_ChangeFluteMusic.description": "Whether to change the horse flute sound to a harp sound. Default enabled. Requires a game restart after disabling for changes to take effect. When enabled it will change the sound even if \"Enable Flute\" is disabled.",
+    
+    "config.CT_RodColour.name": "Fishing Rod Recolor",
+    "config.CT_RodColour.description": "Recolor your fishing rod while fishing to match the fishing rod sprite. Does nothing if Colorful Fishing Rods is not installed.",
+
+    "config.CT_PrismaticTools.name": "Bog's Prismatic Tools",
+    "config.CT_PrismaticTools.description": "Enable this to Boggify your prismatic tools. Does nothing if Prismatic Tools Continued is not installed.",
+
+    "config.CT_AimonHarpAnim.name": "Animate Aimon's Harp",
+    "config.CT_AimonHarpAnim.description": "If you're playing with the harp from Aimon's Fancy Qi Items and Misc Stuff Retexture, this will make the harp animation match it. Disable to return the animation to the default vanilla flute playing. Does nothing if Fancy Qi Items and Misc Stuff Retexture is not installed.",
+
+    //////////////////////////////////////
+	// OBJECTS
+	//////////////////////////////////////
+
+    "object.display-name.horse-flute": "Mount Harp",
+    "object.description.horse-flute": "Playing this harp will summon your mount. Only works outdoors."
+}
