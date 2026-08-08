@@ -1,0 +1,23 @@
+{
+    "Format": "2.0.0",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "TileSheets/weapons",
+            "FromFile": "assets/weapons.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "{{Arborsm.ScaleUpUnofficial/Assets}}",
+            "Entries": {
+                "FaithfulWeaponsRemake.Upscale": [
+                    {
+                        "Asset": "TileSheets/weapons",
+                        "Scale": 2
+                    }
+                ]
+            }
+        }
+    ]
+}

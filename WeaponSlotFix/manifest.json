@@ -1,0 +1,16 @@
+{
+  "Name": "Weapon Slot Fix",
+  "Author": "twilightdvsn",
+  "Version": "1.0.0",
+  "Description": "A patch for Jower's Better Sort mod. Takes the weapon with the highest weapon level and puts it in inventory slot #1. The slot number is configurable.",
+  "UniqueID": "twilightdvsn.WeaponSlotFix",
+  "EntryDll": "WeaponSlotFix.dll",
+  "MinimumApiVersion": "4.0.0",
+  //"UpdateKeys": [ "Nexus:1992" ],
+  "Dependencies": [
+    {
+      "UniqueID": "Jower.BetterSort",
+      "IsRequired": true
+    }
+  ]
+}

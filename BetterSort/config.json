@@ -1,0 +1,46 @@
+{
+  "WeaponLevels": [
+    "WeaponLevel"
+  ],
+  "Sorting": [
+    "Weapon",
+    "Pickaxe",
+    "Name=Cheese",
+    "Axe",
+    "Scythe",
+    "Hoe",
+    "Can",
+    "Rod",
+    "Name=Horse Flute",
+    "Name=Mega Bomb",
+    "Name=Bomb",
+    "Name=Cherry Bomb",
+    "Edibility",
+    "-CategoryNum",
+    "Type",
+    "Name",
+    "-Quality",
+    "-Stack",
+    "ItemID"
+  ],
+  "RightClickSorting": [
+    "CategoryNum=-99",
+    "StackValue",
+    "-Name"
+  ],
+  "MiddleClickSorting": [],
+  "AutoStack": true,
+  "ItemLock": {
+    "13": "Name=Warp Totem: Farm"
+  },
+  "RightClickItemLock": {},
+  "MiddleClickItemLock": {},
+  "Controls": {
+    "LeftShortcut": "Q",
+    "LeftShortcut2": "Q",
+    "RightShortcut": "None",
+    "RightShortcut2": "None",
+    "MiddleShortcut": "None",
+    "MiddleShortcut2": "None"
+  }
+}
