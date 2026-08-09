@@ -1,0 +1,18 @@
+{
+  "Name": "Faithful Weapons Remake",
+  "Author": "twilightdvsn",
+  "Version": "1.0.0",
+  "Description": "A remade sprite sheet for herbivoor's Faithful Weapons using Scale Up Unofficial to use the upscaled sprites.",
+  "UniqueID": "twilightdvsn.FaithfulWeaponsRemake",
+  "MinimumApiVersion": "4.0.0",
+  //"UpdateKeys": [ "Nexus:1992" ],
+  "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "Arborsm.ScaleUpUnofficial",
+      "IsRequired": true
+    }
+  ]
+}

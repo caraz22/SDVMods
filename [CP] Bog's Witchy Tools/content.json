@@ -127,7 +127,7 @@ Json: Abagaianye
 			"Action": "EditImage",
 			"Target": "TileSheets/weapons",
 			"FromFile": "assets/images/ScytheIridium{{CT_IridiumColour}}.png",
-            "Priority": "High",
+            "Priority": "Late",
 			"ToArea": {
 				"X": 32,
 				"Y": 128,
@@ -143,7 +143,7 @@ Json: Abagaianye
 			"Action": "EditImage",
 			"Target": "TileSheets/weapons",
 			"FromFile": "assets/images/ScytheGold.png",
-            "Priority": "High",
+            "Priority": "Late",
 			"ToArea": {
 				"X": 80,
 				"Y": 96,
@@ -159,7 +159,7 @@ Json: Abagaianye
 			"Action": "EditImage",
 			"Target": "TileSheets/weapons",
 			"FromFile": "assets/images/ScytheBase.png",
-            "Priority": "High",
+            "Priority": "Late",
 			"ToArea": {
 				"X": 112,
 				"Y": 80,

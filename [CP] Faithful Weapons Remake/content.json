@@ -3,7 +3,6 @@
     "Changes": [
         {
             "Action": "Load",
-            "Priority": "Low",
             "Target": "TileSheets/weapons",
             "FromFile": "assets/weapons.png"
         },
