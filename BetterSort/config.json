@@ -1,9 +1,5 @@
 {
-  "WeaponLevels": [
-    "WeaponLevel"
-  ],
   "Sorting": [
-    "Weapon",
     "Pickaxe",
     "Name=Cheese",
     "Axe",
@@ -16,6 +12,7 @@
     "Name=Bomb",
     "Name=Cherry Bomb",
     "Edibility",
+    "Weapon",
     "-CategoryNum",
     "Type",
     "Name",
