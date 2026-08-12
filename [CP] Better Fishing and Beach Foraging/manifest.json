@@ -1,0 +1,11 @@
+{
+   "Name": "Better Fishing and Beach Foraging",
+   "Author": "cometkins",
+   "Version": "1.1.8",
+   "Description": "Nicer looking fish and beach foraging.",
+   "UniqueID": "cometkins.BetterFishingAndBeachForaging",
+  "UpdateKeys": ["Nexus:6915"],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+   }
+}

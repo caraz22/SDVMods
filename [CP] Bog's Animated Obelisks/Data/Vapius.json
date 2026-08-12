@@ -1,0 +1,65 @@
+{
+	"Changes": [
+	    {
+			"LogName": "Vapius Obelisk",
+			"Action": "EditImage",
+            "Target": "Mods/Lumisteria.MtVapius/mtvapiusobelisk",
+            "FromFile": "assets/MtVapius/MTVapiusObelisk.png",
+			"When": {"HasMod": "Lumisteria.MtVapius"},
+		},
+        {
+			"LogName": "MTV Obelisk Animations",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+			"When": {"HasMod": "Lumisteria.MtVapius"},
+            "Entries": {
+                "Lumisteria.MtVapius_Obelisk": {
+                    "TargetTexture": "Mods/Lumisteria.MtVapius/mtvapiusobelisk",
+                    "TargetRect": {
+                        "X": 0,
+						"Y": 0,
+						"Width": 48,
+						"Height": 128
+                    },
+                    "SourceTexture": "{{InternalAssetKey:assets/MtVapius/AnimatedVMPPortal.png}}:0..35@7",
+				}	
+            }
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"When": {"HasMod": "Lumisteria.MtVapius", "ObeliskCollision": "true"},
+			"Fields": {
+				"Lumisteria.MtVapius_Obelisk":{
+					"DrawShadow": false,
+					"CollisionMap": "OOO\nXOX",
+			}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"When": {"HasMod": "Lumisteria.MtVapius", "Warp Method": "Walk"},
+			"Fields": {
+				"Lumisteria.MtVapius_Obelisk":{
+					"DefaultAction": null,
+					"TileProperties": [
+					{
+						"Id": "{{ModId}}_VapiusWarp",
+						"Name": "TouchAction",
+						"Value": "MagicWarp Lumisteria.MtVapius_Hamlet 16 61",
+						"Layer": "Back",
+						"TileArea": {
+						"X": 1,
+						"Y": 1,
+						"Width": 1,
+						"Height": 1
+						}
+					}
+				]
+			}
+			}
+		}
+		]
+}
+	

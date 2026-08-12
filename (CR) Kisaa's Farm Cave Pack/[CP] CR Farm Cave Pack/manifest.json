@@ -1,0 +1,18 @@
+{
+  "Name": "[CP] CR Farm Cave Pack",
+  "Author": "crystalinerose",
+  "Version": "1.0.0",
+  "Description": "A pack of 5 farm caves, each with unique functionality.",
+  "UniqueID": "crystalinerose.FarmCaves",
+  "MinimumApiVersion": "4.0.0",
+  
+  "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "crystalinerose.Tilesheets",
+      "IsRequired": true
+    }
+  ]
+}

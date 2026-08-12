@@ -1,0 +1,18 @@
+{
+"Name": "Simple Foliage",
+"Author": "Azrashar/itsanette (unofficial update by Morghoula and tophatta)",
+"Version": "2.1.2",
+"Description": "Decorative content pack to replace trees & bushes",
+"UniqueID": "Az.Foliage",
+"MinimumApiVersion": "1.19.1",
+"UpdateKeys": [ "Nexus:20972" ],
+"ContentPackFor": {"UniqueID": "Pathoschild.ContentPatcher",
+                "MinimumVersion": "1.9"
+                },
+"Dependencies": [
+    {
+        "UniqueID":"frozenoj.LBWRecolor",
+        "IsRequired":false
+    }
+]
+}

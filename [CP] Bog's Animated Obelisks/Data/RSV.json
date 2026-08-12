@@ -1,0 +1,64 @@
+{
+	"Changes": [
+		{
+			"LogName": "RSV Obelisk",
+    		"Action": "EditImage",
+    		"Target": "Buildings/RSV Obelisk",
+    		"FromFile": "assets/Ridgeside/RSVObelisk.png",
+			"When": {"HasMod": "Rafseazz.RSVCP"},
+		},
+        {
+			"LogName": "Ridgeside Obelisk Animations",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+			"When": {"HasMod": "Rafseazz.RSVCP"},
+            "Entries": {
+                "RSV_Obelisk": {
+                    "TargetTexture": "Buildings/RSV Obelisk",
+                    "TargetRect": {
+                        "X": 0,
+						"Y": 0,
+						"Width": 48,
+						"Height": 128
+                    },
+                    "SourceTexture": "{{InternalAssetKey:assets/Ridgeside/AnimatedRSVPortal.png}}:0..35@7",
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"When": {"HasMod": "Rafseazz.RSVCP", "ObeliskCollision": "true"},
+			"Fields": {
+				"RSV_Obelisk":{
+					"DrawShadow": false,
+					"CollisionMap": "OOO\nXOX",
+			}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"When": {"HasMod": "Rafseazz.RSVCP", "Warp Method": "Walk"},
+			"Fields": {
+				"RSV_Obelisk":{
+					"DefaultAction": null,
+					"TileProperties": [
+					{
+						"Id": "{{ModId}}_RSVWarp",
+						"Name": "TouchAction",
+						"Value": "MagicWarp Custom_Ridgeside_Ridge 18 10",
+						"Layer": "Back",
+						"TileArea": {
+						"X": 1,
+						"Y": 1,
+						"Width": 1,
+						"Height": 1
+						}
+					}
+				]
+			}
+			}
+		}
+	]
+}

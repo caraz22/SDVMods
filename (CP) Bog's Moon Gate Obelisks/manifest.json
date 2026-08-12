@@ -1,0 +1,11 @@
+{
+   "Name": "Bog's Moon Gate Obelisks",
+   "Author": "BogWyytch",
+   "Version": "1.0",
+   "Description": "stone moon gates as obelisks.",
+   "UniqueID": "Bogs.MoonGateObelisks",
+   "UpdateKeys": [ "Nexus:24448" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+}

@@ -1,0 +1,45 @@
+{
+	"Name": "[CP] Bog's Animated Obelisks",
+	"Author": "KoalaNet",
+	"Version": "2.4",
+	"UniqueID": "KoalaNet.BogsAnimatedObelisks",
+	"Description": "Animated Bog's Moon Gate Obelisks",
+	"UpdateKeys": ["Nexus:36389"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+	},
+	"Dependencies":[
+	{
+		"UniqueID": "spacechase0.SpaceCore",
+		"IsRequired": "true"
+	},
+	{
+		"UniqueID": "Bogs.MoonGateObelisks",
+		"IsRequired": "true"
+	},
+	{
+		"UniqueID": "Bogs.FarmBuildings",
+		"IsRequired": "false"
+	},
+	{
+		"UniqueID": "Rafseazz.RSVCP",
+		"IsRequired": "false"
+	},
+	{
+		"UniqueID": "Lumisteria.MtVapius",
+		"IsRequired": "false"
+	},
+	{
+		"UniqueID": "DTZ.DowntownZuzuCP",
+		"IsRequired": "false"
+	},
+	{
+		"UniqueID": "Lemurkat.EastScarp",
+		"IsRequired": "false"
+	},
+	{
+		"UniqueID": "maxvollmer.deepwoodsmod",
+		"IsRequired": "false"
+	}
+	]
+}

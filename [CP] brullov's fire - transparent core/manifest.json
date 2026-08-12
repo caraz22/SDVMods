@@ -1,0 +1,18 @@
+{
+   "Name": "[CP] brullov Fire Animations",
+   "Author": "Asterisk555 and brullov",
+   "Version": "1.0",
+   "Description": "Changes Fire Animations",
+   "UniqueID": "A555.CP.brullovFireMod",
+   "UpdateKeys": [ "Nexus:11846@Fire" ],
+   "MinimumApiVersion": "1.6",
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+   "Dependencies": [
+   {
+      "UniqueID": "DustBeauty.1.4miscrecolour",
+      "IsRequired": false
+   },
+]
+}

@@ -1,0 +1,58 @@
+{
+	"Changes": [
+        {
+			"LogName": "Obelisk Building Animations",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "Island Obelisk": {
+                    "TargetTexture": "Buildings/Island Obelisk",
+                    "TargetRect": {
+                        "X": 0,
+						"Y": 0,
+						"Width": 48,
+						"Height": 128
+                    },
+                    "SourceTexture": "{{InternalAssetKey:assets/Island/AnimatedIslandPortal_{{season}}.png}}:0..23@6"
+                }
+			}
+		},
+		{
+			"LogName": "Vanilla COllision Edits",
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"When": {"ObeliskCollision": "true"},
+			"Fields": {
+				"Island Obelisk":{
+					"DrawShadow": false,
+					"CollisionMap": "OOO\nXOX",
+			}
+			}
+		},
+		{
+			"LogName": "Vanilla Walk Warp Edits",
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"When": {"Warp Method": "Walk"},
+			"Fields": {
+				"Island Obelisk":{
+					"DefaultAction": null,
+					"TileProperties": [
+					{
+						"Id": "{{ModId}}_IslandWarp",
+						"Name": "TouchAction",
+						"Value": "MagicWarp IslandSouth {{Island Statue}}",
+						"Layer": "Back",
+						"TileArea": {
+						"X": 1,
+						"Y": 1,
+						"Width": 1,
+						"Height": 1
+						}
+					}
+				]
+			}
+		}
+		}
+		]
+}

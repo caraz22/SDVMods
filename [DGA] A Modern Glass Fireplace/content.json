@@ -1,0 +1,40 @@
+[
+   {
+      "$ItemType": "Furniture",
+      "ID": "ModGlassFire4",
+      "Type": "Fireplace",
+      "Configurations": [
+         {
+            "Texture": "assets/Hot_Glass4.png:0",  //wood
+            "DisplaySize": { "X": 3, "Y": 4 },
+            "CollisionHeight": 1
+         },
+         {
+            "Texture": "assets/Hot_Glass4.png:1",  //black granite
+            "DisplaySize": { "X": 3, "Y": 4 },
+            "CollisionHeight": 1
+         },
+         {
+            "Texture": "assets/Hot_Glass4.png:2",  //white marble
+            "DisplaySize": { "X": 3, "Y": 4 },
+            "CollisionHeight": 1
+         },
+         {
+            "Texture": "assets/Hot_Glass4.png:3",  //green bamboo quartzite
+            "DisplaySize": { "X": 3, "Y": 4 },
+            "CollisionHeight": 1
+         }
+
+      ]
+   },
+   {
+    "$ItemType": "ShopEntry",
+    "ShopId": "Blacksmith",
+    "Cost": 5025,
+    "Item": { 
+	       "Type": "DGAItem",
+	       "Value": "ch0op.ModernFireplace.DGA/ModGlassFire4" 
+    }
+
+  }
+]

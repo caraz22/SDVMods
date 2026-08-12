@@ -1,0 +1,18 @@
+{
+  "Name": "CR Farm Cave Pack FTM",
+  "Author": "crystalinerose",
+  "Version": "1.0.0",
+  "UniqueID": "crystalinerose.FarmCavesFTM",
+  "MinimumApiVersion": "4.0.0",
+  "ContentPackFor": {
+    "UniqueID": "Esca.FarmTypeManager",
+    "MinimumVersion": "1.10.1"
+  },
+
+  "Dependencies": [
+    {
+      "UniqueID": "crystalinerose.FarmCaves",
+      "IsRequired": true
+    }
+  ]
+}

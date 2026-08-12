@@ -1,0 +1,41 @@
+{
+	"Changes": [
+		{
+			"LogName": "Deep Woods Obelisk",
+			"Action": "EditImage",
+			"Target": "Buildings/Woods Obelisk",
+			"FromFile": "assets/DeepWoods/WoodsObelisk.png",
+			"When": {"HasMod": "maxmakesmods.deepwoodsmod"}
+		},
+		{
+			"LogName": "DeepWoods Obelisk Animations",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+			"When": {"HasMod": "maxmakesmods.deepwoodsmod"},
+            "Entries": {
+                "Deep Woods Obelisk": {
+                    "TargetTexture": "Buildings/Woods Obelisk",
+                    "TargetRect": {
+                        "X": 0,
+						"Y": 0,
+						"Width": 48,
+						"Height": 128
+                    },
+                    "SourceTexture": "{{InternalAssetKey:assets/DeepWoods/AnimatedWoodsPortal.png}}:0..35@7"
+                }
+            }
+        },
+		{
+			"Action": "EditData",
+			"When": {"HasMod": "maxmakesmods.deepwoodsmod", "ObeliskCollision": "true"},
+			"Target": "Data/Buildings",
+			"Fields": {
+				"Woods Obelisk":{
+					"DrawShadow": false,
+					"CollisionMap": "OOO\nXOX",
+			}
+			}
+		}
+		]
+}
+	

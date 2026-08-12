@@ -1,0 +1,30 @@
+{
+    "Name": "crystalinerose Tilesheets",
+    "Author": "crystalinerose",
+    "Version": "1.3.2",
+    "Description": "Outdoor essentials tilesheet by Kisaa (crystalinerose).",
+    "UniqueID": "crystalinerose.Tilesheets",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": [ "Nexus:28434" ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies":[
+        {
+            "UniqueID":"grapeponta.VibrantPastoralRecolor",
+            "IsRequired":false
+        },
+        {
+            "UniqueID":"DaisyNiko.EarthyRecolour",
+            "IsRequired":false
+        },
+        {
+            "UniqueID":"Lita.StarblueValleyUnofficial",
+            "IsRequired":false
+        },
+        {
+            "UniqueID":"Neopffe.BetterWater",
+            "IsRequired":false
+        }
+    ]
+}

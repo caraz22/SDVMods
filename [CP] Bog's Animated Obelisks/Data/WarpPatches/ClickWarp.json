@@ -1,0 +1,10 @@
+{
+	"Changes": [
+		{
+			"LogName": "Obelisk Map Animation",
+			"Action": "EditMap",
+			"Target": "Maps/Island_W_Obelisk",
+			"FromFile": "assets/Farm/Island_W_Portal.tmx",
+		},
+		]
+}

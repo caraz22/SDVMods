@@ -1,0 +1,12 @@
+{
+    "Name": "[DGA] Modern Glass Fireplace",
+    "Author": "Ch0opera",
+    "Version": "1.1.0",
+    "Description": "Adds a new glass fireplace via DGA",
+    "UniqueID": "ch0op.ModernFireplace.DGA",
+    "ContentPackFor": { "UniqueID": "spacechase0.DynamicGameAssets" },
+    "UpdateKeys": ["Nexus: 16573"],
+
+    "DGA.FormatVersion": 2,
+    "DGA.ConditionsFormatVersion": "1.23.0"
+}

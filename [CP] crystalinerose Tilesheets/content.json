@@ -1,0 +1,156 @@
+{
+    "Format": "2.3.0",
+    "ConfigSchema": {
+      //recolor selection
+      "Recolor Selection": {
+        "AllowValues": "Off, Vanilla, Vibrant Pastoral, Earthy, Starblue, Wittily",
+        "Default": "Off",
+        "Description": "Manually choose recolor option (off: auto detect recolor used).",
+        "Section": "Recolors"
+      },
+      "Vibrant Pastoral Fall Variant": {
+        "AllowValues": "Green, Orange",
+        "Default": "Green",
+        "Description": "Toggles VPR fall color variant.",
+        "Section": "Recolors"
+      },
+
+      // recolor compatibility
+
+      "Better Water 2 Color": {
+        "AllowValues": "Auto, Off, Blue, Bright, Dark, Teal",
+        "Default": "Auto",
+        "Description": "Toggles compatibility with Better Water 2 water color options (off: you don't use BW2).",
+        "Section": "Compatibility"
+      }
+    },
+
+    "DynamicTokens": [
+      // recolor tokens
+      {
+        "Name": "recolor",
+        "Value": "Vanilla",
+        "When": { "Recolor Selection":  "Off, Vanilla" }
+      },
+      {
+        "Name": "recolor",
+        "Value": "VPR",
+        "When": {
+          "HasMod": "grapeponta.VibrantPastoralRecolor",
+          "Recolor Selection":  "Off, Vibrant Pastoral"
+        }
+      },
+      {
+        "Name": "recolor",
+        "Value": "Vanilla",
+        "When": {
+          "HasMod |contains= grapeponta.VibrantPastoralRecolor": false,
+          "Recolor Selection":  "Vibrant Pastoral"
+        }
+      },
+      {
+        "Name": "recolor",
+        "Value": "Earthy",
+        "When": {
+          "HasMod": "DaisyNiko.EarthyRecolour",
+          "Recolor Selection":  "Off, Earthy"
+        }
+      },
+      {
+        "Name": "recolor",
+        "Value": "Vanilla",
+        "When": {
+          "HasMod |contains= DaisyNiko.EarthyRecolour": false,
+          "Recolor Selection":  "Earthy"
+        }
+      },
+      {
+        "Name": "recolor",
+        "Value": "Starblue",
+        "When": {
+          "HasMod": "Lita.StarblueValleyUnofficial",
+          "Recolor Selection":  "Off, Starblue"
+        }
+      },
+      {
+        "Name": "recolor",
+        "Value": "Vanilla",
+        "When": {
+          "HasMod |contains= Lita.StarblueValleyUnofficial": false,
+          "Recolor Selection":  "Starblue"
+        }
+      },
+
+      // better water 2 tokens
+      {
+        "Name": "betterwater",
+        "Value": "{{Spiderbuttons.CMCT/Config: Neopffe.BetterWater, Color}}",
+        "When": {
+          "HasMod": "Neopffe.BetterWater, Spiderbuttons.CMCT",
+          "Better Water 2 Color": "Auto"
+        }
+      },
+      {
+        "Name": "betterwater",
+        "Value": "{{Better Water 2 Color}}",
+        "When": {
+          "HasMod": "Neopffe.BetterWater",
+          "Better Water 2 Color |contains= Auto, Off":  false
+        }
+      }
+    ],
+
+    "Changes": [
+      // outdoor seasonal options
+      {
+        "Action": "Load",
+        "Target": "Maps/spring_CR_outdoor, Maps/summer_CR_outdoor, Maps/fall_CR_outdoor, Maps/winter_CR_outdoor,",
+        "FromFile": "assets/{{recolor}}/{{TargetWithoutPath}}.png"
+      },
+      {
+        "Action": "Load",
+        "Target": "Maps/spring_CR_extras, Maps/summer_CR_extras, Maps/fall_CR_extras, Maps/winter_CR_extras,",
+        "FromFile": "assets/{{recolor}}/{{TargetWithoutPath}}.png"
+      },
+
+      // VPR green fall edit
+      {
+        "Action": "EditImage",
+        "Target": "Maps/fall_CR_outdoor",
+        "FromFile": "assets/{{recolor}}/fall_green_CR_outdoor.png",
+        "When": {
+          "Vibrant Pastoral Fall Variant": "Green",
+          "recolor": "VPR",
+          "HasMod": "grapeponta.VibrantPastoralRecolor"
+        }
+      },
+      {
+        "Action": "EditImage",
+        "Target": "Maps/fall_CR_extras",
+        "FromFile": "assets/{{recolor}}/fall_green_CR_extras.png",
+        "When": {
+          "Vibrant Pastoral Fall Variant": "Green",
+          "recolor": "VPR",
+          "HasMod": "grapeponta.VibrantPastoralRecolor"
+        }
+      },
+
+      // mines load
+      {
+        "Action": "Load",
+        "Target": "Maps/CR_mines, Maps/CR_minefrost",
+        "FromFile": "assets/{{recolor}}/{{TargetWithoutPath}}.png"
+      },
+
+      // better water edit
+
+      {
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_CR_outdoor",
+        "FromFile": "assets/BetterWater/{{betterwater}}/{{season}}_CR_outdoor.png",
+        "FromArea": { "X": 256, "Y": 0, "Width": 208, "Height": 96},
+        "ToArea": { "X": 256, "Y": 0, "Width": 208, "Height": 96},
+        "PatchMode": "Overlay"
+      }
+    ]
+}

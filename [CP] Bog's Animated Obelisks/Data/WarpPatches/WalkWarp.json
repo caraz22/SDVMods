@@ -1,0 +1,37 @@
+{
+	"Changes": [
+		{
+			"LogName": "Obelisk Map Animation",
+			"Action": "EditMap",
+			"Target": "Maps/Island_W_Obelisk",
+			"FromFile": "assets/Farm/Island_W_Portal.tmx",
+		},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Island_W_Obelisk",
+		"MapTiles": [
+		{
+			"Position": {"X": 1, "Y": 8},
+			"Layer": "Back",
+			"SetProperties": {
+				"TouchAction": "MagicWarp Farm {{Farm Statue}}"
+			}
+		},
+		{
+			"Position": {"X": 0, "Y": 8},
+			"Layer": "Buildings",
+			"SetProperties": {
+				"Action": null
+				}
+		},
+		{
+		"Position": {"X": 2, "Y": 8},
+		"Layer": "Buildings",
+		"SetProperties": {
+			"Action": null
+			}
+		},
+		]
+	}
+	]
+}

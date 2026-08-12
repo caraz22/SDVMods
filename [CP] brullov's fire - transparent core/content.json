@@ -1,0 +1,27 @@
+{
+	"Format": "1.19.0",
+
+	"Changes": [
+			{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/fireplace.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 11 },
+			"ToArea": { "X": 276, "Y": 1985, "Width": 48, "Height": 11 },
+			},
+			{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/candle.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 55, "Height": 8 },
+			"ToArea": { "X": 276, "Y": 1965, "Width": 55, "Height": 8 },
+			},
+			{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/blue_candle.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 53, "Height": 8 },
+			"ToArea": { "X": 537, "Y": 1945, "Width": 53, "Height": 8 },
+			}
+	]
+}

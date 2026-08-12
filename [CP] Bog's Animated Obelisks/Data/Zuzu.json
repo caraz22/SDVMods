@@ -1,0 +1,65 @@
+{
+	"Changes": [
+		{
+			"LogName": "DTZ Obelisk",
+    		"Action": "EditImage",
+    		"Target": "Buildings/Zuzu Obelisk",
+    		"FromFile": "assets/Zuzu/ZuzuObelisk.png",
+			"When": {"HasMod": "DTZ.DowntownZuzuCP"},
+		},
+        {
+			"LogName": "Zuzu Obelisk Animations",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+			"When": {"HasMod": "DTZ.DowntownZuzuCP"},
+            "Entries": {
+                "DTZ.DowntownZuzuCP_Obelisk": {
+                    "TargetTexture": "Buildings/Zuzu Obelisk",
+                    "TargetRect": {
+                        "X": 0,
+						"Y": 0,
+						"Width": 48,
+						"Height": 128
+                    },
+                    "SourceTexture": "{{InternalAssetKey:assets/Zuzu/AnimatedDTZPortal.png}}:0..35@7"
+                }
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"When": {"HasMod": "DTZ.DowntownZuzuCP", "ObeliskCollision": "true"},
+			"Fields": {
+				"DTZ.DowntownZuzuCP_Obelisk":{
+					"DrawShadow": false,
+					"CollisionMap": "OOO\nXOX",
+			}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"When": {"HasMod": "DTZ.DowntownZuzuCP", "Warp Method": "Walk"},
+			"Fields": {
+				"DTZ.DowntownZuzuCP_Obelisk":{
+					"DefaultAction": null,
+					"TileProperties": [
+					{
+						"Id": "{{ModId}}_ZuzuWarp",
+						"Name": "TouchAction",
+						"Value": "MagicWarp Custom_DTZ_ZuzuCity1 20 23",
+						"Layer": "Back",
+						"TileArea": {
+						"X": 1,
+						"Y": 1,
+						"Width": 1,
+						"Height": 1
+						}
+					}
+				]
+			}
+			}
+		}
+		]
+}
+	

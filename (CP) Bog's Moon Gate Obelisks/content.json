@@ -1,0 +1,55 @@
+{
+	"Format": "2.0.0",
+
+	"Changes": [
+
+   {
+          "Action": "EditImage",
+          "Target": "Buildings/Desert Obelisk",
+          "FromFile": "assets/{{season}}Desert Obelisk.png",
+		  "PatchMode": "replace",
+       },
+  {
+          "Action": "EditImage",
+          "Target": "Buildings/Earth Obelisk",
+          "FromFile": "assets/{{season}}Earth Obelisk.png",
+		  "PatchMode": "replace",
+       },
+ {
+          "Action": "EditImage",
+          "Target": "Buildings/Water Obelisk",
+          "FromFile": "assets/{{season}}Water Obelisk.png",
+		  "PatchMode": "replace",
+       },
+ {
+          "Action": "EditImage",
+          "Target": "Buildings/Island Obelisk",
+          "FromFile": "assets/{{season}}Island Obelisk.png",
+		  "PatchMode": "replace",
+       },
+ {
+          "Action": "EditImage",
+          "Target": "Maps/Farm Obelisk",
+          "FromFile": "assets/Farm Obelisk.png",
+		  "PatchMode": "replace",
+       },
+{
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "Fields": {
+                "Earth Obelisk": {
+                    "DrawShadow": false
+                },
+                "Water Obelisk": {
+                    "DrawShadow": false
+                },
+                "Desert Obelisk": {
+                    "DrawShadow": false
+                },
+                "Island Obelisk": {
+                    "DrawShadow": false
+                }
+            }
+        }
+  ],
+}

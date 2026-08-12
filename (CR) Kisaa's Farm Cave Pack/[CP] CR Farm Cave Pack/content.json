@@ -1,0 +1,365 @@
+{
+  "Format": "2.3.0",
+  "ConfigSchema": {
+    //farm cave type
+    "Farm Cave Type": {
+      "AllowValues": "Off, Green, Quarry, Springs, Cove, Fantasy",
+      "Default": "Off",
+      "Description": "Changes farm cave type (beware of placed items clipping when changing types mid-save!)",
+      "Section": "Tweaks"
+    },
+
+    //appearance
+    "Foliage Recolor": {
+      "AllowValues": "Vanilla, Desaturated, Bright",
+      "Default": "Vanilla",
+      "Description": "Changes foliage color of Fantasy Cave.",
+      "Section": "Appearance"
+    }
+  },
+
+    "Changes": [
+      // foliage tilesheet load
+      {
+        "Action": "Load",
+        "Target": "Maps/foliage",
+        "FromFile": "assets/{{Foliage Recolor}}/foliage.png",
+        "When": {
+          "Farm Cave Type": "Fantasy"
+        }
+      },
+
+      // custom farm cave load
+      {
+        "Action": "Load",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/FarmCavePack_Green.tmx",
+        "When": {
+          "Farm Cave Type": "Green"
+        }
+      },
+      {
+        "Action": "Load",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/FarmCavePack_Quarry.tmx",
+        "When": {
+          "Farm Cave Type": "Quarry"
+        }
+      },
+      {
+        "Action": "Load",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/FarmCavePack_Springs.tmx",
+        "When": {
+          "Farm Cave Type": "Springs"
+        }
+      },
+      {
+        "Action": "Load",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/FarmCavePack_Cove.tmx",
+        "When": {
+          "Farm Cave Type": "Cove"
+        }
+      },
+      {
+        "Action": "Load",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/FarmCavePack_Fantasy.tmx",
+        "When": {
+          "Farm Cave Type": "Fantasy"
+        }
+      },
+
+      // detect cave type
+      {
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "Fields": {
+          "FarmCave": {
+            "CustomFields": {
+              "{{ModId}}/FarmCaveType": "{{Farm Cave Type}}"
+            }
+          }
+        },
+        "When": {
+          "Farm Cave Type": "Green, Quarry, Springs, Cove, Fantasy"
+        },
+        "Update": "OnLocationChange"
+      },
+
+      // green cave
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/FarmCavePack_Green.tmx",
+        "MapProperties": {
+          "indoorWater": "true",
+          "BrookSounds": "26 4 0"
+        },
+        "When": {
+          "Farm Cave Type": "Green"
+        }
+      },
+      {
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "TargetField": [ "FarmCave", "Fish" ],
+        "When": {
+          "Farm Cave Type": "Green"
+        },
+        "Entries": {
+          "FCGreen_Driftwood": {
+            "Chance": 0.45,
+            "Season": null,
+            "FishAreaId": null,
+            "Precedence": 0,
+            "Id": "(O)169",
+            "ItemId": "(O)169"
+          },
+          "FCGreen_Trash": {
+            "Chance": 0.15,
+            "Season": null,
+            "FishAreaId": null,
+            "Precedence": 0,
+            "Id": "(O)168",
+            "ItemId": "(O)168"
+          },
+          "FCGreen_Newspaper": {
+            "Chance": 0.15,
+            "Season": null,
+            "FishAreaId": null,
+            "Precedence": 0,
+            "Id": "(O)172",
+            "ItemId": "(O)172"
+          },
+          "FCGreen_Algae": {
+            "Chance": 0.25,
+            "Season": null,
+            "FishAreaId": null,
+            "Precedence": 0,
+            "Id": "(O)153",
+            "ItemId": "(O)153"
+          }
+        }
+      },
+
+      // quarry cave
+      {
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "TargetField": [ "FarmCave" ],
+        "When": {
+          "Farm Cave Type": "Quarry"
+        },
+        "Entries": {
+          "ArtifactSpots": [
+            {
+              "Id": "Coal",
+              "ItemId": "(O)382",
+              "Chance": 0.4,
+              "MinStack": 1,
+              "MaxStack": 2,
+              "Precedence": 0
+            },
+            {
+              "Id": "Clay",
+              "ItemId": "(O)330",
+              "Chance": 0.25,
+              "MinStack": 1,
+              "MaxStack": 3,
+              "Precedence": 0
+            },
+            {
+              "Id": "Cave Carrot",
+              "ItemId": "(O)78",
+              "Chance": 0.3,
+              "MinStack": 1,
+              "MaxStack": 3,
+              "Precedence": 0
+            },
+            {
+              "Id": "Dwarf Scroll II",
+              "ItemId": "(O)97",
+              "Chance": 0.05,
+              "MinStack": 1,
+              "MaxStack": 1,
+              "Precedence": 0
+            },
+            {
+              "Id": "Stone",
+              "ItemId": "(O)390",
+              "Chance": 0.8,
+              "MinStack": 1,
+              "MaxStack": 3,
+              "Precedence": 0
+            }
+          ]
+        }
+      },
+
+      // springs cave
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/FarmCavePack_Springs.tmx",
+        "MapProperties": {
+          "indoorWater": "true",
+          "BrookSounds": "21 4 0"
+        },
+        "When": {
+          "Farm Cave Type": "Springs"
+        }
+      },
+      {
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "TargetField": [ "FarmCave", "Fish" ],
+        "When": {
+          "Farm Cave Type": "Springs"
+        },
+        "Entries": {
+          "FCSprings_RiverFish": {
+            "Chance": 0.7,
+            "Season": null,
+            "FishAreaId": null,
+            "Precedence": 0,
+            "Id": "LOCATION_FISH Town BOBBER_X BOBBER_Y WATER_DEPTH",
+            "ItemId": "LOCATION_FISH Town BOBBER_X BOBBER_Y WATER_DEPTH"
+          },
+          "FCSprings_CaveJelly": {
+            "Chance": 0.15,
+            "Season": null,
+            "FishAreaId": null,
+            "Precedence": 0,
+            "Id": "(O)CaveJelly",
+            "ItemId": "(O)CaveJelly"
+          }
+        }
+      },
+
+      // cove cave
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/FarmCavePack_Cove.tmx",
+        "MapProperties": {
+          "indoorWater": "true"
+        },
+        "When": {
+          "Farm Cave Type": "Cove"
+        }
+      },
+      {
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "TargetField": [ "FarmCave" ],
+        "When": {
+          "Farm Cave Type": "Cove"
+        },
+        "Entries": {
+          "CanPlantHere": false,
+          "ArtifactSpots": [
+            {
+              "Id": "Dried Starfish",
+              "ItemId": "(O)116",
+              "Chance": 0.3,
+              "MinStack": 1,
+              "MaxStack": 1,
+              "Precedence": 0
+            },
+            {
+              "Id": "Glass Shards",
+              "ItemId": "(O)118",
+              "Chance": 0.3,
+              "MinStack": 1,
+              "MaxStack": 2,
+              "Precedence": 0
+            },
+            {
+              "Id": "Clay",
+              "ItemId": "(O)330",
+              "Chance": 0.7,
+              "MinStack": 1,
+              "MaxStack": 3,
+              "Precedence": 0
+            },
+            {
+              "Id": "Nautilus Fossil",
+              "ItemId": "(O)586",
+              "Chance": 0.1,
+              "MinStack": 1,
+              "MaxStack": 1,
+              "Precedence": 0
+            }
+          ]
+        }
+      },
+
+      // fantasy cave
+      {
+        "Action": "EditMap",
+        "Target": "Maps/FarmCave",
+        "FromFile": "assets/FarmCavePack_Fantasy.tmx",
+        "MapProperties": {
+          "indoorWater": "true",
+          "CanCaskHere": "true",
+          "BrookSounds": "18 4 0",
+          "TreatAsOutdoors": "true"
+        },
+        "When": {
+          "Farm Cave Type": "Fantasy"
+        }
+      },
+      {
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "TargetField": [ "FarmCave", "Fish" ],
+        "When": {
+          "Farm Cave Type": "Fantasy"
+        },
+        "Entries": {
+          "FCFantasy_Ghostfish": {
+            "Chance": 0.5,
+            "Season": null,
+            "FishAreaId": null,
+            "Precedence": 0,
+            "Id": "(O)156",
+            "ItemId": "(O)156"
+          },
+          "FCFantasy_Stonefish": {
+            "Chance": 0.15,
+            "Season": null,
+            "FishAreaId": null,
+            "Precedence": 0,
+            "Id": "(O)158",
+            "ItemId": "(O)158"
+          },
+          "FCFantasy_Algae": {
+            "Chance": 0.2,
+            "Season": null,
+            "FishAreaId": null,
+            "Precedence": 0,
+            "Id": "(O)157",
+            "ItemId": "(O)157"
+          },
+          "FCFantasy_CaveJelly": {
+            "Chance": 0.1,
+            "Season": null,
+            "FishAreaId": null,
+            "Precedence": 0,
+            "Id": "(O)CaveJelly",
+            "ItemId": "(O)CaveJelly"
+          },
+          "FCFantasy_VoidSalmon": {
+            "Chance": 0.01,
+            "Season": null,
+            "FishAreaId": null,
+            "Precedence": 0,
+            "Id": "(O)795",
+            "ItemId": "(O)795"
+          }
+        }
+      }
+    ]
+}

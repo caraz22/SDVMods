@@ -1,0 +1,59 @@
+{
+	"Changes": [
+        {
+			"LogName": "Obelisk Building Animations",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "Earth Obelisk": {
+                    "TargetTexture": "Buildings/Earth Obelisk",
+                    "TargetRect": {
+                        "X": 0,
+						"Y": 0,
+						"Width": 48,
+						"Height": 128
+                    },
+                    "SourceTexture": "{{InternalAssetKey:assets/Earth/AnimatedEarthPortal_{{season}}.png}}:0..23@6"
+                }
+			}
+		},
+		{
+			"LogName": "Vanilla COllision Edits",
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"When": {"ObeliskCollision": "true"},
+			"Fields": {
+				"Earth Obelisk":{
+					"DrawShadow": false,
+					"CollisionMap": "OOO\nXOX",
+			}
+			}
+		},		
+		{
+			"LogName": "Vanilla Walk Warp Edits",
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"When": {"Warp Method": "Walk"},
+			"Fields": {
+				"Earth Obelisk":{
+					"DefaultAction": null,
+					"TileProperties": [
+					{
+						"Id": "{{ModId}}_EarthWarp",
+						"Name": "TouchAction",
+						"Value": "MagicWarp Mountain {{Mountain Statue}}",
+						"Layer": "Back",
+						"TileArea": {
+						"X": 1,
+						"Y": 1,
+						"Width": 1,
+						"Height": 1
+						}
+					}
+				]
+			}
+		}
+		}
+		]
+}
+	

@@ -1,0 +1,11 @@
+{
+	"Format": "2.0.0",
+	"Changes": [
+        {
+	     "Action": "EditImage",
+	     "PatchMode": "Replace",
+	     "Target": "Buildings/houses",
+	     "FromFile": "assets/{{season}}/ProphetFarmhouse.png",
+        },   
+    ]
+}

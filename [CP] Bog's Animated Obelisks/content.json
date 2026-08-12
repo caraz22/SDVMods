@@ -1,0 +1,143 @@
+{
+	"Format": "2.7.0",
+	"ConfigSchema": {
+		//Obelisk Select section
+		"FarmObelisk": {
+			"AllowValues": "true,false",
+			"Default": "true",
+			"Section": "Obelisk Select"
+		},
+		"EarthObelisk": {
+			"AllowValues": "true,false",
+			"Default": "true",
+			"Section": "Obelisk Select"
+		},
+		"WaterObelisk": {
+			"AllowValues": "true,false",
+			"Default": "true",
+			"Section": "Obelisk Select"
+		},
+		"DesertObelisk": {
+			"AllowValues": "true,false",
+			"Default": "true",
+			"Section": "Obelisk Select"
+		},
+		"IslandObelisk": {
+			"AllowValues": "true,false",
+			"Default": "true",
+			"Section": "Obelisk Select"
+		},
+		"RidgesideObelisk": {
+			"AllowValues": "true,false",
+			"Default": "true",
+			"Section": "Obelisk Select"
+		},
+		"VMVapiusObelisk": {
+			"AllowValues": "true,false",
+			"Default": "true",
+			"Section": "Obelisk Select"
+		},
+		"DTZuzuObelisk": {
+			"AllowValues": "true,false",
+			"Default": "true",
+			"Section": "Obelisk Select"
+		},
+		"EastScarpObelisk": {
+			"AllowValues": "true,false",
+			"Default": "true",
+			"Section": "Obelisk Select"
+		},
+		"DeepWoodsObelisk": {
+			"AllowValues": "true,false",
+			"Default": "true",
+			"Description": "Will change the obelisk texture, but walking through is not currently functional",
+			"Section": "Obelisk Select"
+		},
+		//Warp Config section
+		"ObeliskCollision": {
+			"AllowValues": "true,false",
+			"Default": "true",
+			"Description": "Disable this and change Warp Method to Click to remove walking through portals; fixes incompatability with other mods that edit warping",
+			"Section": "Warp Config"
+		},
+		"Farm Statue": {
+			"Default": "48 7",
+			"Section": "Warp Config",
+		},
+		"Mountain Statue": {
+			"Default": "31 20",
+			"Section": "Warp Config"
+		},
+		"Desert Statue": {
+			"Default": "35 43",
+			"Section": "Warp Config"
+		},
+		"Beach Statue": {
+			"Default": "20 4",
+			"Section": "Warp Config"
+		},
+		"Island Statue": {
+			"Default": "11 11",
+			"Section": "Warp Config"
+		},
+		"Warp Method": {
+			"AllowValues": "Walk, Click",
+			"Default": "Walk",
+			"Description": "Choose to walk through or click to warp. Save must be re-loaded for Farm Obelisk to change"
+		},
+	},
+	"Changes": [
+//Obelisk Collision Edits
+//Obelisk Warp Edits
+		{
+			"Action": "Include",
+			"FromFile": "Data/WarpPatches/{{Warp Method}}Warp.json",
+			"When": {"FarmObelisk": "true"}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Earth.json",
+			"When": {"EarthObelisk": "true"}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Water.json",
+			"When": {"WaterObelisk": "true"}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Desert.json",
+			"When": {"DesertObelisk": "true"}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Island.json",
+			"When": {"IslandObelisk": "true"}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/RSV.json",
+			"When": {"RidgesideObelisk": "true"}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Vapius.json",
+			"When": {"VMVapiusObelisk": "true"}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Zuzu.json",
+			"When": {"DTZuzuObelisk": "true"}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/ES.json",
+			"When": {"EastScarpObelisk": "true"}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Data/Woods.json",
+			"When": {"DeepWoodsObelisk": "true"}
+		},
+	]
+}

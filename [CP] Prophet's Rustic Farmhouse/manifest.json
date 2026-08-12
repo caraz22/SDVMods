@@ -1,0 +1,11 @@
+{
+    "Name": "(CP) Prophet's Rustic Farmhouse",
+    "Author": "Prophet",
+    "Version": "1.0",
+    "Description": "Content patcher version of A Rustic Cabin",
+    "UniqueID": "LProphet.RusticFarmhouseCP",
+    "ContentPackFor": {
+         "UniqueID": "Pathoschild.ContentPatcher",
+         "MinimumVersion": "2.0.0"
+    }
+}

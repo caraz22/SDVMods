@@ -1,0 +1,66 @@
+{
+	"Changes": [
+		{
+			"LogName": "ES Obelisk",
+    		"Action": "EditImage",
+    		"Target": "Buildings/Scarp_Obelisk",
+    		"FromFile": "assets/EastScarp/EastScarpObelisk.png",
+			"Priority": "Late",
+			"When": {"HasMod": "Lemurkat.EastScarp"},
+		},
+		{
+			"LogName": "East Scarp Obelisk Animations",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+			"When": {"HasMod": "Lemurkat.EastScarp"},
+            "Entries": {
+                "Scarp Obelisk": {
+                    "TargetTexture": "Buildings/Scarp_Obelisk",
+                    "TargetRect": {
+                        "X": 0,
+						"Y": 0,
+						"Width": 48,
+						"Height": 128
+                    },
+                    "SourceTexture": "{{InternalAssetKey:assets/EastScarp/AnimatedESPortal.png}}:0..35@7"
+                }
+			}
+		},
+		{
+			"Action": "EditData",
+			"When": {"HasMod": "Lemurkat.EastScarp", "ObeliskCollision": "true"},
+			"Target": "Data/Buildings",
+			"Fields": {
+				"Scarp Obelisk":{
+					"DrawShadow": false,
+					"CollisionMap": "OOO\nXOX",
+			}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"When": {"HasMod": "Lemurkat.EastScarp", "Warp Method": "Walk"},
+			"Fields": {
+				"Scarp Obelisk":{
+					"DefaultAction": null,
+					"TileProperties": [
+					{
+						"Id": "{{ModId}}_ScarpWarp",
+						"Name": "TouchAction",
+						"Value": "MagicWarp EastScarp_Village 24 97",
+						"Layer": "Back",
+						"TileArea": {
+						"X": 1,
+						"Y": 1,
+						"Width": 1,
+						"Height": 1
+						}
+					}
+				]
+			}
+			}
+		}
+		]
+}
+	
